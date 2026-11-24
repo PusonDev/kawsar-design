@@ -40,7 +40,7 @@ export default function HomePage() {
             backgroundImage: 'url(/assets/kawsar-exact-noise.png)',
             backgroundRepeat: 'repeat',
             backgroundSize: '256px 256px',
-            opacity: 0.4,
+            opacity: 0.3,
           }}
         />
       </div>
@@ -306,7 +306,7 @@ export default function HomePage() {
       {/* =========================================================================
           SERVICES SECTION (Background Canvas #F6F5F4)
           ========================================================================= */}
-      <section className="relative w-full bg-[#F6F5F4] pt-[72px] md:pt-[100px] pb-[80px] md:pb-[121px] z-[1] overflow-hidden">
+      <section className="relative w-full bg-[#F6F5F4] pt-[52px] md:pt-[100px] pb-[80px] md:pb-[121px] z-[1] overflow-hidden">
         <div className="relative max-w-[1300px] mx-auto px-0 z-20">
           {/* Section Headline (Authentic Framer text gradient matching kawsar.design) */}
           <h2
@@ -319,7 +319,7 @@ export default function HomePage() {
           </h2>
 
           {/* Divider Line with Tilted "Services" Pill */}
-          <div className="relative w-[360px] md:w-full md:max-w-[972px] shrink-0 left-1/2 -translate-x-1/2 md:static md:translate-x-0 mx-auto mt-[44px] md:mt-[69px] mb-[101px] md:mb-[65px] flex items-center justify-center">
+          <div className="relative w-[360px] md:w-full md:max-w-[972px] shrink-0 left-1/2 -translate-x-1/2 md:static md:translate-x-0 mx-auto mt-[51px] md:mt-[69px] mb-[101px] md:mb-[65px] flex items-center justify-center">
             {/* Hairline Divider */}
             <div className="w-full h-[1px] bg-[#ECEBEA]" />
 
