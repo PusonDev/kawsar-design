@@ -1,8 +1,17 @@
+# ==============================================================================
+# CLOUDFLARE PAGES EDGE SECURITY & CACHING POLICY (OWASP HARDENED)
+# ==============================================================================
+
 /*
-  X-Frame-Options: SAMEORIGIN
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  X-Frame-Options: DENY
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
-  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), interest-cohort=()
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https: blob:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';
+  # STAGING PROTECTION: Remove the line below when client connects their permanent custom domain
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: public, max-age=0, must-revalidate
 
 /fonts/*
   Cache-Control: public, max-age=31536000, immutable

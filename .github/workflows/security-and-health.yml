@@ -1,0 +1,39 @@
+name: Security Audit, TypeScript & Design Guard
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: '0 3 * * *' # Daily at 03:00 UTC
+
+jobs:
+  verify:
+    name: Security & Production Integrity Verification
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Security Vulnerability Audit
+        run: npm audit --audit-level=high
+
+      - name: Strict TypeScript Compilation Check
+        run: npx tsc --noEmit
+
+      - name: AI-Proof Design & Security Guardrail
+        run: npm run guard
+
+      - name: Production Static Build Verification
+        run: npm run build

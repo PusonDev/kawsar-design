@@ -1,0 +1,9 @@
+# Cursor Rules — Production Hardening & Design Lock
+# Repository: kawsar-design (Clone of https://kawsar.design/)
+
+- Always run `node scripts/guard.mjs` before proposing or committing code changes.
+- Ensure `public/assets/kawsar-exact-noise.png` is never deleted, recompressed or modified.
+- Keep the exact verbatim copy: "Building digital products, brands, and experience.", "Designing interfaces that are intuitive, efficient, and enjoyable to use.", "whatsApp", "instagram".
+- Ensure the footer contains exactly ONE semantic `<footer>` element with ONE copyright text node.
+- Deploy live with `npm run ship` and verify on Cloudflare Pages (`https://kawsar.zenvq.com/`).
+- Follow the Zero Oxford Comma policy in all prose, documentation and commit messages.

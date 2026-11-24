@@ -49,13 +49,13 @@ export default function HomePage() {
           HERO & HEADER TOP SECTION (Curved Bottom Sheet)
           Surface: #F6F5F4 (Exact RGB 246, 245, 244)
           ========================================================================= */}
-      <section className="relative w-full bg-[#F6F5F4] rounded-b-[80px] md:rounded-b-[120px] pt-[24px] pb-[60px] md:pt-[40px] md:pb-[96px] z-10 overflow-hidden">
+      <section className="relative w-full bg-[#F6F5F4] rounded-b-[80px] md:rounded-b-[120px] pt-[24px] pb-[60px] md:pt-[40px] md:pb-[116.5px] z-10 overflow-hidden">
         {/* ----------------- HEADER / NAVBAR (max-w=1300) ----------------- */}
         <header className="relative w-full max-w-[1300px] mx-auto px-4 md:px-0 flex items-center justify-between z-20">
           {/* Desktop Left (>= 810px): Email Pill + CV Pill */}
           <div className="hidden md:flex items-center gap-[10px]">
             {/* Email + Copy Pill */}
-            <div className="h-[56px] w-[279px] bg-[#F1F0EF] rounded-[1000px] flex items-center justify-between pl-[16px] pr-[4px] py-[4px]">
+            <div className="h-[56px] w-[279px] bg-[#F1F0EF] border border-[#ECEBEA] rounded-[1000px] flex items-center justify-between pl-[16px] pr-[4px] py-[4px]">
               <span
                 style={{
                   fontFamily: '"Otterco Regular", sans-serif',
@@ -74,8 +74,8 @@ export default function HomePage() {
             <a
               href="https://drive.google.com/file/d/1CSIY8rbsj0Izwj-OeM2R93eJTddzCdAM/view?usp=sharing"
               target="_blank"
-              rel="noreferrer"
-              className="h-[56px] w-[108px] bg-[#F1F0EF] rounded-[1000px] p-[4px] flex items-center justify-center group"
+              rel="noopener noreferrer"
+              className="h-[56px] w-[108px] bg-[#F1F0EF] border border-[#ECEBEA] rounded-[1000px] p-[4px] flex items-center justify-center group"
             >
               <div className="h-[48px] w-[100px] bg-[#FFFFFE] rounded-[60px] flex items-center justify-center transition-colors group-hover:bg-zinc-50 active:scale-[0.98]">
                 <span
@@ -109,7 +109,7 @@ export default function HomePage() {
             <a
               href="https://drive.google.com/file/d/1CSIY8rbsj0Izwj-OeM2R93eJTddzCdAM/view?usp=sharing"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="h-[48px] w-[88px] rounded-[24px] bg-[#FFFFFE] border border-[#ECEBEA] text-[#242424] flex items-center justify-center transition active:scale-[0.98]"
               style={{
                 fontFamily: '"Otterco Display Medium", sans-serif',
@@ -126,7 +126,7 @@ export default function HomePage() {
             <a
               href="https://www.linkedin.com/in/kawsarvy/"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="hover:opacity-70 transition-opacity"
               style={{ fontFamily: '"Otterco Regular", sans-serif' }}
             >
@@ -138,7 +138,7 @@ export default function HomePage() {
             <a
               href="https://dribbble.com/Kawsarvy"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="hover:opacity-70 transition-opacity"
               style={{ fontFamily: '"Otterco Regular", sans-serif' }}
             >
@@ -150,7 +150,7 @@ export default function HomePage() {
             <a
               href="https://www.instagram.com/kawsarvy/"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="hover:opacity-70 transition-opacity"
               style={{ fontFamily: '"Otterco Regular", sans-serif' }}
             >
@@ -163,7 +163,7 @@ export default function HomePage() {
             <a
               href="https://www.linkedin.com/in/kawsarvy/"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="w-[48px] h-[48px] flex items-center justify-center"
               aria-label="LinkedIn"
             >
@@ -172,7 +172,7 @@ export default function HomePage() {
             <a
               href="https://dribbble.com/Kawsarvy"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="w-[48px] h-[48px] flex items-center justify-center"
               aria-label="Dribbble"
             >
@@ -181,7 +181,7 @@ export default function HomePage() {
             <a
               href="https://www.instagram.com/kawsarvy/"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="w-[48px] h-[48px] flex items-center justify-center"
               aria-label="Instagram"
             >
@@ -208,7 +208,7 @@ export default function HomePage() {
 
             {/* Floating "Kawsar Ahmed  👋🏼 " Badge (At exact crown dx: 99px, dy: 10px) */}
             <div
-              className="absolute left-[99px] top-[10px] w-[127px] h-[68px] bg-[#FFFFFE] rounded-[60px] shadow-[0_10px_10px_0_rgba(84,84,84,0.1)] flex items-center justify-center whitespace-nowrap z-20 pointer-events-none"
+              className="absolute left-[99px] top-[10px] w-[120px] h-[48px] bg-[#FFFFFE] rounded-[60px] shadow-[0_10px_10px_0_rgba(84,84,84,0.1)] flex items-center justify-center whitespace-nowrap z-20 pointer-events-none"
               style={{
                 transform: 'rotate(-10deg)',
               }}
@@ -243,8 +243,8 @@ export default function HomePage() {
           <a
             href="https://dribbble.com/Kawsarvy"
             target="_blank"
-            rel="noreferrer"
-            className="mt-[32px] md:mt-[40px] w-[180px] h-[60px] bg-[#242424] rounded-[60px] flex items-center justify-center gap-[12px] transition-all hover:bg-black active:scale-[0.98] group z-20"
+            rel="noopener noreferrer"
+            className="mt-[32px] md:mt-[49.5px] w-[180px] h-[60px] bg-[#242424] rounded-[60px] flex items-center justify-center gap-[12px] transition-all hover:bg-black active:scale-[0.98] group z-20"
           >
             <DribbbleLatestWorkSvg width={16} height={16} />
             <span
@@ -265,7 +265,7 @@ export default function HomePage() {
           MIDDLE WHITE SHEET (Houses Client Logos Marquee)
           Surface: Pure White #FFFFFF
           ========================================================================= */}
-      <section className="relative w-full bg-white rounded-b-[80px] md:rounded-b-[120px] -mt-[40px] md:-mt-[60px] pt-[80px] md:pt-[110px] pb-[60px] md:pb-[80px] z-[5] overflow-hidden">
+      <section className="relative w-full bg-white rounded-b-[80px] md:rounded-b-[120px] -mt-[80px] md:-mt-[120px] pt-[140px] md:pt-[220px] pb-[90px] md:pb-[140px] z-[5] overflow-hidden">
         {/* Logo Ticker Strip with Soft Edge Fade Mask */}
         <div className="w-full h-[40px] relative overflow-hidden flex items-center z-20 marquee-edge-mask">
           {/* Smooth Continuous Marquee Track */}
@@ -297,7 +297,7 @@ export default function HomePage() {
       {/* =========================================================================
           SERVICES SECTION (Background Canvas #F6F5F4)
           ========================================================================= */}
-      <section className="relative w-full bg-[#F6F5F4] pt-[64px] md:pt-[100px] pb-[72px] md:pb-[100px] z-[1] overflow-hidden">
+      <section className="relative w-full bg-[#F6F5F4] pt-[72px] md:pt-[100px] pb-[80px] md:pb-[121px] z-[1] overflow-hidden">
         <div className="relative max-w-[1300px] mx-auto px-4 md:px-0 z-20">
           {/* Section Headline */}
           <h2
@@ -310,13 +310,13 @@ export default function HomePage() {
           </h2>
 
           {/* Divider Line with Tilted "Services" Pill */}
-          <div className="relative w-full max-w-[972px] mx-auto mt-[40px] md:mt-[72px] mb-[40px] md:mb-[68px] flex items-center justify-center">
+          <div className="relative w-full max-w-[972px] mx-auto mt-[48px] md:mt-[74.5px] mb-[48px] md:mb-[65px] flex items-center justify-center">
             {/* Hairline Divider */}
             <div className="w-full h-[1px] bg-[#ECEBEA]" />
 
             {/* Tilted Floating Pill */}
             <div
-              className="absolute w-[131px] h-[69px] bg-[#FFFFFE] rounded-[60px] shadow-[0_20px_10px_0_rgba(236,235,234,0.4)] flex items-center justify-center pointer-events-none"
+              className="absolute w-[125px] h-[48px] bg-[#FFFFFE] rounded-[60px] shadow-[0_20px_10px_0_rgba(236,235,234,0.4)] flex items-center justify-center pointer-events-none"
               style={{
                 transform: 'rotate(-10deg)',
               }}
@@ -460,10 +460,10 @@ export default function HomePage() {
       </section>
 
       {/* =========================================================================
-          CONTACT & FOOTER (Curved Sheet)
-          Surface: #FAFAFA
+          CONTACT & FOOTER (Curved Sheet, Pure White)
+          Surface: Pure White #FFFFFF
           ========================================================================= */}
-      <section className="relative w-full bg-[#FAFAFA] rounded-t-[80px] md:rounded-t-[120px] pt-[72px] md:pt-[81px] pb-[60px] md:pb-[74px] z-10 overflow-hidden">
+      <section className="relative w-full bg-white rounded-t-[80px] md:rounded-t-[120px] pt-[72px] md:pt-[81px] pb-[60px] md:pb-[74px] z-10 overflow-hidden">
         <div className="relative max-w-[1300px] mx-auto px-4 md:px-0 flex flex-col items-center z-20">
           {/* Top Circular Ring Frame */}
           <div className="relative w-[128px] h-[128px] rounded-full overflow-hidden flex items-center justify-center mb-[28px] md:mb-[36px]">
@@ -507,7 +507,7 @@ export default function HomePage() {
               <a
                 href="https://wa.me/1303536185"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="w-[120px] h-[52px] bg-[#FFFFFE] rounded-[90px] flex items-center justify-center gap-[8px] transition hover:bg-zinc-50 active:scale-[0.98] z-20"
               >
                 <span
@@ -524,15 +524,15 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* ----------------- FOOTER ----------------- */}
+          {/* ----------------- FOOTER (Single Semantic Node, Responsive Layout) ----------------- */}
           <footer className="w-full max-w-[1300px] mt-[80px] md:mt-[115px]">
             {/* Hairline Divider Line */}
             <div className="w-full h-[1px] bg-[#ECEBEA] mb-[24px] md:mb-[28px]" />
 
-            {/* Desktop Footer (>= 810px): Horizontal split */}
-            <div className="hidden md:flex w-full items-center justify-between">
+            {/* Single Responsive Flex Container: Stacked on <=809px, Split on >=810px */}
+            <div className="w-full flex flex-col md:flex-row items-center justify-between gap-[30px] md:gap-0 text-center md:text-left">
               <p
-                className="pl-[2px]"
+                className="pl-0 md:pl-[2px]"
                 style={{
                   fontFamily: '"Otterco Regular", sans-serif',
                   fontSize: '14px',
@@ -543,11 +543,12 @@ export default function HomePage() {
                 © 2026 All rights reserved.
               </p>
 
-              <div className="flex items-center text-[14px] leading-[16.8px] text-[#373737] gap-[10px]">
+              {/* Desktop Text Links (>= 810px) */}
+              <div className="hidden md:flex items-center text-[14px] leading-[16.8px] text-[#373737] gap-[10px]">
                 <a
                   href="https://www.linkedin.com/in/kawsarvy/"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="hover:opacity-70 transition-opacity"
                   style={{ fontFamily: '"Otterco Regular", sans-serif' }}
                 >
@@ -559,7 +560,7 @@ export default function HomePage() {
                 <a
                   href="https://dribbble.com/Kawsarvy"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="hover:opacity-70 transition-opacity"
                   style={{ fontFamily: '"Otterco Regular", sans-serif' }}
                 >
@@ -571,33 +572,20 @@ export default function HomePage() {
                 <a
                   href="https://www.instagram.com/kawsarvy/"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="hover:opacity-70 transition-opacity"
                   style={{ fontFamily: '"Otterco Regular", sans-serif' }}
                 >
                   instagram
                 </a>
               </div>
-            </div>
 
-            {/* Tablet & Mobile Footer (<= 809px): Centered Stacked Layout */}
-            <div className="flex md:hidden flex-col items-center gap-[30px] w-full text-center">
-              <p
-                style={{
-                  fontFamily: '"Otterco Regular", sans-serif',
-                  fontSize: '14px',
-                  lineHeight: '16.8px',
-                  color: 'rgb(55, 55, 55)',
-                }}
-              >
-                © 2026 All rights reserved.
-              </p>
-
-              <div className="flex items-center gap-[4px]">
+              {/* Tablet & Mobile 3 Circular Icon Buttons (<= 809px) */}
+              <div className="flex md:hidden items-center gap-[4px]">
                 <a
                   href="https://www.linkedin.com/in/kawsarvy/"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="w-[48px] h-[48px] flex items-center justify-center"
                   aria-label="LinkedIn"
                 >
@@ -606,7 +594,7 @@ export default function HomePage() {
                 <a
                   href="https://dribbble.com/Kawsarvy"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="w-[48px] h-[48px] flex items-center justify-center"
                   aria-label="Dribbble"
                 >
@@ -615,7 +603,7 @@ export default function HomePage() {
                 <a
                   href="https://www.instagram.com/kawsarvy/"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="w-[48px] h-[48px] flex items-center justify-center"
                   aria-label="Instagram"
                 >

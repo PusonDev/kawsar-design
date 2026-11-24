@@ -2,6 +2,7 @@
 const nextConfig = {
   output: 'export',
   reactStrictMode: true,
+  poweredByHeader: false,
   webpack: (config) => {
     config.resolve.symlinks = false;
     return config;

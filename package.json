@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "dev": "node scripts/run-next.cjs dev",
+    "guard": "node scripts/guard.mjs",
+    "prebuild": "npm run guard",
     "build": "node scripts/run-next.cjs build",
+    "ship": "npm run build && npx wrangler pages deploy out --project-name=kawsar --branch=main --commit-dirty=true",
     "start": "node scripts/run-next.cjs start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,7 +16,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "next": "^14.2.24",
+    "next": "^14.2.35",
     "puppeteer-core": "^25.18.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"

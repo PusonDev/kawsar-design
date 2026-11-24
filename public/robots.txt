@@ -1,0 +1,9 @@
+# ==============================================================================
+# STAGING ROBOTS.TXT (Prevents Search Engines from Indexing Staging Clone)
+# FOR CLIENT PRODUCTION LAUNCH: To allow indexing on the client's main domain,
+# flip this file to:
+# User-agent: *
+# Allow: /
+# ==============================================================================
+User-agent: *
+Disallow: /

@@ -1,0 +1,50 @@
+name: Automated Verified Security Patch
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 4 * * 1' # Every Monday at 04:00 UTC
+
+jobs:
+  patch:
+    name: Audit Fix & Verified Safe Patch
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Run Safe Audit Fix
+        run: npm audit fix --omit=dev || true
+
+      - name: Run Design & Integrity Guard
+        run: npm run guard
+
+      - name: Run Strict TypeScript Check
+        run: npx tsc --noEmit
+
+      - name: Run Production Build
+        run: npm run build
+
+      - name: Create Patch PR if Changes Exist
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: 'fix(security): automated dependency security patch [verified]'
+          title: '🛡️ Automated Verified Security Patch'
+          body: |
+            This PR was automatically created by the Security Patch workflow.
+            All pre-build integrity guards (`npm run guard`), TypeScript checks (`tsc --noEmit`), and production builds (`npm run build`) passed with zero errors.
+          branch: auto-security-patch
+          labels: |
+            security
+            automated-pr

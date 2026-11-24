@@ -29,6 +29,18 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link
+          rel="preload"
+          href="/assets/kawsar-avatar.png"
+          as="image"
+          type="image/png"
+        />
+        <link
+          rel="preload"
+          href="/assets/kawsar-exact-noise.png"
+          as="image"
+          type="image/png"
+        />
       </head>
       <body className="bg-white text-[#242424] antialiased selection:bg-zinc-200">
         {children}
