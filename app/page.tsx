@@ -54,7 +54,7 @@ export default function HomePage() {
         </div>
 
         {/* ----------------- HEADER / NAVBAR (Exact responsive width matching kawsar.design) ----------------- */}
-        <header className="relative w-[367px] md:w-[729px] lg:w-[1296px] mx-auto pt-[4px] md:pt-0 flex items-center justify-between z-20">
+        <header className="relative w-full max-w-[367px] md:max-w-none md:w-[729px] lg:w-[1296px] mx-auto px-[11px] md:px-0 pt-[4px] md:pt-0 flex items-center justify-between z-20">
           {/* Desktop Left (>= 810px): Email Pill + CV Pill */}
           <div className="hidden md:flex items-center gap-[10px]">
             {/* Email + Copy Pill */}
@@ -96,31 +96,48 @@ export default function HomePage() {
             </a>
           </div>
 
-          {/* Tablet & Mobile Header Left (<= 809px): Compact Email & CV Buttons */}
-          <div className="flex md:hidden items-center gap-[8px]">
+          {/* Tablet & Mobile Header Left (<= 809px): Authentic Dual-Capsule Email & CV Buttons (180px x 48px Frame 1321314924) */}
+          <div className="flex md:hidden items-center gap-[4px]">
+            {/* Email Dual Capsule */}
             <a
               href="mailto:kawsarvy.design@gmail.com"
-              className="h-[48px] w-[88px] rounded-[24px] bg-[#242424] text-white flex items-center justify-center"
-              style={{
-                fontFamily: '"Otterco Display Medium", sans-serif',
-                fontSize: '12px',
-                lineHeight: '14.4px',
-              }}
+              className="h-[48px] w-[88px] bg-[#F1F0EF] border border-[#ECEBEA] rounded-[24px] p-[4px] flex items-center justify-center group"
             >
-              Email
+              <div className="h-[40px] w-[80px] bg-[#242424] rounded-[60px] flex items-center justify-center">
+                <span
+                  style={{
+                    fontFamily: '"Otterco Display Medium", sans-serif',
+                    fontSize: '12px',
+                    lineHeight: '14.4px',
+                    color: 'rgb(255, 255, 255)',
+                  }}
+                  className="group-hover:underline"
+                >
+                  Email
+                </span>
+              </div>
             </a>
+
+            {/* CV Dual Capsule */}
             <a
               href="https://drive.google.com/file/d/1CSIY8rbsj0Izwj-OeM2R93eJTddzCdAM/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
-              className="h-[48px] w-[88px] rounded-[24px] bg-[#FFFFFE] border border-[#ECEBEA] text-[#242424] flex items-center justify-center"
-              style={{
-                fontFamily: '"Otterco Display Medium", sans-serif',
-                fontSize: '12px',
-                lineHeight: '14.4px',
-              }}
+              className="h-[48px] w-[88px] bg-[#F1F0EF] border border-[#ECEBEA] rounded-[24px] p-[4px] flex items-center justify-center group"
             >
-              CV
+              <div className="h-[40px] w-[80px] bg-[#FFFFFE] rounded-[60px] flex items-center justify-center">
+                <span
+                  style={{
+                    fontFamily: '"Otterco Display Medium", sans-serif',
+                    fontSize: '12px',
+                    lineHeight: '14.4px',
+                    color: 'rgb(36, 36, 36)',
+                  }}
+                  className="group-hover:underline"
+                >
+                  CV
+                </span>
+              </div>
             </a>
           </div>
 
@@ -361,7 +378,7 @@ export default function HomePage() {
           </h2>
 
           {/* Divider Line with Tilted "Services" Pill */}
-          <div className="w-[351px] md:w-[972px] mx-auto md:mx-0 md:relative md:left-1/2 md:-translate-x-1/2 mt-[51px] md:mt-[69px] mb-[110px] md:mb-[65px] flex items-center justify-center">
+          <div className="w-full max-w-[351px] md:max-w-none md:w-[972px] px-3 md:px-0 mx-auto md:mx-0 md:relative md:left-1/2 md:-translate-x-1/2 mt-[51px] md:mt-[69px] mb-[110px] md:mb-[65px] flex items-center justify-center">
             {/* Hairline Divider */}
             <div className="w-full h-[1px] bg-[#ECEBEA]" />
 
@@ -607,7 +624,7 @@ export default function HomePage() {
           </div>
 
           {/* ----------------- FOOTER (Single Semantic Node, Responsive Layout) ----------------- */}
-          <footer className="w-[351px] md:w-[729px] lg:w-[1302px] mx-auto mt-[87px] md:mt-[99px]">
+          <footer className="w-full max-w-[351px] md:max-w-none md:w-[729px] lg:w-[1302px] px-3 md:px-0 mx-auto mt-[87px] md:mt-[99px]">
             {/* Hairline Divider Line */}
             <div className="w-full h-[1px] bg-[#ECEBEA] mb-[33px] md:mb-[43px]" />
 
