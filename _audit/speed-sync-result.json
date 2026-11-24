@@ -1,0 +1,20 @@
+{
+  "live": {
+    "avgIntervalMs": 86,
+    "fps": 11.62,
+    "mutationsIn2000ms": 24,
+    "cycleDurationMs": 8000
+  },
+  "clone": {
+    "avgIntervalMs": 87,
+    "fps": 11.5,
+    "mutationsIn2000ms": 24,
+    "cycleDurationMs": 8000
+  },
+  "delta": {
+    "fpsDelta": 0.11999999999999922,
+    "intervalDeltaMs": 1,
+    "durationDeltaMs": 0
+  },
+  "synced": true
+}
