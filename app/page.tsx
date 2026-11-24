@@ -226,9 +226,9 @@ export default function HomePage() {
             </a>
           </div>
 
-          {/* Hero H1 (Solid pure rgb(0,0,0) matching kawsar.design, no gradient clip) */}
+          {/* Hero H1 (Authentic Framer text gradient matching kawsar.design) */}
           <h1
-            className="text-heading-solid text-center mt-[16px] md:mt-[10px] tracking-normal text-[36px] leading-[44px] md:text-[56px] md:leading-[64px]"
+            className="heading-hero-gradient text-center mt-[16px] md:mt-[10px] tracking-normal text-[36px] leading-[44px] md:text-[56px] md:leading-[64px]"
             style={{
               fontFamily: '"Otterco Display Medium", sans-serif',
               fontWeight: 500,
@@ -302,9 +302,9 @@ export default function HomePage() {
           ========================================================================= */}
       <section className="relative w-full bg-[#F6F5F4] pt-[72px] md:pt-[100px] pb-[80px] md:pb-[121px] z-[1] overflow-hidden">
         <div className="relative max-w-[1300px] mx-auto px-0 z-20">
-          {/* Section Headline (Solid rgb(0,0,0) matching kawsar.design) */}
+          {/* Section Headline (Authentic Framer text gradient matching kawsar.design) */}
           <h2
-            className="text-heading-solid text-center w-[360px] md:w-[615px] shrink-0 text-[28px] leading-[42px] md:text-[36px] md:leading-[54px] font-[500] relative left-1/2 -translate-x-1/2"
+            className="heading-collaborate-gradient text-center w-[360px] md:w-[615px] shrink-0 text-[28px] leading-[42px] md:text-[36px] md:leading-[54px] font-[500] relative left-1/2 -translate-x-1/2"
             style={{
               fontFamily: '"Otterco Display Medium", sans-serif',
             }}
@@ -474,9 +474,9 @@ export default function HomePage() {
             <AvatarFrameSvg className="w-full h-full pointer-events-none" />
           </div>
 
-          {/* Contact Heading (Solid rgb(0,0,0) matching kawsar.design) */}
+          {/* Contact Heading (Authentic Framer text gradient matching kawsar.design) */}
           <h2
-            className="text-heading-solid text-center w-[352px] md:w-[658px] shrink-0 text-[36px] leading-[44px] md:text-[56px] md:leading-[64px] font-[600] relative left-1/2 -translate-x-1/2 md:static md:translate-x-0"
+            className="heading-contact-gradient text-center w-[352px] md:w-[658px] shrink-0 text-[36px] leading-[44px] md:text-[56px] md:leading-[64px] font-[600] relative left-1/2 -translate-x-1/2 md:static md:translate-x-0"
             style={{
               fontFamily: '"Otterco Display SemiBold", sans-serif',
             }}
