@@ -239,15 +239,16 @@ export default function HomePage() {
             <span className="block">experience.</span>
           </h1>
 
-          {/* Latest Work Button */}
+          {/* Latest Work Button (40px gap from H1; underlines text on hover matching kawsar.design) */}
           <a
             href="https://dribbble.com/Kawsarvy"
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-[32px] md:mt-[49.5px] w-[180px] h-[60px] bg-[#242424] rounded-[60px] flex items-center justify-center gap-[12px] group z-20"
+            className="mt-[40px] w-[180px] h-[60px] bg-[#242424] rounded-[60px] flex items-center justify-center gap-[12px] group z-20"
           >
             <DribbbleLatestWorkSvg width={16} height={16} />
             <span
+              className="group-hover:underline"
               style={{
                 fontFamily: '"Otterco Medium", sans-serif',
                 fontSize: '12px',
@@ -264,10 +265,10 @@ export default function HomePage() {
       {/* =========================================================================
           MIDDLE WHITE SHEET (Houses Client Logos Marquee)
           Surface: Pure White #FFFFFF
-          Framer Rectangle 5724: rounded-[80px] on mobile, rounded-t-[80px] rounded-b-[120px] on desktop
+          Seamless flat top behind hero sheet (rounded-t-none), curved bottom (rounded-b-[80px] md:rounded-b-[120px])
           Zero border stroke (matches kawsar.design)
           ========================================================================= */}
-      <section className="relative w-full bg-white rounded-[80px] md:rounded-t-[80px] md:rounded-b-[120px] -mt-[80px] md:-mt-[120px] pt-[162px] md:pt-[220px] pb-[90px] md:pb-[140px] z-[5] overflow-hidden">
+      <section className="relative w-full bg-white rounded-t-none rounded-b-[80px] md:rounded-b-[120px] -mt-[80px] md:-mt-[120px] pt-[162px] md:pt-[220px] pb-[118px] md:pb-[140px] z-[5] overflow-hidden">
         {/* Logo Ticker Strip (Clean 100% Crisp Edges matching live site) */}
         <div className="w-full h-[40px] relative overflow-hidden flex items-center z-20">
           {/* Smooth Continuous Marquee Track */}
