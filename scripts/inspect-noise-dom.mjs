@@ -1,55 +1,64 @@
 import puppeteer from 'puppeteer-core';
-
 const CHROME_PATH = 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe';
-const TARGET_URL = 'https://kawsar.design/';
 
-async function inspectNoiseDOM() {
-  const browser = await puppeteer.launch({
-    executablePath: CHROME_PATH,
-    headless: 'new',
-    args: ['--no-sandbox']
-  });
-
+async function main() {
+  const browser = await puppeteer.launch({ executablePath: CHROME_PATH, headless: 'new', args: ['--no-sandbox'] });
   const page = await browser.newPage();
-  await page.setViewport({ width: 1440, height: 900 });
-  await page.goto(TARGET_URL, { waitUntil: 'networkidle2' });
-
+  await page.goto('https://kawsar.design/', { waitUntil: 'networkidle2' });
+  
   const info = await page.evaluate(() => {
     const el = document.querySelector('.framer-ekivo5-container');
     if (!el) return { found: false };
-    const rect = el.getBoundingClientRect();
-    const cs = window.getComputedStyle(el);
-    const parent = el.parentElement;
-    const parentCs = window.getComputedStyle(parent);
+    const p = el.parentElement;
+    const computed = window.getComputedStyle(el);
+    const child = el.firstElementChild;
+    const grandChild = child ? child.firstElementChild : null;
     
-    // Find all siblings and their z-indices
-    const siblings = Array.from(parent.children).map(child => ({
-      className: child.className,
-      tag: child.tagName,
-      zIndex: window.getComputedStyle(child).zIndex,
-      position: window.getComputedStyle(child).position,
-      rect: {
-        x: Math.round(child.getBoundingClientRect().x),
-        y: Math.round(child.getBoundingClientRect().y),
-        w: Math.round(child.getBoundingClientRect().width),
-        h: Math.round(child.getBoundingClientRect().height)
-      }
-    }));
-
     return {
       found: true,
-      rect,
-      zIndex: cs.zIndex,
-      position: cs.position,
-      opacity: cs.opacity,
-      parentTag: parent.tagName,
-      parentClass: parent.className,
-      siblings
+      tag: el.tagName,
+      class: el.className,
+      parentTag: p ? p.tagName : null,
+      parentClass: p ? p.className : null,
+      parentPath: p ? (p.id || p.className) : null,
+      computed: {
+        position: computed.position,
+        top: computed.top,
+        left: computed.left,
+        right: computed.right,
+        bottom: computed.bottom,
+        width: computed.width,
+        height: computed.height,
+        zIndex: computed.zIndex,
+        pointerEvents: computed.pointerEvents,
+        opacity: computed.opacity,
+        overflow: computed.overflow
+      },
+      childComputed: child ? {
+        tag: child.tagName,
+        style: child.getAttribute('style'),
+        width: window.getComputedStyle(child).width,
+        height: window.getComputedStyle(child).height,
+        position: window.getComputedStyle(child).position,
+        overflow: window.getComputedStyle(child).overflow
+      } : null,
+      grandChildComputed: grandChild ? {
+        tag: grandChild.tagName,
+        style: grandChild.getAttribute('style'),
+        width: window.getComputedStyle(grandChild).width,
+        height: window.getComputedStyle(grandChild).height,
+        position: window.getComputedStyle(grandChild).position,
+        opacity: window.getComputedStyle(grandChild).opacity,
+        backgroundSize: window.getComputedStyle(grandChild).backgroundSize,
+        backgroundRepeat: window.getComputedStyle(grandChild).backgroundRepeat,
+        backgroundImage: window.getComputedStyle(grandChild).backgroundImage,
+        transform: window.getComputedStyle(grandChild).transform
+      } : null
     };
   });
-
-  console.log('NOISE DOM INFO:', JSON.stringify(info, null, 2));
+  
+  console.log(JSON.stringify(info, null, 2));
   await browser.close();
 }
 
-inspectNoiseDOM().catch(console.error);
+main().catch(console.error);

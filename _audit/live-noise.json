@@ -1,0 +1,116 @@
+{
+  "noiseCandidates": [
+    {
+      "tagName": "DIV",
+      "className": "framer-ekivo5-container",
+      "id": "",
+      "styleAttr": "",
+      "rect": {
+        "x": -662,
+        "y": 0,
+        "w": 2765,
+        "h": 2304
+      },
+      "computed": {
+        "position": "absolute",
+        "inset": "0px -663px 0px -662px",
+        "width": "2765px",
+        "height": "2304px",
+        "opacity": "0.08",
+        "mixBlendMode": "normal",
+        "filter": "none",
+        "zIndex": "auto",
+        "pointerEvents": "auto",
+        "backgroundImage": "none",
+        "backgroundSize": "auto",
+        "backgroundRepeat": "repeat",
+        "backgroundPosition": "0% 0%",
+        "willChange": "auto",
+        "transform": "none"
+      },
+      "animationCount": 0,
+      "animations": [],
+      "parent": {
+        "tagName": "DIV",
+        "className": "framer-iwhjsb",
+        "overflow": "hidden",
+        "rect": {}
+      }
+    },
+    {
+      "tagName": "DIV",
+      "className": "",
+      "id": "",
+      "styleAttr": "background: url(\"https://framerusercontent.com/images/rR6HYXBrMmX4cRpXfXUOvpvpB0.png\"); opacity: 0.4; inset: -200%; width: 400%; height: 400%; position: absolute; will-change: transform; transform: translateX(-15%) translateY(5%);",
+      "rect": {
+        "x": -7851,
+        "y": -4147.2001953125,
+        "w": 11060,
+        "h": 9216
+      },
+      "computed": {
+        "position": "absolute",
+        "inset": "-4608px -5530px -4608px -5530px",
+        "width": "11060px",
+        "height": "9216px",
+        "opacity": "0.4",
+        "mixBlendMode": "normal",
+        "filter": "none",
+        "zIndex": "auto",
+        "pointerEvents": "auto",
+        "backgroundImage": "url(\"https://framerusercontent.com/images/rR6HYXBrMmX4cRpXfXUOvpvpB0.png\")",
+        "backgroundSize": "auto",
+        "backgroundRepeat": "repeat",
+        "backgroundPosition": "0% 0%",
+        "willChange": "transform",
+        "transform": "matrix(1, 0, 0, 1, -1659, 460.8)"
+      },
+      "animationCount": 0,
+      "animations": [],
+      "parent": {
+        "tagName": "DIV",
+        "className": "",
+        "overflow": "hidden",
+        "rect": {}
+      }
+    },
+    {
+      "tagName": "DIV",
+      "className": "",
+      "id": "",
+      "styleAttr": "background: url(\"https://framerusercontent.com/images/rR6HYXBrMmX4cRpXfXUOvpvpB0.png\"); opacity: 0.3; inset: -200%; width: 400%; height: 400%; position: absolute; will-change: transform; transform: translateX(-15%) translateY(5%);",
+      "rect": {
+        "x": 322.20001220703125,
+        "y": -38.899993896484375,
+        "w": 512,
+        "h": 512
+      },
+      "computed": {
+        "position": "absolute",
+        "inset": "-256px -256px -256px -256px",
+        "width": "512px",
+        "height": "512px",
+        "opacity": "0.3",
+        "mixBlendMode": "normal",
+        "filter": "none",
+        "zIndex": "auto",
+        "pointerEvents": "auto",
+        "backgroundImage": "url(\"https://framerusercontent.com/images/rR6HYXBrMmX4cRpXfXUOvpvpB0.png\")",
+        "backgroundSize": "auto",
+        "backgroundRepeat": "repeat",
+        "backgroundPosition": "0% 0%",
+        "willChange": "transform",
+        "transform": "matrix(1, 0, 0, 1, -76.8, 25.6)"
+      },
+      "animationCount": 0,
+      "animations": [],
+      "parent": {
+        "tagName": "DIV",
+        "className": "",
+        "overflow": "hidden",
+        "rect": {}
+      }
+    }
+  ],
+  "keyframesList": []
+}

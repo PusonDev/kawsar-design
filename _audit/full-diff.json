@@ -1,0 +1,286 @@
+{
+  "desktop": {
+    "live": {
+      "h1": null,
+      "servicesH2": null,
+      "contactH2": null,
+      "avatar": {
+        "x": 655,
+        "y": 192,
+        "w": 128,
+        "h": 128,
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "color": "rgb(0, 0, 0)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      "latestWorkBtn": {
+        "x": 629,
+        "y": 566,
+        "w": 180,
+        "h": 60,
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "color": "rgb(0, 0, 238)",
+        "bg": "rgb(36, 36, 36)",
+        "borderRadius": "60px"
+      },
+      "emailPill": {
+        "x": 587,
+        "y": 2022,
+        "w": 128,
+        "h": 60,
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "color": "rgb(0, 0, 0)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      "servicesGrid": {
+        "x": 115,
+        "y": 1365,
+        "w": 1210,
+        "h": 152,
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "color": "rgb(0, 0, 0)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      "footer": null
+    },
+    "clone": {
+      "h1": {
+        "x": 480,
+        "y": 330,
+        "w": 480,
+        "h": 192,
+        "fontSize": "56px",
+        "lineHeight": "64px",
+        "color": "rgb(36, 36, 36)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      "servicesH2": {
+        "x": 413,
+        "y": 1122,
+        "w": 615,
+        "h": 108,
+        "fontSize": "36px",
+        "lineHeight": "54px",
+        "color": "rgb(36, 36, 36)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      "contactH2": {
+        "x": 387,
+        "y": 1850,
+        "w": 667,
+        "h": 128,
+        "fontSize": "56px",
+        "lineHeight": "64px",
+        "color": "rgb(36, 36, 36)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      "avatar": {
+        "x": 657,
+        "y": 193,
+        "w": 126,
+        "h": 126,
+        "fontSize": "16px",
+        "lineHeight": "24px",
+        "color": "rgba(0, 0, 0, 0)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "borderRadius": "9999px"
+      },
+      "latestWorkBtn": {
+        "x": 1233,
+        "y": 60,
+        "w": 54,
+        "h": 17,
+        "fontSize": "14px",
+        "lineHeight": "16.8px",
+        "color": "rgb(55, 55, 55)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      "emailPill": {
+        "x": 70,
+        "y": 40,
+        "w": 279,
+        "h": 56,
+        "fontSize": "16px",
+        "lineHeight": "24px",
+        "color": "rgb(36, 36, 36)",
+        "bg": "rgb(241, 240, 239)",
+        "borderRadius": "1000px"
+      },
+      "servicesGrid": {
+        "x": 234,
+        "y": 1384,
+        "w": 972,
+        "h": 140,
+        "fontSize": "16px",
+        "lineHeight": "24px",
+        "color": "rgb(36, 36, 36)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      "footer": {
+        "x": 70,
+        "y": 2197,
+        "w": 1300,
+        "h": 46,
+        "fontSize": "16px",
+        "lineHeight": "24px",
+        "color": "rgb(36, 36, 36)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px"
+      }
+    }
+  },
+  "mobile": {
+    "live": {
+      "h1": null,
+      "servicesH2": null,
+      "contactH2": null,
+      "avatar": {
+        "x": 124,
+        "y": 205,
+        "w": 128,
+        "h": 128,
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "color": "rgb(0, 0, 0)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      "latestWorkBtn": {
+        "x": 97,
+        "y": 517,
+        "w": 180,
+        "h": 60,
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "color": "rgb(0, 0, 238)",
+        "bg": "rgb(36, 36, 36)",
+        "borderRadius": "60px"
+      },
+      "emailPill": {
+        "x": 11,
+        "y": 44,
+        "w": 88,
+        "h": 48,
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "color": "rgb(0, 0, 0)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      "servicesGrid": {
+        "x": 8,
+        "y": 1250,
+        "w": 360,
+        "h": 362,
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "color": "rgb(0, 0, 0)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      "footer": null
+    },
+    "clone": {
+      "h1": {
+        "x": 33,
+        "y": 301,
+        "w": 308,
+        "h": 132,
+        "fontSize": "36px",
+        "lineHeight": "44px",
+        "color": "rgb(36, 36, 36)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      "servicesH2": {
+        "x": 16,
+        "y": 942,
+        "w": 343,
+        "h": 126,
+        "fontSize": "28px",
+        "lineHeight": "42px",
+        "color": "rgb(36, 36, 36)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      "contactH2": {
+        "x": 16,
+        "y": 1810,
+        "w": 343,
+        "h": 88,
+        "fontSize": "36px",
+        "lineHeight": "44px",
+        "color": "rgb(36, 36, 36)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      "avatar": {
+        "x": 125,
+        "y": 164,
+        "w": 126,
+        "h": 126,
+        "fontSize": "16px",
+        "lineHeight": "24px",
+        "color": "rgba(0, 0, 0, 0)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "borderRadius": "9999px"
+      },
+      "latestWorkBtn": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "fontSize": "14px",
+        "lineHeight": "16.8px",
+        "color": "rgb(55, 55, 55)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      "emailPill": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "fontSize": "16px",
+        "lineHeight": "24px",
+        "color": "rgb(36, 36, 36)",
+        "bg": "rgb(241, 240, 239)",
+        "borderRadius": "1000px"
+      },
+      "servicesGrid": {
+        "x": 16,
+        "y": 1165,
+        "w": 343,
+        "h": 320,
+        "fontSize": "16px",
+        "lineHeight": "24px",
+        "color": "rgb(36, 36, 36)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      "footer": {
+        "x": 16,
+        "y": 2090,
+        "w": 343,
+        "h": 106,
+        "fontSize": "16px",
+        "lineHeight": "24px",
+        "color": "rgb(36, 36, 36)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px"
+      }
+    }
+  }
+}

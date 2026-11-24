@@ -14,8 +14,8 @@ import {
   DribbbleLatestWorkSvg,
 } from '../components/icons';
 
-// Reusable 1:1 Tactical Noise / Grain Overlay
-function NoiseOverlay({ opacity = 0.028 }: { opacity?: number }) {
+// Reusable 1:1 Live Tactile Noise / Grain Overlay with Stepped Jitter
+function NoiseOverlay({ opacity = 0.032 }: { opacity?: number }) {
   return (
     <div
       className="absolute inset-0 pointer-events-none select-none z-[1] overflow-hidden"
@@ -23,9 +23,9 @@ function NoiseOverlay({ opacity = 0.028 }: { opacity?: number }) {
       aria-hidden="true"
     >
       <div
-        className="absolute -inset-[200%] w-[400%] h-[400%] pointer-events-none"
+        className="absolute -inset-[200%] w-[400%] h-[400%] pointer-events-none animate-live-noise"
         style={{
-          backgroundImage: 'url(/assets/noise-tile.png)',
+          backgroundImage: 'url(/assets/noise-live.png)',
           backgroundRepeat: 'repeat',
           backgroundSize: '256px 256px',
         }}
@@ -237,7 +237,7 @@ export default function HomePage() {
             }}
           >
             <span className="block">Building digital</span>
-            <span className="block">products, brands and</span>
+            <span className="block">products, brands, and</span>
             <span className="block">experience.</span>
           </h1>
 
@@ -371,7 +371,7 @@ export default function HomePage() {
                   color: 'rgb(42, 42, 42)',
                 }}
               >
-                Designing interfaces that are intuitive, efficient and enjoyable to use.
+                Designing interfaces that are intuitive, efficient, and enjoyable to use.
               </p>
             </div>
 

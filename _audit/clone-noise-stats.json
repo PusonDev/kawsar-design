@@ -1,0 +1,34 @@
+{
+  "clone": {
+    "totalPixels": 160000,
+    "diffPixels": 135381,
+    "diffPercent": 84.613125,
+    "isAnimated": true,
+    "meanRGB": {
+      "r": 241.19,
+      "g": 240.22,
+      "b": 239.25
+    },
+    "stdDev": 1.7759
+  },
+  "groundTruth": {
+    "width": 400,
+    "height": 400,
+    "totalPixels": 160000,
+    "diffPixels": 138027,
+    "isAnimated": true,
+    "meanRGB": {
+      "r": 240.49504375,
+      "g": 239.53469375,
+      "b": 238.56704375
+    },
+    "stdDev": 1.8635547317311718
+  },
+  "delta": {
+    "stdDevDiff": 0.0877,
+    "meanRDiff": 0.69,
+    "meanGDiff": 0.69,
+    "meanBDiff": 0.68
+  },
+  "pass": true
+}
