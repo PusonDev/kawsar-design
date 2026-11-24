@@ -26,6 +26,23 @@ export default function HomePage() {
 
   return (
     <main className="w-full min-h-screen bg-[#F6F5F4] text-[#242424] relative overflow-x-hidden selection:bg-zinc-200">
+      {/* Global Canvas Scoped Background Noise Layer (z-0 strictly behind all sections & sheets) */}
+      <div
+        className="absolute inset-0 pointer-events-none select-none overflow-hidden z-0"
+        style={{ opacity: 0.08 }}
+        aria-hidden="true"
+      >
+        <div
+          className="absolute -inset-[200%] w-[400%] h-[400%] pointer-events-none animate-live-noise"
+          style={{
+            backgroundImage: 'url(/assets/kawsar-exact-noise.png)',
+            backgroundRepeat: 'repeat',
+            backgroundSize: '256px 256px',
+            opacity: 0.4,
+          }}
+        />
+      </div>
+
       {/* =========================================================================
           HERO & HEADER TOP SECTION (Curved Bottom Sheet)
           Surface: #F6F5F4 (Exact RGB 246, 245, 244)
@@ -228,6 +245,7 @@ export default function HomePage() {
               className="absolute left-[102px] top-[20px] w-[120px] h-[48px] bg-[#FFFFFE] rounded-[60px] shadow-[0_10px_10px_0_rgba(84,84,84,0.1)] flex items-center justify-center whitespace-pre z-20 animate-badge-float select-none"
               style={{
                 transformOrigin: '60px 24px',
+                transform: 'translateY(0px) rotate(-10deg)',
               }}
             >
               <p
@@ -246,19 +264,17 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Hero H1 (1:1 with Framer .framer-2cgirf: w-full max-w-[340px] md:max-w-[525px] mx-auto, break-words) */}
+          {/* Hero H1 (1:1 with Framer .framer-2cgirf: w-[308px] md:w-[525px] shrink-0, exact 3 lines, zero unwanted line breaks) */}
           <h1
-            className="heading-hero-gradient text-center mt-[16px] md:mt-[10px] tracking-normal text-[36px] leading-[44px] md:text-[56px] md:leading-[64px] w-full max-w-[340px] md:max-w-[525px] mx-auto break-words"
+            className="heading-hero-gradient text-center mt-[16px] md:mt-[10px] tracking-normal text-[36px] leading-[44px] md:text-[56px] md:leading-[64px] w-[308px] md:w-[525px] shrink-0 mx-auto"
             style={{
               fontFamily: '"Otterco Display Medium", sans-serif',
               fontWeight: 500,
-              wordBreak: 'break-word',
-              overflowWrap: 'break-word',
             }}
           >
-            <span className="block">Building digital</span>
-            <span className="block">products, brands, and</span>
-            <span className="block">experience.</span>
+            <span className="block whitespace-nowrap">Building digital</span>
+            <span className="block whitespace-nowrap">products, brands, and</span>
+            <span className="block whitespace-nowrap">experience.</span>
           </h1>
 
           {/* Latest Work Button (matching kawsar.design) */}
@@ -340,25 +356,9 @@ export default function HomePage() {
       </section>
 
       {/* =========================================================================
-          SERVICES SECTION (Background Canvas #F6F5F4)
+          SERVICES SECTION (Sits seamlessly on #F6F5F4 Canvas)
           ========================================================================= */}
-      <section className="relative w-full bg-[#F6F5F4] pt-[52px] md:pt-[100px] pb-[80px] md:pb-[121px] z-[1] overflow-hidden">
-        {/* Section Scoped Background Noise Layer (z-0 strictly behind foreground UI) */}
-        <div
-          className="absolute inset-0 pointer-events-none select-none overflow-hidden z-0"
-          style={{ opacity: 0.08 }}
-          aria-hidden="true"
-        >
-          <div
-            className="absolute -inset-[200%] w-[400%] h-[400%] pointer-events-none animate-live-noise"
-            style={{
-              backgroundImage: 'url(/assets/kawsar-exact-noise.png)',
-              backgroundRepeat: 'repeat',
-              backgroundSize: '256px 256px',
-              opacity: 0.3,
-            }}
-          />
-        </div>
+      <section className="relative w-full pt-[52px] md:pt-[100px] pb-[80px] md:pb-[121px] z-[1]">
 
         <div className="relative max-w-[1300px] mx-auto px-0 z-20">
           {/* Section Headline (Authentic Framer text gradient matching kawsar.design) */}
