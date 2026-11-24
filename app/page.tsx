@@ -31,15 +31,16 @@ export default function HomePage() {
           ========================================================================= */}
       <div
         className="fixed inset-0 pointer-events-none select-none z-[9999] overflow-hidden"
+        style={{ opacity: 0.08 }}
         aria-hidden="true"
       >
         <div
           className="absolute -inset-[200%] w-[400%] h-[400%] pointer-events-none animate-live-noise"
           style={{
-            backgroundImage: 'url(/assets/live-noise.png)',
+            backgroundImage: 'url(/assets/kawsar-exact-noise.png)',
             backgroundRepeat: 'repeat',
             backgroundSize: '256px 256px',
-            opacity: 0.035,
+            opacity: 0.4,
           }}
         />
       </div>

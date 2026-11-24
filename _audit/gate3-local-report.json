@@ -1,0 +1,31 @@
+{
+  "assetMatch": true,
+  "dimensions": "256x256",
+  "backgroundSize": "256px 256px",
+  "timing": {
+    "liveFPS": 11.45,
+    "cloneFPS": 11.3,
+    "liveIntervalMs": 87,
+    "cloneIntervalMs": 88,
+    "fpsDelta": 0.14999999999999858
+  },
+  "grain": {
+    "hero": {
+      "meanRGB": {
+        "r": 240.45,
+        "g": 239.49,
+        "b": 238.52
+      },
+      "stdDev": 2.1069
+    },
+    "contact": {
+      "meanRGB": {
+        "r": 244.41,
+        "g": 244.41,
+        "b": 244.41
+      },
+      "stdDev": 2.0087
+    }
+  },
+  "pass": true
+}
