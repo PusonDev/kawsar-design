@@ -21,7 +21,7 @@ export function CopyButton() {
     <button
       onClick={handleCopy}
       type="button"
-      className="cursor-pointer bg-white rounded-[47px] w-[100px] h-[48px] flex items-center justify-center transition-colors hover:bg-zinc-50 active:scale-[0.98]"
+      className="cursor-pointer bg-white rounded-[47px] w-[100px] h-[48px] flex items-center justify-center"
       style={{
         padding: '0 16px',
       }}

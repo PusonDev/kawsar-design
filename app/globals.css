@@ -61,23 +61,12 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Gradient Text Fills matching live site */
-.text-gradient-hero {
-  background-image: linear-gradient(286deg, rgb(11, 11, 11) 0%, rgba(12, 12, 12, 0.55) 100%, rgba(12, 12, 12, 0.55) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.text-gradient-services {
-  background-image: linear-gradient(843deg, rgb(12, 12, 12) 0%, rgba(12, 12, 12, 0.55) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.text-gradient-contact {
-  background-image: linear-gradient(1265deg, rgb(12, 12, 12) 0%, rgba(12, 12, 12, 0.55) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+/* Solid Headings matching live site (kawsar.design has solid rgb(0, 0, 0), no gradient clip) */
+.text-heading-solid {
+  color: rgb(0, 0, 0);
+  background-image: none;
+  -webkit-background-clip: border-box;
+  -webkit-text-fill-color: rgb(0, 0, 0);
 }
 
 /* Custom marquee animation */
@@ -95,10 +84,6 @@ html, body {
   width: max-content;
   animation: kawsar-marquee 72s linear infinite;
   will-change: transform;
-}
-
-.animate-marquee-smooth:hover {
-  animation-play-state: paused;
 }
 
 /* Edge Fade Mask for Marquee Ticker (Removed to match live site crisp edges) */

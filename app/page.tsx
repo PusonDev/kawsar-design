@@ -49,7 +49,7 @@ export default function HomePage() {
           HERO & HEADER TOP SECTION (Curved Bottom Sheet)
           Surface: #F6F5F4 (Exact RGB 246, 245, 244)
           ========================================================================= */}
-      <section className="relative w-full bg-[#F6F5F4] rounded-b-[80px] md:rounded-b-[120px] border-b border-[#ECEBEA] min-h-[660px] md:min-h-[742px] pt-[40px] pb-[83px] md:pb-[116.5px] z-10 overflow-hidden">
+      <section className="relative w-full bg-[#F6F5F4] rounded-b-[80px] md:rounded-b-[120px] min-h-[660px] md:min-h-[742px] pt-[40px] pb-[83px] md:pb-[116.5px] z-10 overflow-hidden">
         {/* ----------------- HEADER / NAVBAR (w=90% max-w=1296) ----------------- */}
         <header className="relative w-[90%] max-w-[1296px] mx-auto flex items-center justify-between z-20">
           {/* Desktop Left (>= 810px): Email Pill + CV Pill */}
@@ -77,7 +77,7 @@ export default function HomePage() {
               rel="noopener noreferrer"
               className="h-[56px] w-[108px] bg-[#F1F0EF] border border-[#ECEBEA] rounded-[1000px] p-[4px] flex items-center justify-center group"
             >
-              <div className="h-[48px] w-[100px] bg-[#FFFFFE] rounded-[60px] flex items-center justify-center transition-colors group-hover:bg-zinc-50 active:scale-[0.98]">
+              <div className="h-[48px] w-[100px] bg-[#FFFFFE] rounded-[60px] flex items-center justify-center">
                 <span
                   style={{
                     fontFamily: '"Otterco Display Medium", sans-serif',
@@ -97,7 +97,7 @@ export default function HomePage() {
           <div className="flex md:hidden items-center gap-[8px]">
             <a
               href="mailto:kawsarvy.design@gmail.com"
-              className="h-[48px] w-[88px] rounded-[24px] bg-[#242424] text-white flex items-center justify-center transition active:scale-[0.98]"
+              className="h-[48px] w-[88px] rounded-[24px] bg-[#242424] text-white flex items-center justify-center"
               style={{
                 fontFamily: '"Otterco Display Medium", sans-serif',
                 fontSize: '12px',
@@ -110,7 +110,7 @@ export default function HomePage() {
               href="https://drive.google.com/file/d/1CSIY8rbsj0Izwj-OeM2R93eJTddzCdAM/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
-              className="h-[48px] w-[88px] rounded-[24px] bg-[#FFFFFE] border border-[#ECEBEA] text-[#242424] flex items-center justify-center transition active:scale-[0.98]"
+              className="h-[48px] w-[88px] rounded-[24px] bg-[#FFFFFE] border border-[#ECEBEA] text-[#242424] flex items-center justify-center"
               style={{
                 fontFamily: '"Otterco Display Medium", sans-serif',
                 fontSize: '12px',
@@ -127,7 +127,6 @@ export default function HomePage() {
               href="https://www.linkedin.com/in/kawsarvy/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:opacity-70 transition-opacity"
               style={{ fontFamily: '"Otterco Regular", sans-serif' }}
             >
               LinkedIn
@@ -139,7 +138,6 @@ export default function HomePage() {
               href="https://dribbble.com/Kawsarvy"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:opacity-70 transition-opacity"
               style={{ fontFamily: '"Otterco Regular", sans-serif' }}
             >
               Dribbble
@@ -151,7 +149,6 @@ export default function HomePage() {
               href="https://www.instagram.com/kawsarvy/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:opacity-70 transition-opacity"
               style={{ fontFamily: '"Otterco Regular", sans-serif' }}
             >
               instagram
@@ -206,16 +203,19 @@ export default function HomePage() {
               />
             </div>
 
-            {/* Floating "Kawsar Ahmed  👋🏼 " Badge with Framer 6s Live Float Animation */}
-            <div
-              className="absolute left-[102px] top-[20px] w-[120px] h-[48px] bg-[#FFFFFE] rounded-[60px] shadow-[0_10px_10px_0_rgba(84,84,84,0.1)] flex items-center justify-center whitespace-nowrap z-20 pointer-events-none animate-badge-float"
+            {/* Floating "Kawsar Ahmed  👋🏼 " Badge with Framer Live Float Animation (Links to Dribbble) */}
+            <a
+              href="https://dribbble.com/Kawsarvy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="absolute left-[102px] top-[20px] w-[120px] h-[48px] bg-[#FFFFFE] rounded-[60px] shadow-[0_10px_10px_0_rgba(84,84,84,0.1)] flex items-center justify-center whitespace-nowrap z-20 animate-badge-float cursor-pointer select-none"
               style={{
                 transformOrigin: 'center center',
               }}
             >
               <span
                 style={{
-                  fontFamily: '"Otterco Regular", "Apple Color Emoji", "Segoe UI Emoji", sans-serif',
+                  fontFamily: '"Otterco Regular", "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif',
                   fontSize: '12px',
                   lineHeight: '14.4px',
                   color: 'rgb(36, 36, 36)',
@@ -223,12 +223,12 @@ export default function HomePage() {
               >
                 {'Kawsar Ahmed  \u{1F44B}\u{1F3FC} '}
               </span>
-            </div>
+            </a>
           </div>
 
-          {/* Hero H1 */}
+          {/* Hero H1 (Solid pure rgb(0,0,0) matching kawsar.design, no gradient clip) */}
           <h1
-            className="text-gradient-hero text-center mt-[16px] md:mt-[20px] tracking-normal text-[36px] leading-[44px] md:text-[56px] md:leading-[64px]"
+            className="text-heading-solid text-center mt-[16px] md:mt-[20px] tracking-normal text-[36px] leading-[44px] md:text-[56px] md:leading-[64px]"
             style={{
               fontFamily: '"Otterco Display Medium", sans-serif',
               fontWeight: 500,
@@ -244,7 +244,7 @@ export default function HomePage() {
             href="https://dribbble.com/Kawsarvy"
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-[32px] md:mt-[49.5px] w-[180px] h-[60px] bg-[#242424] rounded-[60px] flex items-center justify-center gap-[12px] transition-all hover:bg-black active:scale-[0.98] group z-20"
+            className="mt-[32px] md:mt-[49.5px] w-[180px] h-[60px] bg-[#242424] rounded-[60px] flex items-center justify-center gap-[12px] group z-20"
           >
             <DribbbleLatestWorkSvg width={16} height={16} />
             <span
@@ -264,8 +264,10 @@ export default function HomePage() {
       {/* =========================================================================
           MIDDLE WHITE SHEET (Houses Client Logos Marquee)
           Surface: Pure White #FFFFFF
+          Framer Rectangle 5724: rounded-[80px] on mobile, rounded-t-[80px] rounded-b-[120px] on desktop
+          Zero border stroke (matches kawsar.design)
           ========================================================================= */}
-      <section className="relative w-full bg-white rounded-b-[80px] md:rounded-b-[120px] border-b border-[#ECEBEA] -mt-[80px] md:-mt-[120px] pt-[162px] md:pt-[220px] pb-[90px] md:pb-[140px] z-[5] overflow-hidden">
+      <section className="relative w-full bg-white rounded-[80px] md:rounded-t-[80px] md:rounded-b-[120px] -mt-[80px] md:-mt-[120px] pt-[162px] md:pt-[220px] pb-[90px] md:pb-[140px] z-[5] overflow-hidden">
         {/* Logo Ticker Strip (Clean 100% Crisp Edges matching live site) */}
         <div className="w-full h-[40px] relative overflow-hidden flex items-center z-20">
           {/* Smooth Continuous Marquee Track */}
@@ -299,9 +301,9 @@ export default function HomePage() {
           ========================================================================= */}
       <section className="relative w-full bg-[#F6F5F4] pt-[72px] md:pt-[100px] pb-[80px] md:pb-[121px] z-[1] overflow-hidden">
         <div className="relative max-w-[1300px] mx-auto px-4 md:px-0 z-20">
-          {/* Section Headline */}
+          {/* Section Headline (Solid rgb(0,0,0) matching kawsar.design) */}
           <h2
-            className="text-gradient-services text-center max-w-[360px] md:max-w-[615px] mx-auto text-[36px] leading-[54px] font-[500]"
+            className="text-heading-solid text-center max-w-[360px] md:max-w-[615px] mx-auto text-[36px] leading-[42px] md:leading-[54px] font-[500]"
             style={{
               fontFamily: '"Otterco Display Medium", sans-serif',
             }}
@@ -462,17 +464,18 @@ export default function HomePage() {
       {/* =========================================================================
           CONTACT & FOOTER (Curved Sheet, Pure White)
           Surface: Pure White #FFFFFF
+          Zero border stroke (matches kawsar.design)
           ========================================================================= */}
-      <section className="relative w-full bg-white rounded-t-[80px] md:rounded-t-[120px] border-t border-[#ECEBEA] pt-[72px] md:pt-[81px] pb-[60px] md:pb-[74px] z-10 overflow-hidden">
+      <section className="relative w-full bg-white rounded-t-[80px] md:rounded-t-[120px] pt-[72px] md:pt-[81px] pb-[60px] md:pb-[74px] z-10 overflow-hidden">
         <div className="relative w-full max-w-[1300px] mx-auto px-0 flex flex-col items-center z-20">
           {/* Top Circular Ring Frame */}
           <div className="relative w-[128px] h-[128px] rounded-full overflow-hidden flex items-center justify-center mb-[20px] md:mb-[24px]">
             <AvatarFrameSvg className="w-full h-full pointer-events-none" />
           </div>
 
-          {/* Contact Heading */}
+          {/* Contact Heading (Solid rgb(0,0,0) matching kawsar.design) */}
           <h2
-            className="text-gradient-contact text-center max-w-[352px] md:max-w-[667px] text-[36px] leading-[44px] md:text-[56px] md:leading-[64px] font-[600]"
+            className="text-heading-solid text-center max-w-[352px] md:max-w-[667px] text-[36px] leading-[44px] md:text-[56px] md:leading-[64px] font-[600]"
             style={{
               fontFamily: '"Otterco Display SemiBold", sans-serif',
             }}
@@ -486,7 +489,7 @@ export default function HomePage() {
             <div className="w-[128px] h-[60px] bg-[#F1F0EF] border border-[#ECEBEA] rounded-[74px] p-[4px] flex items-center justify-center">
               <a
                 href="mailto:kawsarvy.design@gmail.com"
-                className="w-[120px] h-[52px] bg-[#242424] rounded-[90px] flex items-center justify-center gap-[8px] transition hover:bg-black active:scale-[0.98] z-20"
+                className="w-[120px] h-[52px] bg-[#242424] rounded-[90px] flex items-center justify-center gap-[8px] z-20"
               >
                 <EmailIconSvg width={14} height={14} />
                 <span
@@ -509,7 +512,7 @@ export default function HomePage() {
                 href="https://wa.me/1303536185"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-[120px] h-[52px] bg-[#FFFFFE] rounded-[90px] flex items-center justify-center gap-[8px] transition hover:bg-zinc-50 active:scale-[0.98] z-20"
+                className="w-[120px] h-[52px] bg-[#FFFFFE] rounded-[90px] flex items-center justify-center gap-[8px] z-20"
               >
                 <span
                   style={{
@@ -551,7 +554,6 @@ export default function HomePage() {
                   href="https://www.linkedin.com/in/kawsarvy/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:opacity-70 transition-opacity"
                   style={{ fontFamily: '"Otterco Regular", sans-serif' }}
                 >
                   LinkedIn
@@ -563,7 +565,6 @@ export default function HomePage() {
                   href="https://dribbble.com/Kawsarvy"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:opacity-70 transition-opacity"
                   style={{ fontFamily: '"Otterco Regular", sans-serif' }}
                 >
                   Dribbble
@@ -575,7 +576,6 @@ export default function HomePage() {
                   href="https://www.instagram.com/kawsarvy/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:opacity-70 transition-opacity"
                   style={{ fontFamily: '"Otterco Regular", sans-serif' }}
                 >
                   instagram
