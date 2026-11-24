@@ -26,29 +26,44 @@ export default function HomePage() {
 
   return (
     <main className="w-full min-h-screen bg-[#F6F5F4] text-[#242424] relative overflow-x-hidden selection:bg-zinc-200">
+      {/* Global Canvas Scoped Background Noise Layer (z-0 strictly behind all sections and sheets) */}
+      <div
+        className="absolute inset-0 pointer-events-none select-none overflow-hidden z-0"
+        style={{ opacity: 0.08 }}
+        aria-hidden="true"
+      >
+        <div
+          className="absolute -inset-[200%] w-[400%] h-[400%] pointer-events-none animate-live-noise"
+          style={{
+            backgroundImage: 'url(/assets/kawsar-exact-noise.png)',
+            backgroundRepeat: 'repeat',
+            backgroundSize: '256px 256px',
+            opacity: 0.4,
+          }}
+        />
+      </div>
+
       {/* =========================================================================
           HERO & HEADER TOP SECTION (Curved Bottom Sheet)
           Surface: #F6F5F4 (Exact RGB 246, 245, 244)
           ========================================================================= */}
       <section
         data-framer-border="true"
-        className="relative w-full bg-[#F6F5F4] rounded-b-[80px] md:rounded-b-[120px] h-[660px] md:h-[742px] pt-[40px] pb-[72px] md:pb-[116px] z-10"
+        className="relative w-full bg-[#F6F5F4] rounded-b-[80px] md:rounded-b-[120px] h-[660px] md:h-[742px] pt-[40px] pb-[72px] md:pb-[116px] z-10 overflow-hidden"
       >
         {/* Section Scoped Background Noise Layer (1:1 with kawsar.design framer-ekivo5-container) */}
         <div
-          className="absolute inset-0 pointer-events-none select-none overflow-hidden z-0"
+          className="absolute inset-0 pointer-events-none select-none overflow-hidden rounded-b-[80px] md:rounded-b-[120px] z-0"
           style={{ opacity: 0.08 }}
           aria-hidden="true"
         >
           <div
-            className="absolute -inset-[200%] w-[400%] h-[400%] pointer-events-none"
+            className="absolute -inset-[200%] w-[400%] h-[400%] pointer-events-none animate-live-noise"
             style={{
               backgroundImage: 'url(/assets/kawsar-exact-noise.png)',
               backgroundRepeat: 'repeat',
-              backgroundSize: 'auto',
-              opacity: 0.3,
-              willChange: 'transform',
-              transform: 'translateX(-4%) translateY(-8%)',
+              backgroundSize: '256px 256px',
+              opacity: 0.4,
             }}
           />
         </div>
@@ -231,14 +246,12 @@ export default function HomePage() {
                 aria-hidden="true"
               >
                 <div
-                  className="absolute -inset-[200%] w-[400%] h-[400%] pointer-events-none"
+                  className="absolute -inset-[200%] w-[400%] h-[400%] pointer-events-none animate-live-noise"
                   style={{
                     backgroundImage: 'url(/assets/kawsar-exact-noise.png)',
                     backgroundRepeat: 'repeat',
-                    backgroundSize: 'auto',
-                    opacity: 0.3,
-                    willChange: 'transform',
-                    transform: 'translateX(-4%) translateY(-8%)',
+                    backgroundSize: '256px 256px',
+                    opacity: 0.4,
                   }}
                 />
               </div>
@@ -312,23 +325,21 @@ export default function HomePage() {
           ========================================================================= */}
       <section
         data-framer-border="true"
-        className="relative w-full bg-white rounded-t-[80px] rounded-b-[80px] md:rounded-b-[120px] -mt-[80px] md:-mt-[120px] pt-[162px] md:pt-[220px] pb-[118px] md:pb-[140px] z-[5]"
+        className="relative w-full bg-white rounded-t-[80px] rounded-b-[80px] md:rounded-b-[120px] -mt-[80px] md:-mt-[120px] pt-[162px] md:pt-[220px] pb-[118px] md:pb-[140px] z-[5] overflow-hidden"
       >
         {/* Section Scoped Background Noise Layer (z-0 strictly behind foreground UI) */}
         <div
-          className="absolute inset-0 pointer-events-none select-none overflow-hidden z-0"
+          className="absolute inset-0 pointer-events-none select-none overflow-hidden rounded-t-[80px] rounded-b-[80px] md:rounded-b-[120px] z-0"
           style={{ opacity: 0.08 }}
           aria-hidden="true"
         >
           <div
-            className="absolute -inset-[200%] w-[400%] h-[400%] pointer-events-none"
+            className="absolute -inset-[200%] w-[400%] h-[400%] pointer-events-none animate-live-noise"
             style={{
               backgroundImage: 'url(/assets/kawsar-exact-noise.png)',
               backgroundRepeat: 'repeat',
-              backgroundSize: 'auto',
-              opacity: 0.3,
-              willChange: 'transform',
-              transform: 'translateX(-4%) translateY(-8%)',
+              backgroundSize: '256px 256px',
+              opacity: 0.4,
             }}
           />
         </div>
@@ -540,23 +551,21 @@ export default function HomePage() {
           ========================================================================= */}
       <section
         data-framer-border="true"
-        className="relative w-full bg-white rounded-t-[80px] md:rounded-t-[120px] pt-[61px] md:pt-[88px] pb-[34px] md:pb-[62px] z-10"
+        className="relative w-full bg-white rounded-t-[80px] md:rounded-t-[120px] pt-[61px] md:pt-[88px] pb-[34px] md:pb-[62px] z-10 overflow-hidden"
       >
         {/* Section Scoped Background Noise Layer (z-0 strictly behind foreground UI) */}
         <div
-          className="absolute inset-0 pointer-events-none select-none overflow-hidden z-0"
+          className="absolute inset-0 pointer-events-none select-none overflow-hidden rounded-t-[80px] md:rounded-t-[120px] z-0"
           style={{ opacity: 0.08 }}
           aria-hidden="true"
         >
           <div
-            className="absolute -inset-[200%] w-[400%] h-[400%] pointer-events-none"
+            className="absolute -inset-[200%] w-[400%] h-[400%] pointer-events-none animate-live-noise"
             style={{
               backgroundImage: 'url(/assets/kawsar-exact-noise.png)',
               backgroundRepeat: 'repeat',
-              backgroundSize: 'auto',
-              opacity: 0.3,
-              willChange: 'transform',
-              transform: 'translateX(-4%) translateY(-8%)',
+              backgroundSize: '256px 256px',
+              opacity: 0.4,
             }}
           />
         </div>
