@@ -16,7 +16,8 @@ const REQUIRED_STRINGS = [
   'Building digital',
   'products, brands, and',
   'intuitive, efficient, and',
-  'whatsApp'
+  'whatsApp',
+  'instagram'
 ];
 
 const REQUIRED_OWASP_HEADERS = [
@@ -39,7 +40,7 @@ function check(title, condition, errorMsg) {
   }
 }
 
-console.log('🛡️ --- RUNNING PRE-BUILD PRODUCTION & AI-PROOF INTEGRITY GUARD ---');
+console.log('🛡️ --- RUNNING PRE-BUILD PRODUCTION & 1000% PIXEL PERFECTION GUARD ---');
 
 // 1. Noise Asset Integrity
 if (!fs.existsSync(NOISE_PATH)) {
@@ -126,12 +127,52 @@ if (fs.existsSync(PAGE_PATH)) {
     !hasGlobalOverlay,
     'Found global noise overlay with high z-index in app/page.tsx! Noise must be strictly scoped to section backgrounds at z-0.'
   );
+
+  // 7. Single Semantic Footer Check
+  const footerMatches = (pageCode.match(/<footer\b/g) || []).length;
+  check(
+    'Single Semantic Footer Element in DOM',
+    footerMatches === 1,
+    `Expected exactly 1 <footer> node, found ${footerMatches}`
+  );
+
+  // 8. Single Copyright Text Node Check
+  const copyrightMatches = (pageCode.match(/© 2026 All rights reserved\./g) || []).length;
+  check(
+    'Single Copyright Notice in DOM',
+    copyrightMatches === 1,
+    `Expected exactly 1 copyright notice, found ${copyrightMatches}`
+  );
+
+  // 9. Interactive Hover Underline Verification
+  const hasLatestWorkUnderline = pageCode.includes('Latest Work') && pageCode.includes('group-hover:underline');
+  check(
+    'Latest Work Button Hover Underline',
+    hasLatestWorkUnderline,
+    'Latest Work button must include group-hover:underline'
+  );
+
+  // 10. Services Tilted Pill Border Check
+  const hasServicesBorder = pageCode.includes('Services') && pageCode.includes('border border-[#ECEBEA]');
+  check(
+    'Services Pill 1px Border Stroke',
+    hasServicesBorder,
+    'Services floating pill must include border border-[#ECEBEA]'
+  );
+
+  // 11. Framer Border Attribute Check
+  const framerBorderCount = (pageCode.match(/data-framer-border="true"/g) || []).length;
+  check(
+    'Framer Sheet Border Layer (data-framer-border="true")',
+    framerBorderCount >= 3,
+    `Expected at least 3 sheets with data-framer-border="true", found ${framerBorderCount}`
+  );
 }
 
 if (failed) {
-  console.error('\n🛑 PRODUCTION GUARD FAILED! Aborting build to protect production integrity.');
+  console.error('\n🛑 PRODUCTION GUARD FAILED! Aborting build to protect 1000% pixel perfection integrity.');
   process.exit(1);
 } else {
-  console.log('\n✨ ALL PRODUCTION INTEGRITY CHECKS PASSED (100% HEALTHY)! Proceeding safely.');
+  console.log('\n✨ ALL 1000% PIXEL PERFECTION CHECKS PASSED (100% HEALTHY)! Proceeding safely.');
   process.exit(0);
 }

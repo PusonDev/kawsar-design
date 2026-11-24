@@ -1,9 +1,12 @@
-# Antigravity Rules — Production Hardening & Design Lock
+# Antigravity Rules — Supreme 1000% Pixel Perfection Law
 # Repository: kawsar-design (Clone of https://kawsar.design/)
 
+- MAXIMUM LEVEL PRIORITY: https://kawsar.design/ is the absolute ground truth. The production target https://kawsar.zenvq.com/ must be a 1000% pixel-to-pixel, color-to-color and motion-to-motion exact replica.
+- Zero tolerance: Not even 1% unsimilarity, not even a 1-pixel shift is permitted across desktop (1440px), tablet (810px) and mobile (390px).
 - Always run `node scripts/guard.mjs` before proposing or committing code changes.
-- Ensure `public/assets/kawsar-exact-noise.png` is never deleted, recompressed or modified.
-- Keep the exact verbatim copy: "Building digital products, brands, and experience.", "Designing interfaces that are intuitive, efficient, and enjoyable to use.", "whatsApp", "instagram".
+- Ensure `public/assets/kawsar-exact-noise.png` is never deleted, recompressed or modified (SHA-256 locked).
+- Keep exact verbatim copy: "Building digital products, brands, and experience.", "Designing interfaces that are intuitive, efficient, and enjoyable to use.", "whatsApp", "instagram".
 - Ensure the footer contains exactly ONE semantic `<footer>` element with ONE copyright text node.
-- Deploy live with `npm run ship` and verify on Cloudflare Pages (`https://kawsar.zenvq.com/`).
+- All interactive hover states (Latest Work underline, CV underline, social links underline) must remain 100% active.
+- Deploy live with `npm run ship` and verify HTTP 200 OK on Cloudflare Pages (`https://kawsar.zenvq.com/`).
 - Follow the Zero Oxford Comma policy in all prose, documentation and commit messages.
