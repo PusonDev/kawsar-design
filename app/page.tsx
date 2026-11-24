@@ -195,7 +195,7 @@ export default function HomePage() {
         <div className="relative max-w-[1300px] mx-auto px-4 flex flex-col items-center mt-[116px] md:mt-[96px] z-20">
           {/* Avatar + Floating Badge Container */}
           <div className="relative w-[128px] h-[128px] flex items-center justify-center">
-            {/* 128x128 Avatar Circle (Border-free, Shadow-free, exact matching kawsar.design) */}
+            {/* 128x128 Avatar Circle with Authentic Noise Overlay matching kawsar.design (framer-1dh92xw-container) */}
             <div className="relative w-[128px] h-[128px] rounded-full overflow-hidden flex items-center justify-center">
               <Image
                 src="/assets/kawsar-avatar.png"
@@ -205,6 +205,22 @@ export default function HomePage() {
                 priority
                 className="w-full h-full object-cover rounded-full"
               />
+              {/* Authentic Avatar Noise Overlay (1:1 with kawsar.design framer-1dh92xw-container) */}
+              <div
+                className="absolute inset-0 pointer-events-none select-none overflow-hidden rounded-full z-10"
+                style={{ opacity: 0.08 }}
+                aria-hidden="true"
+              >
+                <div
+                  className="absolute -inset-[200%] w-[400%] h-[400%] pointer-events-none animate-live-noise"
+                  style={{
+                    backgroundImage: 'url(/assets/kawsar-exact-noise.png)',
+                    backgroundRepeat: 'repeat',
+                    backgroundSize: '256px 256px',
+                    opacity: 0.4,
+                  }}
+                />
+              </div>
             </div>
 
             {/* Floating "Kawsar Ahmed  👋🏼 " Badge with Framer Live Float Animation (1:1 Ruler: w=120px, h=48px, top=20px, left=102px, rounded-[60px], shadow) */}
@@ -230,12 +246,14 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Hero H1 (Authentic Framer text gradient matching kawsar.design) */}
+          {/* Hero H1 (1:1 with Framer .framer-2cgirf: w-full max-w-[340px] md:max-w-[525px] mx-auto, break-words) */}
           <h1
-            className="heading-hero-gradient text-center mt-[16px] md:mt-[10px] tracking-normal text-[36px] leading-[44px] md:text-[56px] md:leading-[64px]"
+            className="heading-hero-gradient text-center mt-[16px] md:mt-[10px] tracking-normal text-[36px] leading-[44px] md:text-[56px] md:leading-[64px] w-full max-w-[340px] md:max-w-[525px] mx-auto break-words"
             style={{
               fontFamily: '"Otterco Display Medium", sans-serif',
               fontWeight: 500,
+              wordBreak: 'break-word',
+              overflowWrap: 'break-word',
             }}
           >
             <span className="block">Building digital</span>
