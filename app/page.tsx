@@ -49,7 +49,7 @@ export default function HomePage() {
           HERO & HEADER TOP SECTION (Curved Bottom Sheet)
           Surface: #F6F5F4 (Exact RGB 246, 245, 244)
           ========================================================================= */}
-      <section className="relative w-full bg-[#F6F5F4] rounded-b-[80px] md:rounded-b-[120px] pt-[24px] pb-[60px] md:pt-[40px] md:pb-[116.5px] z-10 overflow-hidden">
+      <section className="relative w-full bg-[#F6F5F4] rounded-b-[80px] md:rounded-b-[120px] min-h-[660px] md:min-h-[742px] pt-[40px] pb-[83px] md:pb-[116.5px] z-10 overflow-hidden">
         {/* ----------------- HEADER / NAVBAR (max-w=1300) ----------------- */}
         <header className="relative w-full max-w-[1300px] mx-auto px-4 md:px-0 flex items-center justify-between z-20">
           {/* Desktop Left (>= 810px): Email Pill + CV Pill */}
@@ -191,7 +191,7 @@ export default function HomePage() {
         </header>
 
         {/* ----------------- HERO CONTENT ----------------- */}
-        <div className="relative max-w-[1300px] mx-auto px-4 flex flex-col items-center mt-[48px] md:mt-[80px] z-20">
+        <div className="relative max-w-[1300px] mx-auto px-4 flex flex-col items-center mt-[109px] z-20">
           {/* Avatar + Floating Badge Container */}
           <div className="relative flex items-center justify-center">
             {/* 128x128 Avatar Circle */}
@@ -206,9 +206,9 @@ export default function HomePage() {
               />
             </div>
 
-            {/* Floating "Kawsar Ahmed  👋🏼 " Badge (At exact crown dx: 99px, dy: 10px) */}
+            {/* Floating "Kawsar Ahmed  👋🏼 " Badge (At exact crown dx: 102px, dy: 20px) */}
             <div
-              className="absolute left-[99px] top-[10px] w-[120px] h-[48px] bg-[#FFFFFE] rounded-[60px] shadow-[0_10px_10px_0_rgba(84,84,84,0.1)] flex items-center justify-center whitespace-nowrap z-20 pointer-events-none"
+              className="absolute left-[102px] top-[20px] w-[120px] h-[48px] bg-[#FFFFFE] rounded-[60px] shadow-[0_10px_10px_0_rgba(84,84,84,0.1)] flex items-center justify-center whitespace-nowrap z-20 pointer-events-none"
               style={{
                 transform: 'rotate(-10deg)',
               }}
@@ -265,7 +265,7 @@ export default function HomePage() {
           MIDDLE WHITE SHEET (Houses Client Logos Marquee)
           Surface: Pure White #FFFFFF
           ========================================================================= */}
-      <section className="relative w-full bg-white rounded-b-[80px] md:rounded-b-[120px] -mt-[80px] md:-mt-[120px] pt-[140px] md:pt-[220px] pb-[90px] md:pb-[140px] z-[5] overflow-hidden">
+      <section className="relative w-full bg-white rounded-b-[80px] md:rounded-b-[120px] -mt-[80px] md:-mt-[120px] pt-[162px] md:pt-[220px] pb-[90px] md:pb-[140px] z-[5] overflow-hidden">
         {/* Logo Ticker Strip with Soft Edge Fade Mask */}
         <div className="w-full h-[40px] relative overflow-hidden flex items-center z-20 marquee-edge-mask">
           {/* Smooth Continuous Marquee Track */}
@@ -335,7 +335,7 @@ export default function HomePage() {
           </div>
 
           {/* 4 Services Grid: 1 col on mobile, 2 col on tablet/split-screen, 4 col on desktop */}
-          <div className="max-w-[972px] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-[48px] md:gap-x-[80px] gap-y-[40px] md:gap-y-0">
+          <div className="w-full max-w-[360px] sm:max-w-[360px] md:max-w-[760px] lg:max-w-[972px] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-[16px] sm:gap-x-[48px] md:gap-x-[48px] lg:gap-x-[80px] gap-y-[40px] md:gap-y-0">
             {/* Service 1: UX & UI */}
             <div className="flex flex-col items-start w-full">
               <div className="w-[44px] h-[44px] flex items-center justify-center">
@@ -480,7 +480,7 @@ export default function HomePage() {
             Tell me about your next project
           </h2>
 
-          {/* Action Buttons: Email Me & whatsApp */}
+          {/* Action Buttons: Email Me & WhatsApp */}
           <div className="mt-[36px] md:mt-[44px] flex items-center justify-center gap-[10px]">
             {/* Email Me Button */}
             <div className="w-[128px] h-[60px] bg-[#F1F0EF] border border-[#ECEBEA] rounded-[74px] p-[4px] flex items-center justify-center">
@@ -496,13 +496,14 @@ export default function HomePage() {
                     lineHeight: '14.4px',
                     color: 'rgb(255, 255, 255)',
                   }}
+                  className="capitalize"
                 >
                   Email Me
                 </span>
               </a>
             </div>
 
-            {/* whatsApp Button (Strict lowercase w) */}
+            {/* WhatsApp Button */}
             <div className="w-[128px] h-[60px] bg-[#F1F0EF] border border-[#ECEBEA] rounded-[74px] p-[4px] flex items-center justify-center">
               <a
                 href="https://wa.me/1303536185"
@@ -517,6 +518,7 @@ export default function HomePage() {
                     lineHeight: '14.4px',
                     color: 'rgb(36, 36, 36)',
                   }}
+                  className="capitalize"
                 >
                   whatsApp
                 </span>
@@ -529,8 +531,8 @@ export default function HomePage() {
             {/* Hairline Divider Line */}
             <div className="w-full h-[1px] bg-[#ECEBEA] mb-[24px] md:mb-[28px]" />
 
-            {/* Single Responsive Flex Container: Stacked on <=809px, Split on >=810px */}
-            <div className="w-full flex flex-col md:flex-row items-center justify-between gap-[30px] md:gap-0 text-center md:text-left">
+            {/* Single Responsive Flex Container: Single Row on ALL viewports */}
+            <div className="w-full flex flex-row items-center justify-between text-left">
               <p
                 className="pl-0 md:pl-[2px]"
                 style={{

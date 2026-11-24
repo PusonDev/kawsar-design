@@ -24,8 +24,8 @@ export function AvatarFrameSvg(props: React.SVGProps<SVGSVGElement>) {
 <path fillRule="evenodd" clipRule="evenodd" d="M92.1527 73.6011H103.587C103.813 73.6011 104 73.4135 104 73.1865V44.8693C104 44.6422 103.813 44.4546 103.587 44.4546H89.5747C89.4566 44.4546 89.3484 44.504 89.2696 44.5928C89.1909 44.6718 89.1516 44.7903 89.1614 44.9088L91.7395 73.2259C91.7591 73.4333 91.9363 73.6011 92.1527 73.6011Z" fill="url(#svg-1239319412_8642_paint2_linear_477_5664)"></path>
 <defs>
 <linearGradient id="svg-1239319412_8642_paint0_linear_477_5664" x1="64" y1="0" x2="64" y2="128" gradientUnits="userSpaceOnUse">
-<stop stopColor="#F6F5F4"></stop>
-<stop offset="1" stopColor="white"></stop>
+<stop stopColor="#F7F6F4"></stop>
+<stop offset="1" stopColor="#FFFFFF"></stop>
 </linearGradient>
 <linearGradient id="svg-1239319412_8642_paint1_linear_477_5664" x1="64" y1="0" x2="64" y2="128" gradientUnits="userSpaceOnUse">
 <stop stopColor="#ECEBEA"></stop>
