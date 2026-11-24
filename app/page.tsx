@@ -49,7 +49,7 @@ export default function HomePage() {
           HERO & HEADER TOP SECTION (Curved Bottom Sheet)
           Surface: #F6F5F4 (Exact RGB 246, 245, 244)
           ========================================================================= */}
-      <section className="relative w-full bg-[#F6F5F4] rounded-b-[80px] md:rounded-b-[120px] min-h-[660px] md:min-h-[742px] pt-[40px] pb-[83px] md:pb-[116.5px] z-10 overflow-hidden">
+      <section className="relative w-full bg-[#F6F5F4] rounded-b-[80px] md:rounded-b-[120px] min-h-[660px] md:h-[742px] pt-[40px] pb-[83px] md:pb-[116px] z-10 overflow-hidden">
         {/* ----------------- HEADER / NAVBAR (w=90% max-w=1296) ----------------- */}
         <header className="relative w-[90%] max-w-[1296px] mx-auto flex items-center justify-between z-20">
           {/* Desktop Left (>= 810px): Email Pill + CV Pill */}
@@ -188,7 +188,7 @@ export default function HomePage() {
         </header>
 
         {/* ----------------- HERO CONTENT ----------------- */}
-        <div className="relative max-w-[1300px] mx-auto px-4 flex flex-col items-center mt-[116px] md:mt-[95px] z-20">
+        <div className="relative max-w-[1300px] mx-auto px-4 flex flex-col items-center mt-[116px] md:mt-[96px] z-20">
           {/* Avatar + Floating Badge Container */}
           <div className="relative flex items-center justify-center">
             {/* 128x128 Avatar Circle */}
@@ -228,7 +228,7 @@ export default function HomePage() {
 
           {/* Hero H1 (Solid pure rgb(0,0,0) matching kawsar.design, no gradient clip) */}
           <h1
-            className="text-heading-solid text-center mt-[16px] md:mt-[20px] tracking-normal text-[36px] leading-[44px] md:text-[56px] md:leading-[64px]"
+            className="text-heading-solid text-center mt-[16px] md:mt-[10px] tracking-normal text-[36px] leading-[44px] md:text-[56px] md:leading-[64px]"
             style={{
               fontFamily: '"Otterco Display Medium", sans-serif',
               fontWeight: 500,
@@ -239,12 +239,12 @@ export default function HomePage() {
             <span className="block">experience.</span>
           </h1>
 
-          {/* Latest Work Button (40px gap from H1; underlines text on hover matching kawsar.design) */}
+          {/* Latest Work Button (underlines text on hover matching kawsar.design) */}
           <a
             href="https://dribbble.com/Kawsarvy"
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-[40px] w-[180px] h-[60px] bg-[#242424] rounded-[60px] flex items-center justify-center gap-[12px] group z-20"
+            className="mt-[44px] w-[180px] h-[60px] bg-[#242424] rounded-[60px] flex items-center justify-center gap-[12px] group z-20"
           >
             <DribbbleLatestWorkSvg width={16} height={16} />
             <span
@@ -313,7 +313,7 @@ export default function HomePage() {
           </h2>
 
           {/* Divider Line with Tilted "Services" Pill */}
-          <div className="relative w-full max-w-[972px] mx-auto mt-[44px] md:mt-[65px] mb-[101px] md:mb-[50px] flex items-center justify-center">
+          <div className="relative w-full max-w-[972px] mx-auto mt-[44px] md:mt-[69px] mb-[101px] md:mb-[65px] flex items-center justify-center">
             {/* Hairline Divider */}
             <div className="w-full h-[1px] bg-[#ECEBEA]" />
 
@@ -338,14 +338,14 @@ export default function HomePage() {
           </div>
 
           {/* 4 Services Grid: 2 col on mobile/tablet, 4 col on desktop */}
-          <div className="w-full max-w-[360px] md:max-w-[972px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-x-[16px] md:gap-x-[80px] gap-y-[65px] md:gap-y-0">
+          <div className="w-full max-w-[360px] md:max-w-[972px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-x-[16px] md:gap-x-[80px] gap-y-[65px] md:gap-y-0 h-auto md:h-[152px]">
             {/* Service 1: UX & UI */}
             <div className="flex flex-col items-start w-full">
               <div className="w-[44px] h-[44px] flex items-center justify-center">
                 <ServiceUxUiSvg width={44} height={44} />
               </div>
               <h3
-                className="mt-[16px]"
+                className="mt-[20px]"
                 style={{
                   fontFamily: '"Otterco Regular", sans-serif',
                   fontSize: '18px',
@@ -375,7 +375,7 @@ export default function HomePage() {
                 <ServiceWebMobileSvg width={44} height={44} />
               </div>
               <h3
-                className="mt-[16px]"
+                className="mt-[20px]"
                 style={{
                   fontFamily: '"Otterco Regular", sans-serif',
                   fontSize: '18px',
@@ -405,7 +405,7 @@ export default function HomePage() {
                 <ServiceDesignCreativeSvg width={44} height={44} />
               </div>
               <h3
-                className="mt-[16px]"
+                className="mt-[20px]"
                 style={{
                   fontFamily: '"Otterco Regular", sans-serif',
                   fontSize: '18px',
@@ -435,7 +435,7 @@ export default function HomePage() {
                 <ServiceDevelopmentSvg width={42} height={44} />
               </div>
               <h3
-                className="mt-[16px]"
+                className="mt-[20px]"
                 style={{
                   fontFamily: '"Otterco Regular", sans-serif',
                   fontSize: '18px',
@@ -467,16 +467,16 @@ export default function HomePage() {
           Surface: Pure White #FFFFFF
           Zero border stroke (matches kawsar.design)
           ========================================================================= */}
-      <section className="relative w-full bg-white rounded-t-[80px] md:rounded-t-[120px] pt-[72px] md:pt-[81px] pb-[60px] md:pb-[74px] z-10 overflow-hidden">
+      <section className="relative w-full bg-white rounded-t-[80px] md:rounded-t-[120px] pt-[72px] md:pt-[88px] pb-[60px] md:pb-[62px] z-10 overflow-hidden">
         <div className="relative w-full max-w-[1300px] mx-auto px-0 flex flex-col items-center z-20">
           {/* Top Circular Ring Frame */}
-          <div className="relative w-[128px] h-[128px] rounded-full overflow-hidden flex items-center justify-center mb-[20px] md:mb-[24px]">
+          <div className="relative w-[128px] h-[128px] rounded-full overflow-hidden flex items-center justify-center mb-0 md:mb-0">
             <AvatarFrameSvg className="w-full h-full pointer-events-none" />
           </div>
 
           {/* Contact Heading (Solid rgb(0,0,0) matching kawsar.design) */}
           <h2
-            className="text-heading-solid text-center max-w-[352px] md:max-w-[667px] text-[36px] leading-[44px] md:text-[56px] md:leading-[64px] font-[600]"
+            className="text-heading-solid text-center max-w-[352px] md:max-w-[658px] text-[36px] leading-[44px] md:text-[56px] md:leading-[64px] font-[600]"
             style={{
               fontFamily: '"Otterco Display SemiBold", sans-serif',
             }}
@@ -485,7 +485,7 @@ export default function HomePage() {
           </h2>
 
           {/* Action Buttons: Email Me & WhatsApp */}
-          <div className="mt-[36px] md:mt-[44px] flex items-center justify-center gap-[10px]">
+          <div className="mt-[36px] md:mt-[40px] flex items-center justify-center gap-[10px]">
             {/* Email Me Button */}
             <div className="w-[128px] h-[60px] bg-[#F1F0EF] border border-[#ECEBEA] rounded-[74px] p-[4px] flex items-center justify-center">
               <a
@@ -531,9 +531,9 @@ export default function HomePage() {
           </div>
 
           {/* ----------------- FOOTER (Single Semantic Node, Responsive Layout) ----------------- */}
-          <footer className="w-[90%] max-w-[1296px] mx-auto mt-[80px] md:mt-[115px]">
+          <footer className="w-[90%] max-w-[1296px] mx-auto mt-[80px] md:mt-[99px]">
             {/* Hairline Divider Line */}
-            <div className="w-full h-[1px] bg-[#ECEBEA] mb-[24px] md:mb-[28px]" />
+            <div className="w-full h-[1px] bg-[#ECEBEA] mb-[24px] md:mb-[43px]" />
 
             {/* Single Responsive Flex Container: Single Row on ALL viewports */}
             <div className="w-full flex flex-row items-center justify-between text-left">

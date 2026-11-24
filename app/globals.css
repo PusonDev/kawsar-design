@@ -92,7 +92,7 @@ html, body {
   -webkit-mask-image: none;
 }
 
-/* Exact 1:1 Live Floating Badge Animation from Framer (Continuous 6s Smooth Sine Cycle, Zero Pauses) */
+/* Exact 1:1 Live Floating Badge Animation from Framer (Continuous 6s Smooth Tween Cycle, Zero Pauses) */
 @keyframes kawsar-badge-float {
   0% {
     transform: translateY(0px) rotate(-10deg);
@@ -105,13 +105,24 @@ html, body {
   }
 }
 
-.animate-badge-float {
-  animation: kawsar-badge-float 6s cubic-bezier(0.44, 0, 0.56, 1) infinite;
+.animate-badge-float,
+.animate-badge-float:hover,
+.animate-badge-float:focus,
+.animate-badge-float:active {
+  animation: kawsar-badge-float 6s cubic-bezier(0.44, 0, 0.56, 1) infinite !important;
+  animation-play-state: running !important;
   will-change: transform;
 }
 
-.animate-badge-float:hover {
-  animation-play-state: running;
+.animate-marquee-smooth,
+.animate-marquee-smooth:hover,
+.animate-marquee-smooth:focus,
+.animate-marquee-smooth:active {
+  display: flex;
+  width: max-content;
+  animation: kawsar-marquee 72s linear infinite !important;
+  animation-play-state: running !important;
+  will-change: transform;
 }
 
 /* Exact 1:1 Live Noise Stepped Jitter from Framer (90 discrete steps @ 11.25 FPS / 88.89ms cadence) */
