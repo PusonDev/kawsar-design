@@ -240,16 +240,15 @@ export default function HomePage() {
             <span className="block">experience.</span>
           </h1>
 
-          {/* Latest Work Button (underlines text on hover matching kawsar.design) */}
+          {/* Latest Work Button (matching kawsar.design) */}
           <a
             href="https://dribbble.com/Kawsarvy"
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-[44px] w-[180px] h-[60px] bg-[#242424] rounded-[60px] flex items-center justify-center gap-[12px] group z-20"
+            className="mt-[44px] w-[180px] h-[60px] bg-[#242424] rounded-[60px] flex items-center justify-center gap-[12px] no-underline z-20"
           >
             <DribbbleLatestWorkSvg width={16} height={16} />
             <span
-              className="group-hover:underline"
               style={{
                 fontFamily: '"Otterco Medium", sans-serif',
                 fontSize: '12px',
