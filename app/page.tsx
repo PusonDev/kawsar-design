@@ -65,9 +65,10 @@ export default function HomePage() {
                   lineHeight: '14.4px',
                   color: 'rgb(55, 55, 55)',
                 }}
-              >
-                kawsarvy.design@gmail.com
-              </span>
+                dangerouslySetInnerHTML={{
+                  __html: '<!--email_off-->kawsarvy.design@gmail.com<!--/email_off-->',
+                }}
+              />
               <CopyButton />
             </div>
 
@@ -195,9 +196,8 @@ export default function HomePage() {
         <div className="relative max-w-[1300px] mx-auto px-4 flex flex-col items-center mt-[75px] md:mt-[96px] z-20">
           {/* Avatar + Floating Badge Container (Avatar at y=192) */}
           <div className="relative flex items-center justify-center">
-            {/* 128x128 Avatar Circle with tactile grain */}
-            <div className="relative w-[128px] h-[128px] rounded-full overflow-hidden flex items-center justify-center">
-              <AvatarFrameSvg className="absolute inset-0 w-full h-full pointer-events-none z-10" />
+            {/* 128x128 Avatar Circle */}
+            <div className="relative w-[128px] h-[128px] rounded-full overflow-hidden flex items-center justify-center border border-[#ECEBEA] shadow-sm">
               <Image
                 src="/assets/kawsar-avatar.png"
                 alt="Kawsar Ahmed"
@@ -205,15 +205,6 @@ export default function HomePage() {
                 height={128}
                 priority
                 className="w-full h-full object-cover rounded-full"
-              />
-              <div
-                className="absolute -inset-[200%] w-[400%] h-[400%] pointer-events-none z-[15]"
-                style={{
-                  backgroundImage: 'url(/assets/noise-tile.png)',
-                  backgroundRepeat: 'repeat',
-                  backgroundSize: 'auto',
-                  opacity: 0.3,
-                }}
               />
             </div>
 
