@@ -52,12 +52,12 @@ export default function HomePage() {
           ========================================================================= */}
       <section className="relative w-full bg-[#F6F5F4] rounded-b-[80px] md:rounded-b-[120px] pt-[40px] pb-[116px] z-10 overflow-hidden">
         <NoiseOverlay opacity={0.028} />
-        {/* ----------------- HEADER / NAVBAR (y=40, h=56, max-w=1296) ----------------- */}
-        <header className="relative w-full max-w-[1296px] mx-auto px-4 md:px-0 flex items-center justify-between z-20">
+        {/* ----------------- HEADER / NAVBAR (y=40, h=56, max-w=1300) ----------------- */}
+        <header className="relative w-full max-w-[1300px] mx-auto px-4 md:px-0 flex items-center justify-between z-20">
           {/* Desktop Left: Email Pill + CV Pill */}
           <div className="hidden md:flex items-center gap-[10px]">
             {/* Email + Copy Pill */}
-            <div className="h-[56px] bg-[#F1F0EF] rounded-[1000px] flex items-center pl-[16px] pr-[4px] py-[4px] gap-[10px]">
+            <div className="h-[56px] w-[279px] bg-[#F1F0EF] rounded-[1000px] flex items-center justify-between pl-[16px] pr-[4px] py-[4px]">
               <span
                 style={{
                   fontFamily: '"Otterco Regular", sans-serif',
@@ -123,7 +123,7 @@ export default function HomePage() {
           </div>
 
           {/* Desktop Right: Social Links */}
-          <div className="hidden md:flex items-center text-[14px] leading-[16.8px] text-[#373737]">
+          <div className="hidden md:flex items-center text-[14px] leading-[16.8px] text-[#373737] gap-[10px]">
             <a
               href="https://www.linkedin.com/in/kawsarvy/"
               target="_blank"
@@ -133,7 +133,7 @@ export default function HomePage() {
             >
               LinkedIn
             </a>
-            <span className="mx-[10px] select-none" style={{ fontFamily: '"Outfit", sans-serif' }}>
+            <span className="select-none" style={{ fontFamily: '"Outfit", sans-serif' }}>
               /
             </span>
             <a
@@ -145,7 +145,7 @@ export default function HomePage() {
             >
               Dribbble
             </a>
-            <span className="mx-[10px] select-none" style={{ fontFamily: '"Outfit", sans-serif' }}>
+            <span className="select-none" style={{ fontFamily: '"Outfit", sans-serif' }}>
               /
             </span>
             <a
@@ -192,14 +192,14 @@ export default function HomePage() {
         </header>
 
         {/* ----------------- HERO CONTENT ----------------- */}
-        <div className="relative max-w-[1296px] mx-auto px-4 flex flex-col items-center mt-[75px] md:mt-[96px] z-20">
+        <div className="relative max-w-[1300px] mx-auto px-4 flex flex-col items-center mt-[75px] md:mt-[96px] z-20">
           {/* Avatar + Floating Badge Container (Avatar at y=192) */}
           <div className="relative flex items-center justify-center">
             {/* 128x128 Avatar Circle with tactile grain */}
             <div className="relative w-[128px] h-[128px] rounded-full overflow-hidden flex items-center justify-center">
               <AvatarFrameSvg className="absolute inset-0 w-full h-full pointer-events-none z-10" />
               <Image
-                src="/assets/Ylx45dCKlDrap5HSs7wTBwhoAY.png"
+                src="/assets/kawsar-avatar.png"
                 alt="Kawsar Ahmed"
                 width={128}
                 height={128}
@@ -239,7 +239,7 @@ export default function HomePage() {
 
           {/* Hero H1 (Starts at y=330) */}
           <h1
-            className="text-gradient-hero text-center mt-[28px] md:mt-[34px] tracking-normal text-[36px] leading-[44px] md:text-[56px] md:leading-[64px]"
+            className="text-gradient-hero text-center mt-[10px] md:mt-[10px] tracking-normal text-[36px] leading-[44px] md:text-[56px] md:leading-[64px]"
             style={{
               fontFamily: '"Otterco Display Medium", sans-serif',
               fontWeight: 500,
@@ -276,7 +276,7 @@ export default function HomePage() {
           MIDDLE WHITE SHEET (Houses Client Logos Marquee)
           Visible from y=742 to 1022 (h=280px, Ticker at y=842)
           ========================================================================= */}
-      <section className="relative w-full bg-white rounded-b-[80px] md:rounded-b-[120px] -mt-[60px] md:-mt-[80px] pt-[140px] md:pt-[160px] pb-[100px] md:pb-[140px] z-[5] overflow-hidden">
+      <section className="relative w-full bg-white rounded-b-[80px] md:rounded-b-[120px] -mt-[60px] md:-mt-[80px] pt-[140px] md:pt-[184px] pb-[100px] md:pb-[116px] z-[5] overflow-hidden">
         <NoiseOverlay opacity={0.028} />
         {/* Logo Ticker Strip (h=40, y=842) */}
         <div className="w-full h-[40px] relative overflow-hidden flex items-center z-20">
@@ -287,7 +287,7 @@ export default function HomePage() {
           {/* Smooth Continuous Marquee Track */}
           <div className="animate-marquee-smooth flex items-center gap-[80px]">
             {[...logos, ...logos, ...logos, ...logos].map((logo, idx) => (
-              <div key={idx} className="flex-shrink-0 flex items-center justify-center">
+              <div key={idx} className="w-[160px] h-[40px] flex-shrink-0 flex items-center justify-center">
                 <Image
                   src={logo.src}
                   alt={logo.alt}
@@ -305,9 +305,9 @@ export default function HomePage() {
           SERVICES SECTION (Background Canvas #F6F5F4)
           Visible from y=1022 to 1638 (Title at y=1122, Pill at y=1271, Grid at y=1365)
           ========================================================================= */}
-      <section className="relative w-full bg-[#F6F5F4] pt-[81px] pb-[121px] z-[1] overflow-hidden">
+      <section className="relative w-full bg-[#F6F5F4] pt-[81px] md:pt-[124px] pb-[81px] md:pb-[81px] z-[1] overflow-hidden">
         <NoiseOverlay opacity={0.028} />
-        <div className="relative max-w-[1296px] mx-auto px-4 md:px-0 z-20">
+        <div className="relative max-w-[1300px] mx-auto px-4 md:px-0 z-20">
           {/* Section Headline (Starts at y=1122) */}
           <h2
             className="text-gradient-services text-center max-w-[360px] md:max-w-[615px] mx-auto text-[28px] leading-[42px] md:text-[36px] md:leading-[54px] font-[500]"
@@ -319,13 +319,13 @@ export default function HomePage() {
           </h2>
 
           {/* Divider Line with Tilted "Services" Pill (Centered at y=1271) */}
-          <div className="relative w-full max-w-[972px] mx-auto mt-[48px] md:mt-[60px] mb-[48px] md:mb-[68px] flex items-center justify-center">
+          <div className="relative w-full max-w-[972px] mx-auto mt-[48px] md:mt-[85px] mb-[48px] md:mb-[68px] flex items-center justify-center">
             {/* Hairline Divider */}
             <div className="w-full h-[1px] bg-[#ECEBEA]" />
 
             {/* Tilted Floating Pill */}
             <div
-              className="absolute bg-[#FFFFFE] rounded-[60px] px-[36px] md:px-[48px] py-[16px] md:py-[24px] shadow-[0_20px_10px_0_rgba(236,235,234,0.4)] flex items-center justify-center"
+              className="absolute w-[131px] h-[69px] bg-[#FFFFFE] rounded-[60px] shadow-[0_20px_10px_0_rgba(236,235,234,0.4)] flex items-center justify-center"
               style={{
                 transform: 'rotate(-10deg)',
               }}
@@ -371,7 +371,7 @@ export default function HomePage() {
                   color: 'rgb(42, 42, 42)',
                 }}
               >
-                Designing interfaces that are intuitive, efficient, and enjoyable to use.
+                Designing interfaces that are intuitive, efficient and enjoyable to use.
               </p>
             </div>
 
@@ -472,9 +472,9 @@ export default function HomePage() {
           CONTACT & FOOTER (Curved White Top Sheet)
           Visible from y=1638 to 2304 (h=666px, Icon at y=1726, Title at y=1850, Buttons at y=2022)
           ========================================================================= */}
-      <section className="relative w-full bg-white rounded-t-[80px] md:rounded-t-[120px] pt-[88px] pb-[74px] z-10 overflow-hidden">
+      <section className="relative w-full bg-white rounded-t-[80px] md:rounded-t-[120px] pt-[88px] md:pt-[81px] pb-[74px] z-10 overflow-hidden">
         <NoiseOverlay opacity={0.028} />
-        <div className="relative max-w-[1296px] mx-auto px-4 md:px-0 flex flex-col items-center z-20">
+        <div className="relative max-w-[1300px] mx-auto px-4 md:px-0 flex flex-col items-center z-20">
           {/* Top Circular Ring Frame (y=1726) */}
           <div className="relative w-[128px] h-[128px] rounded-full overflow-hidden flex items-center justify-center mb-[28px] md:mb-[36px]">
             <AvatarFrameSvg className="w-full h-full pointer-events-none" />
@@ -535,13 +535,14 @@ export default function HomePage() {
           </div>
 
           {/* ----------------- FOOTER (y=2181, copyright at y=2225) ----------------- */}
-          <footer className="w-full max-w-[1296px] mt-[96px] md:mt-[111px]">
+          <footer className="w-full max-w-[1300px] mt-[96px] md:mt-[115px]">
             {/* Hairline Divider Line */}
             <div className="w-full h-[1px] bg-[#ECEBEA] mb-[24px] md:mb-[28px]" />
 
             <div className="w-full flex flex-col md:flex-row items-center justify-between gap-4">
               {/* Copyright (x=72 on desktop) */}
               <p
+                className="pl-0 md:pl-[2px]"
                 style={{
                   fontFamily: '"Otterco Regular", sans-serif',
                   fontSize: '14px',
@@ -553,7 +554,7 @@ export default function HomePage() {
               </p>
 
               {/* Desktop Footer Socials */}
-              <div className="hidden md:flex items-center text-[14px] leading-[16.8px] text-[#373737]">
+              <div className="hidden md:flex items-center text-[14px] leading-[16.8px] text-[#373737] gap-[10px]">
                 <a
                   href="https://www.linkedin.com/in/kawsarvy/"
                   target="_blank"
@@ -563,7 +564,7 @@ export default function HomePage() {
                 >
                   LinkedIn
                 </a>
-                <span className="mx-[10px] select-none" style={{ fontFamily: '"Outfit", sans-serif' }}>
+                <span className="select-none" style={{ fontFamily: '"Outfit", sans-serif' }}>
                   /
                 </span>
                 <a
@@ -575,7 +576,7 @@ export default function HomePage() {
                 >
                   Dribbble
                 </a>
-                <span className="mx-[10px] select-none" style={{ fontFamily: '"Outfit", sans-serif' }}>
+                <span className="select-none" style={{ fontFamily: '"Outfit", sans-serif' }}>
                   /
                 </span>
                 <a

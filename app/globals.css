@@ -47,7 +47,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('https://fonts.gstatic.com/s/outfit/v15/QGYyz_MVcBeNP4NjuGObqx1XmO1I4TC1O4a0Ew.woff2') format('woff2');
+  src: url('/fonts/Outfit-Regular.woff2') format('woff2');
 }
 
 html, body {
@@ -93,7 +93,7 @@ html, body {
 .animate-marquee-smooth {
   display: flex;
   width: max-content;
-  animation: kawsar-marquee 30s linear infinite;
+  animation: kawsar-marquee 72s linear infinite;
   will-change: transform;
 }
 
