@@ -393,12 +393,12 @@ export default function HomePage() {
             {/* Hairline Divider */}
             <div className="w-full h-[1px] bg-[#ECEBEA]" />
 
-            {/* Tilted Floating Pill */}
+            {/* Tilted "Services" Pill (Static -10deg rotation matching kawsar.design) */}
             <div
-              className="absolute w-[125px] h-[48px] bg-[#FFFFFE] border border-[#ECEBEA] rounded-[60px] shadow-[0_20px_10px_0_rgba(236,235,234,0.4)] flex items-center justify-center pointer-events-none z-20 animate-badge-float select-none"
+              className="absolute w-[125px] h-[48px] bg-[#FFFFFE] border border-[#ECEBEA] rounded-[60px] shadow-[0_20px_10px_0_rgba(236,235,234,0.4)] flex items-center justify-center pointer-events-none z-20 select-none"
               style={{
                 transformOrigin: '62px 24px',
-                transform: 'translateY(0px) rotate(-10deg)',
+                transform: 'rotate(-10deg)',
               }}
             >
               <span
