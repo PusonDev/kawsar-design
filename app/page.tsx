@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { CopyButton } from '../components/CopyButton';
+import { LiveNoiseDriver } from '../components/LiveNoiseDriver';
 import {
   AvatarFrameSvg,
   LinkedInSocialSvg,
@@ -26,6 +27,9 @@ export default function HomePage() {
 
   return (
     <main className="w-full min-h-screen bg-[#F6F5F4] text-[#242424] relative overflow-x-hidden selection:bg-zinc-200">
+      {/* Client-Side JavaScript Live Noise Driver (100% Guaranteed Grain Jitter across all browsers & mobile devices) */}
+      <LiveNoiseDriver />
+
       {/* Global Canvas Scoped Background Noise Layer (z-0 strictly behind all sections and sheets) */}
       <div
         className="absolute inset-0 pointer-events-none select-none overflow-hidden z-0"
@@ -375,7 +379,23 @@ export default function HomePage() {
       {/* =========================================================================
           SERVICES SECTION (Sits seamlessly on #F6F5F4 Canvas)
           ========================================================================= */}
-      <section className="relative w-full pt-[63px] md:pt-[100px] pb-[70px] md:pb-[121px] z-[1]">
+      <section className="relative w-full pt-[63px] md:pt-[100px] pb-[70px] md:pb-[121px] z-[1] overflow-hidden">
+        {/* Section Scoped Background Noise Layer (z-0 strictly behind foreground UI) */}
+        <div
+          className="absolute inset-0 pointer-events-none select-none overflow-hidden z-0"
+          style={{ opacity: 0.08 }}
+          aria-hidden="true"
+        >
+          <div
+            className="absolute -inset-[200%] w-[400%] h-[400%] pointer-events-none animate-live-noise"
+            style={{
+              backgroundImage: 'url(/assets/kawsar-exact-noise.png)',
+              backgroundRepeat: 'repeat',
+              backgroundSize: '256px 256px',
+              opacity: 0.4,
+            }}
+          />
+        </div>
 
         <div className="relative max-w-[1300px] mx-auto px-0 z-20">
           {/* Section Headline (Authentic Framer text gradient matching kawsar.design) */}
