@@ -26,23 +26,6 @@ export default function HomePage() {
 
   return (
     <main className="w-full min-h-screen bg-[#F6F5F4] text-[#242424] relative overflow-x-hidden selection:bg-zinc-200">
-      {/* Global Canvas Scoped Background Noise Layer (z-0 strictly behind all sections & sheets) */}
-      <div
-        className="absolute inset-0 pointer-events-none select-none overflow-hidden z-0"
-        style={{ opacity: 0.08 }}
-        aria-hidden="true"
-      >
-        <div
-          className="absolute -inset-[200%] w-[400%] h-[400%] pointer-events-none animate-live-noise"
-          style={{
-            backgroundImage: 'url(/assets/kawsar-exact-noise.png)',
-            backgroundRepeat: 'repeat',
-            backgroundSize: '256px 256px',
-            opacity: 0.4,
-          }}
-        />
-      </div>
-
       {/* =========================================================================
           HERO & HEADER TOP SECTION (Curved Bottom Sheet)
           Surface: #F6F5F4 (Exact RGB 246, 245, 244)
@@ -51,25 +34,27 @@ export default function HomePage() {
         data-framer-border="true"
         className="relative w-full bg-[#F6F5F4] rounded-b-[80px] md:rounded-b-[120px] min-h-[660px] md:h-[742px] pt-[40px] pb-[83px] md:pb-[116px] z-10 overflow-hidden"
       >
-        {/* Section Scoped Background Noise Layer (z-0 strictly behind foreground UI) */}
+        {/* Section Scoped Background Noise Layer (1:1 with kawsar.design framer-ekivo5-container) */}
         <div
           className="absolute inset-0 pointer-events-none select-none overflow-hidden z-0"
           style={{ opacity: 0.08 }}
           aria-hidden="true"
         >
           <div
-            className="absolute -inset-[200%] w-[400%] h-[400%] pointer-events-none animate-live-noise"
+            className="absolute -inset-[200%] w-[400%] h-[400%] pointer-events-none"
             style={{
               backgroundImage: 'url(/assets/kawsar-exact-noise.png)',
               backgroundRepeat: 'repeat',
-              backgroundSize: '256px 256px',
+              backgroundSize: 'auto',
               opacity: 0.3,
+              willChange: 'transform',
+              transform: 'translateX(-4%) translateY(-8%)',
             }}
           />
         </div>
 
-        {/* ----------------- HEADER / NAVBAR (w=90% max-w=1296) ----------------- */}
-        <header className="relative w-[90%] max-w-[1296px] mx-auto flex items-center justify-between z-20">
+        {/* ----------------- HEADER / NAVBAR (Exact responsive width matching kawsar.design) ----------------- */}
+        <header className="relative w-[367px] md:w-[729px] lg:w-[1296px] mx-auto pt-[4px] md:pt-0 flex items-center justify-between z-20">
           {/* Desktop Left (>= 810px): Email Pill + CV Pill */}
           <div className="hidden md:flex items-center gap-[10px]">
             {/* Email + Copy Pill */}
@@ -229,12 +214,14 @@ export default function HomePage() {
                 aria-hidden="true"
               >
                 <div
-                  className="absolute -inset-[200%] w-[400%] h-[400%] pointer-events-none animate-live-noise"
+                  className="absolute -inset-[200%] w-[400%] h-[400%] pointer-events-none"
                   style={{
                     backgroundImage: 'url(/assets/kawsar-exact-noise.png)',
                     backgroundRepeat: 'repeat',
-                    backgroundSize: '256px 256px',
-                    opacity: 0.4,
+                    backgroundSize: 'auto',
+                    opacity: 0.3,
+                    willChange: 'transform',
+                    transform: 'translateX(-4%) translateY(-8%)',
                   }}
                 />
               </div>
@@ -317,12 +304,14 @@ export default function HomePage() {
           aria-hidden="true"
         >
           <div
-            className="absolute -inset-[200%] w-[400%] h-[400%] pointer-events-none animate-live-noise"
+            className="absolute -inset-[200%] w-[400%] h-[400%] pointer-events-none"
             style={{
               backgroundImage: 'url(/assets/kawsar-exact-noise.png)',
               backgroundRepeat: 'repeat',
-              backgroundSize: '256px 256px',
+              backgroundSize: 'auto',
               opacity: 0.3,
+              willChange: 'transform',
+              transform: 'translateX(-4%) translateY(-8%)',
             }}
           />
         </div>
@@ -363,7 +352,7 @@ export default function HomePage() {
         <div className="relative max-w-[1300px] mx-auto px-0 z-20">
           {/* Section Headline (Authentic Framer text gradient matching kawsar.design) */}
           <h2
-            className="heading-collaborate-gradient text-center w-[360px] md:w-[615px] shrink-0 text-[28px] leading-[42px] md:text-[36px] md:leading-[54px] font-[500] relative left-1/2 -translate-x-1/2"
+            className="heading-collaborate-gradient text-center w-[351px] md:w-[615px] shrink-0 text-[28px] leading-[42px] md:text-[36px] md:leading-[54px] font-[500] mx-auto"
             style={{
               fontFamily: '"Otterco Display Medium", sans-serif',
             }}
@@ -372,7 +361,7 @@ export default function HomePage() {
           </h2>
 
           {/* Divider Line with Tilted "Services" Pill */}
-          <div className="relative w-[360px] md:w-full md:max-w-[972px] shrink-0 left-1/2 -translate-x-1/2 md:static md:translate-x-0 mx-auto mt-[51px] md:mt-[69px] mb-[101px] md:mb-[65px] flex items-center justify-center">
+          <div className="w-[351px] md:w-[972px] mx-auto md:mx-0 md:relative md:left-1/2 md:-translate-x-1/2 mt-[51px] md:mt-[69px] mb-[101px] md:mb-[65px] flex items-center justify-center">
             {/* Hairline Divider */}
             <div className="w-full h-[1px] bg-[#ECEBEA]" />
 
@@ -396,10 +385,10 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* 4 Services Grid: 2 col on mobile/tablet, 4 col on desktop */}
-          <div className="w-[360px] md:w-full md:max-w-[972px] shrink-0 relative left-1/2 -translate-x-1/2 md:static md:translate-x-0 mx-auto grid grid-cols-2 md:grid-cols-4 gap-x-[16px] md:gap-x-[80px] gap-y-[65px] md:gap-y-0 h-auto md:h-[152px]">
+          {/* 4 Services Grid: 2 col on mobile, 4 col on tablet/desktop */}
+          <div className="w-[351px] md:w-[762px] lg:w-[972px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-x-[16px] md:gap-x-[10px] lg:gap-x-[80px] gap-y-[65px] md:gap-y-0 h-auto md:h-[152px]">
             {/* Service 1: UX & UI */}
-            <div className="flex flex-col items-start w-full">
+            <div className="flex flex-col items-start w-[167px] md:w-[183px]">
               <div className="w-[44px] h-[44px] flex items-center justify-center">
                 <ServiceUxUiSvg width={44} height={44} />
               </div>
@@ -429,7 +418,7 @@ export default function HomePage() {
             </div>
 
             {/* Service 2: Web & Mobile App */}
-            <div className="flex flex-col items-start w-full">
+            <div className="flex flex-col items-start w-[167px] md:w-[183px]">
               <div className="w-[44px] h-[44px] flex items-center justify-center">
                 <ServiceWebMobileSvg width={44} height={44} />
               </div>
@@ -459,7 +448,7 @@ export default function HomePage() {
             </div>
 
             {/* Service 3: Design & Creative */}
-            <div className="flex flex-col items-start w-full">
+            <div className="flex flex-col items-start w-[167px] md:w-[183px]">
               <div className="w-[44px] h-[44px] flex items-center justify-center">
                 <ServiceDesignCreativeSvg width={44} height={44} />
               </div>
@@ -489,7 +478,7 @@ export default function HomePage() {
             </div>
 
             {/* Service 4: Development */}
-            <div className="flex flex-col items-start w-full">
+            <div className="flex flex-col items-start w-[167px] md:w-[183px]">
               <div className="w-[42px] h-[44px] flex items-center justify-center">
                 <ServiceDevelopmentSvg width={42} height={44} />
               </div>
@@ -528,7 +517,7 @@ export default function HomePage() {
           ========================================================================= */}
       <section
         data-framer-border="true"
-        className="relative w-full bg-white rounded-t-[80px] md:rounded-t-[120px] pt-[72px] md:pt-[88px] pb-[60px] md:pb-[62px] z-10 overflow-hidden"
+        className="relative w-full bg-white rounded-t-[80px] md:rounded-t-[120px] pt-[72px] md:pt-[88px] pb-[34px] md:pb-[62px] z-10 overflow-hidden"
       >
         {/* Section Scoped Background Noise Layer (z-0 strictly behind foreground UI) */}
         <div
@@ -537,25 +526,27 @@ export default function HomePage() {
           aria-hidden="true"
         >
           <div
-            className="absolute -inset-[200%] w-[400%] h-[400%] pointer-events-none animate-live-noise"
+            className="absolute -inset-[200%] w-[400%] h-[400%] pointer-events-none"
             style={{
               backgroundImage: 'url(/assets/kawsar-exact-noise.png)',
               backgroundRepeat: 'repeat',
-              backgroundSize: '256px 256px',
+              backgroundSize: 'auto',
               opacity: 0.3,
+              willChange: 'transform',
+              transform: 'translateX(-4%) translateY(-8%)',
             }}
           />
         </div>
 
-        <div className="relative w-full max-w-[1300px] mx-auto px-0 flex flex-col items-center z-20">
+        <div className="relative w-full max-w-[1302px] mx-auto px-0 flex flex-col items-center z-20">
           {/* Top Circular Ring Frame */}
-          <div className="relative w-[128px] h-[128px] rounded-full overflow-hidden flex items-center justify-center mb-0 md:mb-0">
+          <div className="relative w-[128px] h-[128px] rounded-full overflow-hidden flex items-center justify-center mb-[28px] md:mb-0">
             <AvatarFrameSvg className="w-full h-full pointer-events-none" />
           </div>
 
           {/* Contact Heading (Authentic Framer text gradient matching kawsar.design) */}
           <h2
-            className="heading-contact-gradient text-center w-[352px] md:w-[658px] shrink-0 text-[36px] leading-[44px] md:text-[56px] md:leading-[64px] font-[600] relative left-1/2 -translate-x-1/2 md:static md:translate-x-0"
+            className="heading-contact-gradient text-center w-[355px] md:w-[658px] shrink-0 text-[36px] leading-[44px] md:text-[56px] md:leading-[64px] font-[600] mx-auto"
             style={{
               fontFamily: '"Otterco Display SemiBold", sans-serif',
             }}
@@ -564,7 +555,7 @@ export default function HomePage() {
           </h2>
 
           {/* Action Buttons: Email Me & WhatsApp */}
-          <div className="mt-[36px] md:mt-[40px] flex items-center justify-center gap-[10px]">
+          <div className="mt-[23px] md:mt-[40px] flex items-center justify-center gap-[10px]">
             {/* Email Me Button */}
             <div className="w-[128px] h-[60px] bg-[#F1F0EF] border border-[#ECEBEA] rounded-[74px] p-[4px] flex items-center justify-center">
               <a
@@ -610,7 +601,7 @@ export default function HomePage() {
           </div>
 
           {/* ----------------- FOOTER (Single Semantic Node, Responsive Layout) ----------------- */}
-          <footer className="w-[90%] max-w-[1296px] mx-auto mt-[80px] md:mt-[99px]">
+          <footer className="w-[351px] md:w-[729px] lg:w-[1302px] mx-auto mt-[91px] md:mt-[99px]">
             {/* Hairline Divider Line */}
             <div className="w-full h-[1px] bg-[#ECEBEA] mb-[24px] md:mb-[43px]" />
 
