@@ -92,12 +92,12 @@ html, body {
   -webkit-mask-image: none;
 }
 
-/* Exact 1:1 Live Floating Badge Animation from Framer (3s pause at top, 3s tween down, 3s pause at bottom, 3s tween up) */
+/* Exact 1:1 Live Floating Badge Animation from Framer (Continuous 6s Smooth Sine Cycle, Zero Pauses) */
 @keyframes kawsar-badge-float {
-  0%, 25% {
+  0% {
     transform: translateY(0px) rotate(-10deg);
   }
-  50%, 75% {
+  50% {
     transform: translateY(21px) rotate(-10deg);
   }
   100% {
@@ -106,8 +106,12 @@ html, body {
 }
 
 .animate-badge-float {
-  animation: kawsar-badge-float 12s cubic-bezier(0.44, 0, 0.56, 1) infinite;
+  animation: kawsar-badge-float 6s cubic-bezier(0.44, 0, 0.56, 1) infinite;
   will-change: transform;
+}
+
+.animate-badge-float:hover {
+  animation-play-state: running;
 }
 
 /* Exact 1:1 Live Noise Stepped Jitter from Framer (90 discrete steps @ 11.25 FPS / 88.89ms cadence) */
