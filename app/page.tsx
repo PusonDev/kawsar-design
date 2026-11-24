@@ -49,9 +49,9 @@ export default function HomePage() {
           HERO & HEADER TOP SECTION (Curved Bottom Sheet)
           Surface: #F6F5F4 (Exact RGB 246, 245, 244)
           ========================================================================= */}
-      <section className="relative w-full bg-[#F6F5F4] rounded-b-[80px] md:rounded-b-[120px] min-h-[660px] md:min-h-[742px] pt-[40px] pb-[83px] md:pb-[116.5px] z-10 overflow-hidden">
-        {/* ----------------- HEADER / NAVBAR (max-w=1300) ----------------- */}
-        <header className="relative w-full max-w-[1300px] mx-auto px-4 md:px-0 flex items-center justify-between z-20">
+      <section className="relative w-full bg-[#F6F5F4] rounded-b-[80px] md:rounded-b-[120px] border-b border-[#ECEBEA] min-h-[660px] md:min-h-[742px] pt-[40px] pb-[83px] md:pb-[116.5px] z-10 overflow-hidden">
+        {/* ----------------- HEADER / NAVBAR (w=90% max-w=1296) ----------------- */}
+        <header className="relative w-[90%] max-w-[1296px] mx-auto flex items-center justify-between z-20">
           {/* Desktop Left (>= 810px): Email Pill + CV Pill */}
           <div className="hidden md:flex items-center gap-[10px]">
             {/* Email + Copy Pill */}
@@ -191,7 +191,7 @@ export default function HomePage() {
         </header>
 
         {/* ----------------- HERO CONTENT ----------------- */}
-        <div className="relative max-w-[1300px] mx-auto px-4 flex flex-col items-center mt-[109px] z-20">
+        <div className="relative max-w-[1300px] mx-auto px-4 flex flex-col items-center mt-[116px] md:mt-[95px] z-20">
           {/* Avatar + Floating Badge Container */}
           <div className="relative flex items-center justify-center">
             {/* 128x128 Avatar Circle */}
@@ -206,22 +206,22 @@ export default function HomePage() {
               />
             </div>
 
-            {/* Floating "Kawsar Ahmed  👋🏼 " Badge (At exact crown dx: 102px, dy: 20px) */}
+            {/* Floating "Kawsar Ahmed  👋🏼 " Badge with Framer 6s Live Float Animation */}
             <div
-              className="absolute left-[102px] top-[20px] w-[120px] h-[48px] bg-[#FFFFFE] rounded-[60px] shadow-[0_10px_10px_0_rgba(84,84,84,0.1)] flex items-center justify-center whitespace-nowrap z-20 pointer-events-none"
+              className="absolute left-[102px] top-[20px] w-[120px] h-[48px] bg-[#FFFFFE] rounded-[60px] shadow-[0_10px_10px_0_rgba(84,84,84,0.1)] flex items-center justify-center whitespace-nowrap z-20 pointer-events-none animate-badge-float"
               style={{
-                transform: 'rotate(-10deg)',
+                transformOrigin: 'center center',
               }}
             >
               <span
                 style={{
-                  fontFamily: '"Otterco Regular", sans-serif',
+                  fontFamily: '"Otterco Regular", "Apple Color Emoji", "Segoe UI Emoji", sans-serif',
                   fontSize: '12px',
                   lineHeight: '14.4px',
                   color: 'rgb(36, 36, 36)',
                 }}
               >
-                Kawsar Ahmed  👋🏼 
+                {'Kawsar Ahmed  \u{1F44B}\u{1F3FC} '}
               </span>
             </div>
           </div>
@@ -265,9 +265,9 @@ export default function HomePage() {
           MIDDLE WHITE SHEET (Houses Client Logos Marquee)
           Surface: Pure White #FFFFFF
           ========================================================================= */}
-      <section className="relative w-full bg-white rounded-b-[80px] md:rounded-b-[120px] -mt-[80px] md:-mt-[120px] pt-[162px] md:pt-[220px] pb-[90px] md:pb-[140px] z-[5] overflow-hidden">
-        {/* Logo Ticker Strip with Soft Edge Fade Mask */}
-        <div className="w-full h-[40px] relative overflow-hidden flex items-center z-20 marquee-edge-mask">
+      <section className="relative w-full bg-white rounded-b-[80px] md:rounded-b-[120px] border-b border-[#ECEBEA] -mt-[80px] md:-mt-[120px] pt-[162px] md:pt-[220px] pb-[90px] md:pb-[140px] z-[5] overflow-hidden">
+        {/* Logo Ticker Strip (Clean 100% Crisp Edges matching live site) */}
+        <div className="w-full h-[40px] relative overflow-hidden flex items-center z-20">
           {/* Smooth Continuous Marquee Track */}
           <div className="animate-marquee-smooth flex items-center gap-[60px] md:gap-[80px]">
             {[...logos, ...logos, ...logos, ...logos].map((logo, idx) => (
@@ -301,7 +301,7 @@ export default function HomePage() {
         <div className="relative max-w-[1300px] mx-auto px-4 md:px-0 z-20">
           {/* Section Headline */}
           <h2
-            className="text-gradient-services text-center max-w-[360px] md:max-w-[615px] mx-auto text-[28px] leading-[42px] md:text-[36px] md:leading-[54px] font-[500]"
+            className="text-gradient-services text-center max-w-[360px] md:max-w-[615px] mx-auto text-[36px] leading-[54px] font-[500]"
             style={{
               fontFamily: '"Otterco Display Medium", sans-serif',
             }}
@@ -310,7 +310,7 @@ export default function HomePage() {
           </h2>
 
           {/* Divider Line with Tilted "Services" Pill */}
-          <div className="relative w-full max-w-[972px] mx-auto mt-[48px] md:mt-[74.5px] mb-[48px] md:mb-[65px] flex items-center justify-center">
+          <div className="relative w-full max-w-[972px] mx-auto mt-[44px] md:mt-[65px] mb-[101px] md:mb-[50px] flex items-center justify-center">
             {/* Hairline Divider */}
             <div className="w-full h-[1px] bg-[#ECEBEA]" />
 
@@ -334,8 +334,8 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* 4 Services Grid: 1 col on mobile, 2 col on tablet/split-screen, 4 col on desktop */}
-          <div className="w-full max-w-[360px] sm:max-w-[360px] md:max-w-[760px] lg:max-w-[972px] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-[16px] sm:gap-x-[48px] md:gap-x-[48px] lg:gap-x-[80px] gap-y-[40px] md:gap-y-0">
+          {/* 4 Services Grid: 2 col on mobile/tablet, 4 col on desktop */}
+          <div className="w-full max-w-[360px] md:max-w-[972px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-x-[16px] md:gap-x-[80px] gap-y-[65px] md:gap-y-0">
             {/* Service 1: UX & UI */}
             <div className="flex flex-col items-start w-full">
               <div className="w-[44px] h-[44px] flex items-center justify-center">
@@ -463,10 +463,10 @@ export default function HomePage() {
           CONTACT & FOOTER (Curved Sheet, Pure White)
           Surface: Pure White #FFFFFF
           ========================================================================= */}
-      <section className="relative w-full bg-white rounded-t-[80px] md:rounded-t-[120px] pt-[72px] md:pt-[81px] pb-[60px] md:pb-[74px] z-10 overflow-hidden">
-        <div className="relative max-w-[1300px] mx-auto px-4 md:px-0 flex flex-col items-center z-20">
+      <section className="relative w-full bg-white rounded-t-[80px] md:rounded-t-[120px] border-t border-[#ECEBEA] pt-[72px] md:pt-[81px] pb-[60px] md:pb-[74px] z-10 overflow-hidden">
+        <div className="relative w-full max-w-[1300px] mx-auto px-0 flex flex-col items-center z-20">
           {/* Top Circular Ring Frame */}
-          <div className="relative w-[128px] h-[128px] rounded-full overflow-hidden flex items-center justify-center mb-[28px] md:mb-[36px]">
+          <div className="relative w-[128px] h-[128px] rounded-full overflow-hidden flex items-center justify-center mb-[20px] md:mb-[24px]">
             <AvatarFrameSvg className="w-full h-full pointer-events-none" />
           </div>
 
@@ -527,7 +527,7 @@ export default function HomePage() {
           </div>
 
           {/* ----------------- FOOTER (Single Semantic Node, Responsive Layout) ----------------- */}
-          <footer className="w-full max-w-[1300px] mt-[80px] md:mt-[115px]">
+          <footer className="w-[90%] max-w-[1296px] mx-auto mt-[80px] md:mt-[115px]">
             {/* Hairline Divider Line */}
             <div className="w-full h-[1px] bg-[#ECEBEA] mb-[24px] md:mb-[28px]" />
 

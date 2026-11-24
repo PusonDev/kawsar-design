@@ -101,10 +101,28 @@ html, body {
   animation-play-state: paused;
 }
 
-/* Edge Fade Mask for Marquee Ticker */
+/* Edge Fade Mask for Marquee Ticker (Removed to match live site crisp edges) */
 .marquee-edge-mask {
-  mask-image: linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%);
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%);
+  mask-image: none;
+  -webkit-mask-image: none;
+}
+
+/* Exact 1:1 Live Floating Badge Animation from Framer (3s pause at top, 3s tween down, 3s pause at bottom, 3s tween up) */
+@keyframes kawsar-badge-float {
+  0%, 25% {
+    transform: translateY(0px) rotate(-10deg);
+  }
+  50%, 75% {
+    transform: translateY(21px) rotate(-10deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(-10deg);
+  }
+}
+
+.animate-badge-float {
+  animation: kawsar-badge-float 12s cubic-bezier(0.44, 0, 0.56, 1) infinite;
+  will-change: transform;
 }
 
 /* Exact 1:1 Live Noise Stepped Jitter from Framer (90 discrete steps @ 11.25 FPS / 88.89ms cadence) */
