@@ -191,9 +191,9 @@ export default function HomePage() {
         {/* ----------------- HERO CONTENT ----------------- */}
         <div className="relative max-w-[1300px] mx-auto px-4 flex flex-col items-center mt-[116px] md:mt-[96px] z-20">
           {/* Avatar + Floating Badge Container */}
-          <div className="relative flex items-center justify-center">
-            {/* 128x128 Avatar Circle */}
-            <div className="relative w-[128px] h-[128px] rounded-full overflow-hidden flex items-center justify-center border border-[#ECEBEA] shadow-sm">
+          <div className="relative w-[128px] h-[128px] flex items-center justify-center">
+            {/* 128x128 Avatar Circle (Border-free, Shadow-free, exact matching kawsar.design) */}
+            <div className="relative w-[128px] h-[128px] rounded-full overflow-hidden flex items-center justify-center">
               <Image
                 src="/assets/kawsar-avatar.png"
                 alt="Kawsar Ahmed"
@@ -204,27 +204,27 @@ export default function HomePage() {
               />
             </div>
 
-            {/* Floating "Kawsar Ahmed  👋🏼 " Badge with Framer Live Float Animation (Links to Dribbble) */}
-            <a
-              href="https://dribbble.com/Kawsarvy"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="absolute left-[102px] top-[20px] w-[120px] h-[48px] bg-[#FFFFFE] rounded-[60px] shadow-[0_10px_10px_0_rgba(84,84,84,0.1)] flex items-center justify-center whitespace-nowrap z-20 animate-badge-float cursor-pointer select-none"
+            {/* Floating "Kawsar Ahmed  👋🏼 " Badge with Framer Live Float Animation (1:1 Ruler: w=120px, h=48px, top=20px, left=102px, rounded-[60px], shadow) */}
+            <div
+              className="absolute left-[102px] top-[20px] w-[120px] h-[48px] bg-[#FFFFFE] rounded-[60px] shadow-[0_10px_10px_0_rgba(84,84,84,0.1)] flex items-center justify-center whitespace-pre z-20 animate-badge-float select-none"
               style={{
-                transformOrigin: 'center center',
+                transformOrigin: '60px 24px',
               }}
             >
-              <span
+              <p
                 style={{
-                  fontFamily: '"Otterco Regular", "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif',
+                  fontFamily: '"Otterco Regular", "Otterco Regular Placeholder", sans-serif',
                   fontSize: '12px',
+                  fontWeight: 400,
                   lineHeight: '14.4px',
+                  letterSpacing: '0px',
                   color: 'rgb(36, 36, 36)',
+                  whiteSpace: 'pre',
                 }}
               >
                 {'Kawsar Ahmed  \u{1F44B}\u{1F3FC} '}
-              </span>
-            </a>
+              </p>
+            </div>
           </div>
 
           {/* Hero H1 (Authentic Framer text gradient matching kawsar.design) */}
