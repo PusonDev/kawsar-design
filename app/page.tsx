@@ -46,7 +46,7 @@ export default function HomePage() {
               backgroundImage: 'url(/assets/kawsar-exact-noise.png)',
               backgroundRepeat: 'repeat',
               backgroundSize: '256px 256px',
-              opacity: 0.4,
+              opacity: 0.3,
             }}
           />
         </div>
@@ -86,7 +86,7 @@ export default function HomePage() {
                     lineHeight: '14.4px',
                     color: 'rgb(36, 36, 36)',
                   }}
-                  className="capitalize"
+                  className="capitalize group-hover:underline"
                 >
                   CV
                 </span>
@@ -128,6 +128,7 @@ export default function HomePage() {
               href="https://www.linkedin.com/in/kawsarvy/"
               target="_blank"
               rel="noopener noreferrer"
+              className="hover:underline"
               style={{ fontFamily: '"Otterco Regular", sans-serif' }}
             >
               LinkedIn
@@ -139,6 +140,7 @@ export default function HomePage() {
               href="https://dribbble.com/Kawsarvy"
               target="_blank"
               rel="noopener noreferrer"
+              className="hover:underline"
               style={{ fontFamily: '"Otterco Regular", sans-serif' }}
             >
               Dribbble
@@ -150,6 +152,7 @@ export default function HomePage() {
               href="https://www.instagram.com/kawsarvy/"
               target="_blank"
               rel="noopener noreferrer"
+              className="hover:underline"
               style={{ fontFamily: '"Otterco Regular", sans-serif' }}
             >
               instagram
@@ -245,7 +248,7 @@ export default function HomePage() {
             href="https://dribbble.com/Kawsarvy"
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-[44px] w-[180px] h-[60px] bg-[#242424] rounded-[60px] flex items-center justify-center gap-[12px] no-underline z-20"
+            className="group mt-[44px] w-[180px] h-[60px] bg-[#242424] rounded-[60px] flex items-center justify-center gap-[12px] no-underline z-20"
           >
             <DribbbleLatestWorkSvg width={16} height={16} />
             <span
@@ -255,6 +258,7 @@ export default function HomePage() {
                 lineHeight: '14.4px',
                 color: 'rgb(255, 255, 255)',
               }}
+              className="group-hover:underline"
             >
               Latest Work
             </span>
@@ -265,12 +269,12 @@ export default function HomePage() {
       {/* =========================================================================
           MIDDLE WHITE SHEET (Houses Client Logos Marquee)
           Surface: Pure White #FFFFFF
-          Seamless flat top behind hero sheet (rounded-t-[80px]), curved bottom (rounded-b-[80px] md:rounded-b-[120px])
+          Seamless flat top behind hero sheet (rounded-t-none), curved bottom (rounded-b-[80px] md:rounded-b-[120px])
           1:1 Framer border stroke #ECEBEA
           ========================================================================= */}
       <section
         data-framer-border="true"
-        className="relative w-full bg-white rounded-t-[80px] rounded-b-[80px] md:rounded-b-[120px] -mt-[80px] md:-mt-[120px] pt-[162px] md:pt-[220px] pb-[118px] md:pb-[140px] z-[5] overflow-hidden"
+        className="relative w-full bg-white rounded-t-none rounded-b-[80px] md:rounded-b-[120px] -mt-[80px] md:-mt-[120px] pt-[162px] md:pt-[220px] pb-[118px] md:pb-[140px] z-[5] overflow-hidden"
       >
         {/* Section Scoped Background Noise Layer (z-0 strictly behind foreground UI) */}
         <div
@@ -284,7 +288,7 @@ export default function HomePage() {
               backgroundImage: 'url(/assets/kawsar-exact-noise.png)',
               backgroundRepeat: 'repeat',
               backgroundSize: '256px 256px',
-              opacity: 0.4,
+              opacity: 0.3,
             }}
           />
         </div>
@@ -333,7 +337,7 @@ export default function HomePage() {
               backgroundImage: 'url(/assets/kawsar-exact-noise.png)',
               backgroundRepeat: 'repeat',
               backgroundSize: '256px 256px',
-              opacity: 0.4,
+              opacity: 0.3,
             }}
           />
         </div>
@@ -356,7 +360,7 @@ export default function HomePage() {
 
             {/* Tilted Floating Pill */}
             <div
-              className="absolute w-[125px] h-[48px] bg-[#FFFFFE] rounded-[60px] shadow-[0_20px_10px_0_rgba(236,235,234,0.4)] flex items-center justify-center pointer-events-none z-20"
+              className="absolute w-[125px] h-[48px] bg-[#FFFFFE] border border-[#ECEBEA] rounded-[60px] shadow-[0_20px_10px_0_rgba(236,235,234,0.4)] flex items-center justify-center pointer-events-none z-20"
               style={{
                 transform: 'rotate(-10deg)',
               }}
@@ -520,7 +524,7 @@ export default function HomePage() {
               backgroundImage: 'url(/assets/kawsar-exact-noise.png)',
               backgroundRepeat: 'repeat',
               backgroundSize: '256px 256px',
-              opacity: 0.4,
+              opacity: 0.3,
             }}
           />
         </div>
@@ -547,7 +551,7 @@ export default function HomePage() {
             <div className="w-[128px] h-[60px] bg-[#F1F0EF] border border-[#ECEBEA] rounded-[74px] p-[4px] flex items-center justify-center">
               <a
                 href="mailto:kawsarvy.design@gmail.com"
-                className="w-[120px] h-[52px] bg-[#242424] rounded-[90px] flex items-center justify-center gap-[8px] z-20"
+                className="w-[120px] h-[52px] bg-[#242424] rounded-[90px] flex items-center justify-center gap-[8px] z-20 group"
               >
                 <EmailIconSvg width={14} height={14} />
                 <span
@@ -557,7 +561,7 @@ export default function HomePage() {
                     lineHeight: '14.4px',
                     color: 'rgb(255, 255, 255)',
                   }}
-                  className="capitalize"
+                  className="capitalize group-hover:underline"
                 >
                   Email Me
                 </span>
@@ -570,7 +574,7 @@ export default function HomePage() {
                 href="https://wa.me/1303536185"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-[120px] h-[52px] bg-[#FFFFFE] rounded-[90px] flex items-center justify-center gap-[8px] z-20"
+                className="w-[120px] h-[52px] bg-[#FFFFFE] rounded-[90px] flex items-center justify-center gap-[8px] z-20 group"
               >
                 <span
                   style={{
@@ -579,7 +583,7 @@ export default function HomePage() {
                     lineHeight: '14.4px',
                     color: 'rgb(36, 36, 36)',
                   }}
-                  className="capitalize"
+                  className="capitalize group-hover:underline"
                 >
                   whatsApp
                 </span>
@@ -612,6 +616,7 @@ export default function HomePage() {
                   href="https://www.linkedin.com/in/kawsarvy/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="hover:underline"
                   style={{ fontFamily: '"Otterco Regular", sans-serif' }}
                 >
                   LinkedIn
@@ -623,6 +628,7 @@ export default function HomePage() {
                   href="https://dribbble.com/Kawsarvy"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="hover:underline"
                   style={{ fontFamily: '"Otterco Regular", sans-serif' }}
                 >
                   Dribbble
@@ -634,6 +640,7 @@ export default function HomePage() {
                   href="https://www.instagram.com/kawsarvy/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="hover:underline"
                   style={{ fontFamily: '"Otterco Regular", sans-serif' }}
                 >
                   instagram
