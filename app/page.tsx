@@ -32,8 +32,8 @@ export default function HomePage() {
 
       {/* Global Canvas Scoped Background Noise Layer (z-0 strictly behind all sections and sheets) */}
       <div
-        className="absolute inset-0 pointer-events-none select-none overflow-hidden z-0"
-        style={{ opacity: 0.08 }}
+        className="absolute inset-0 pointer-events-none select-none overflow-hidden max-w-full z-0"
+        style={{ opacity: 0.08, contain: 'paint' }}
         aria-hidden="true"
       >
         <div
@@ -57,8 +57,8 @@ export default function HomePage() {
       >
         {/* Section Scoped Background Noise Layer (1:1 with kawsar.design framer-ekivo5-container) */}
         <div
-          className="absolute inset-0 pointer-events-none select-none overflow-hidden rounded-b-[80px] md:rounded-b-[120px] z-0"
-          style={{ opacity: 0.08 }}
+          className="absolute inset-0 pointer-events-none select-none overflow-hidden max-w-full rounded-b-[80px] md:rounded-b-[120px] z-0"
+          style={{ opacity: 0.08, contain: 'paint' }}
           aria-hidden="true"
         >
           <div
@@ -245,8 +245,8 @@ export default function HomePage() {
               />
               {/* Authentic Avatar Noise Overlay (1:1 with kawsar.design framer-1dh92xw-container) */}
               <div
-                className="absolute inset-0 pointer-events-none select-none overflow-hidden rounded-full z-10"
-                style={{ opacity: 0.08 }}
+                className="absolute inset-0 pointer-events-none select-none overflow-hidden max-w-full rounded-full z-10"
+                style={{ opacity: 0.08, contain: 'paint' }}
                 aria-hidden="true"
               >
                 <div
@@ -333,8 +333,8 @@ export default function HomePage() {
       >
         {/* Section Scoped Background Noise Layer (z-0 strictly behind foreground UI) */}
         <div
-          className="absolute inset-0 pointer-events-none select-none overflow-hidden rounded-t-[80px] rounded-b-[80px] md:rounded-b-[120px] z-0"
-          style={{ opacity: 0.08 }}
+          className="absolute inset-0 pointer-events-none select-none overflow-hidden max-w-full rounded-t-[80px] rounded-b-[80px] md:rounded-b-[120px] z-0"
+          style={{ opacity: 0.08, contain: 'paint' }}
           aria-hidden="true"
         >
           <div
@@ -349,7 +349,10 @@ export default function HomePage() {
         </div>
 
         {/* Logo Ticker Strip (Clean 100% Crisp Edges matching live site) */}
-        <div className="w-full h-[40px] relative overflow-hidden flex items-center z-20">
+        <div
+          className="w-full max-w-full h-[40px] relative overflow-hidden flex items-center z-20"
+          style={{ contain: 'paint' }}
+        >
           {/* Smooth Continuous Marquee Track */}
           <div className="animate-marquee-smooth flex items-center gap-[60px] md:gap-[80px]">
             {[...logos, ...logos, ...logos, ...logos].map((logo, idx) => (
@@ -382,8 +385,8 @@ export default function HomePage() {
       <section className="relative w-full pt-[63px] md:pt-[100px] pb-[70px] md:pb-[121px] z-[1] overflow-hidden">
         {/* Section Scoped Background Noise Layer (z-0 strictly behind foreground UI) */}
         <div
-          className="absolute inset-0 pointer-events-none select-none overflow-hidden z-0"
-          style={{ opacity: 0.08 }}
+          className="absolute inset-0 pointer-events-none select-none overflow-hidden max-w-full z-0"
+          style={{ opacity: 0.08, contain: 'paint' }}
           aria-hidden="true"
         >
           <div
@@ -575,8 +578,8 @@ export default function HomePage() {
       >
         {/* Section Scoped Background Noise Layer (z-0 strictly behind foreground UI) */}
         <div
-          className="absolute inset-0 pointer-events-none select-none overflow-hidden rounded-t-[80px] md:rounded-t-[120px] z-0"
-          style={{ opacity: 0.08 }}
+          className="absolute inset-0 pointer-events-none select-none overflow-hidden max-w-full rounded-t-[80px] md:rounded-t-[120px] z-0"
+          style={{ opacity: 0.08, contain: 'paint' }}
           aria-hidden="true"
         >
           <div
