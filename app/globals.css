@@ -127,13 +127,13 @@ html, body {
   -webkit-mask-image: none;
 }
 
-/* Exact 1:1 Live Floating Badge Animation from Framer (Continuous 6s Smooth Tween Cycle, Zero Pauses) */
+/* Exact 1:1 Live Floating Badge Animation from Framer (Continuous 6s Smooth Tween Cycle, Upward -21px, Zero Pauses) */
 @keyframes kawsar-badge-float {
   0% {
     transform: translateY(0px) rotate(-10deg);
   }
   50% {
-    transform: translateY(21px) rotate(-10deg);
+    transform: translateY(-21px) rotate(-10deg);
   }
   100% {
     transform: translateY(0px) rotate(-10deg);

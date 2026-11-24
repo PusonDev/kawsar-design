@@ -27,10 +27,10 @@ export default function HomePage() {
   return (
     <main className="w-full min-h-screen bg-[#F6F5F4] text-[#242424] relative overflow-x-hidden selection:bg-zinc-200">
       {/* =========================================================================
-          GLOBAL 1:1 LIVE NOISE LAYER (Exact Framer Tile, Fixed Inset, 11.6 FPS Cadence)
+          GLOBAL 1:1 LIVE NOISE LAYER (Exact Framer Tile, Absolute Document Inset, 11.25 FPS Cadence)
           ========================================================================= */}
       <div
-        className="fixed inset-0 pointer-events-none select-none z-[9999] overflow-hidden"
+        className="absolute inset-0 h-full w-full pointer-events-none select-none z-[25] overflow-hidden"
         style={{ opacity: 0.08 }}
         aria-hidden="true"
       >
@@ -49,7 +49,10 @@ export default function HomePage() {
           HERO & HEADER TOP SECTION (Curved Bottom Sheet)
           Surface: #F6F5F4 (Exact RGB 246, 245, 244)
           ========================================================================= */}
-      <section className="relative w-full bg-[#F6F5F4] rounded-b-[80px] md:rounded-b-[120px] min-h-[660px] md:h-[742px] pt-[40px] pb-[83px] md:pb-[116px] z-10 overflow-hidden">
+      <section
+        data-framer-border="true"
+        className="relative w-full bg-[#F6F5F4] rounded-b-[80px] md:rounded-b-[120px] min-h-[660px] md:h-[742px] pt-[40px] pb-[83px] md:pb-[116px] z-10 overflow-hidden"
+      >
         {/* ----------------- HEADER / NAVBAR (w=90% max-w=1296) ----------------- */}
         <header className="relative w-[90%] max-w-[1296px] mx-auto flex items-center justify-between z-20">
           {/* Desktop Left (>= 810px): Email Pill + CV Pill */}
@@ -265,10 +268,13 @@ export default function HomePage() {
       {/* =========================================================================
           MIDDLE WHITE SHEET (Houses Client Logos Marquee)
           Surface: Pure White #FFFFFF
-          Seamless flat top behind hero sheet (rounded-t-none), curved bottom (rounded-b-[80px] md:rounded-b-[120px])
-          Zero border stroke (matches kawsar.design)
+          Seamless flat top behind hero sheet (rounded-t-[80px]), curved bottom (rounded-b-[80px] md:rounded-b-[120px])
+          1:1 Framer border stroke #ECEBEA
           ========================================================================= */}
-      <section className="relative w-full bg-white rounded-t-none rounded-b-[80px] md:rounded-b-[120px] -mt-[80px] md:-mt-[120px] pt-[162px] md:pt-[220px] pb-[118px] md:pb-[140px] z-[5] overflow-hidden">
+      <section
+        data-framer-border="true"
+        className="relative w-full bg-white rounded-t-[80px] rounded-b-[80px] md:rounded-b-[120px] -mt-[80px] md:-mt-[120px] pt-[162px] md:pt-[220px] pb-[118px] md:pb-[140px] z-[5] overflow-hidden"
+      >
         {/* Logo Ticker Strip (Clean 100% Crisp Edges matching live site) */}
         <div className="w-full h-[40px] relative overflow-hidden flex items-center z-20">
           {/* Smooth Continuous Marquee Track */}
@@ -465,9 +471,12 @@ export default function HomePage() {
       {/* =========================================================================
           CONTACT & FOOTER (Curved Sheet, Pure White)
           Surface: Pure White #FFFFFF
-          Zero border stroke (matches kawsar.design)
+          1:1 Framer border stroke #ECEBEA
           ========================================================================= */}
-      <section className="relative w-full bg-white rounded-t-[80px] md:rounded-t-[120px] pt-[72px] md:pt-[88px] pb-[60px] md:pb-[62px] z-10 overflow-hidden">
+      <section
+        data-framer-border="true"
+        className="relative w-full bg-white rounded-t-[80px] md:rounded-t-[120px] pt-[72px] md:pt-[88px] pb-[60px] md:pb-[62px] z-10 overflow-hidden"
+      >
         <div className="relative w-full max-w-[1300px] mx-auto px-0 flex flex-col items-center z-20">
           {/* Top Circular Ring Frame */}
           <div className="relative w-[128px] h-[128px] rounded-full overflow-hidden flex items-center justify-center mb-0 md:mb-0">
