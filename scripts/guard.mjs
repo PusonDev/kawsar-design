@@ -117,6 +117,17 @@ if (fs.existsSync(gitIgnorePath)) {
   );
 }
 
+// 6. Section-Scoped Background Noise Architecture Check (Zero Foreground Bleed)
+if (fs.existsSync(PAGE_PATH)) {
+  const pageCode = fs.readFileSync(PAGE_PATH, 'utf8');
+  const hasGlobalOverlay = pageCode.includes('z-[9999]') || pageCode.includes('z-[25]') || pageCode.includes('z-50');
+  check(
+    'Scoped Background Noise Architecture (Zero Foreground Bleed)',
+    !hasGlobalOverlay,
+    'Found global noise overlay with high z-index in app/page.tsx! Noise must be strictly scoped to section backgrounds at z-0.'
+  );
+}
+
 if (failed) {
   console.error('\n🛑 PRODUCTION GUARD FAILED! Aborting build to protect production integrity.');
   process.exit(1);

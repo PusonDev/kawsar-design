@@ -101,7 +101,7 @@ html, body {
   border: 1px solid #ECEBEA;
   border-radius: inherit;
   pointer-events: none;
-  z-index: 25;
+  z-index: 5;
 }
 
 /* Custom marquee animation */

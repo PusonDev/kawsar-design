@@ -27,25 +27,6 @@ export default function HomePage() {
   return (
     <main className="w-full min-h-screen bg-[#F6F5F4] text-[#242424] relative overflow-x-hidden selection:bg-zinc-200">
       {/* =========================================================================
-          GLOBAL 1:1 LIVE NOISE LAYER (Exact Framer Tile, Absolute Document Inset, 11.25 FPS Cadence)
-          ========================================================================= */}
-      <div
-        className="absolute inset-0 h-full w-full pointer-events-none select-none z-[25] overflow-hidden"
-        style={{ opacity: 0.08 }}
-        aria-hidden="true"
-      >
-        <div
-          className="absolute -inset-[200%] w-[400%] h-[400%] pointer-events-none animate-live-noise"
-          style={{
-            backgroundImage: 'url(/assets/kawsar-exact-noise.png)',
-            backgroundRepeat: 'repeat',
-            backgroundSize: '256px 256px',
-            opacity: 0.3,
-          }}
-        />
-      </div>
-
-      {/* =========================================================================
           HERO & HEADER TOP SECTION (Curved Bottom Sheet)
           Surface: #F6F5F4 (Exact RGB 246, 245, 244)
           ========================================================================= */}
@@ -53,6 +34,23 @@ export default function HomePage() {
         data-framer-border="true"
         className="relative w-full bg-[#F6F5F4] rounded-b-[80px] md:rounded-b-[120px] min-h-[660px] md:h-[742px] pt-[40px] pb-[83px] md:pb-[116px] z-10 overflow-hidden"
       >
+        {/* Section Scoped Background Noise Layer (z-0 strictly behind foreground UI) */}
+        <div
+          className="absolute inset-0 pointer-events-none select-none overflow-hidden z-0"
+          style={{ opacity: 0.08 }}
+          aria-hidden="true"
+        >
+          <div
+            className="absolute -inset-[200%] w-[400%] h-[400%] pointer-events-none animate-live-noise"
+            style={{
+              backgroundImage: 'url(/assets/kawsar-exact-noise.png)',
+              backgroundRepeat: 'repeat',
+              backgroundSize: '256px 256px',
+              opacity: 0.4,
+            }}
+          />
+        </div>
+
         {/* ----------------- HEADER / NAVBAR (w=90% max-w=1296) ----------------- */}
         <header className="relative w-[90%] max-w-[1296px] mx-auto flex items-center justify-between z-20">
           {/* Desktop Left (>= 810px): Email Pill + CV Pill */}
@@ -275,6 +273,23 @@ export default function HomePage() {
         data-framer-border="true"
         className="relative w-full bg-white rounded-t-[80px] rounded-b-[80px] md:rounded-b-[120px] -mt-[80px] md:-mt-[120px] pt-[162px] md:pt-[220px] pb-[118px] md:pb-[140px] z-[5] overflow-hidden"
       >
+        {/* Section Scoped Background Noise Layer (z-0 strictly behind foreground UI) */}
+        <div
+          className="absolute inset-0 pointer-events-none select-none overflow-hidden z-0"
+          style={{ opacity: 0.08 }}
+          aria-hidden="true"
+        >
+          <div
+            className="absolute -inset-[200%] w-[400%] h-[400%] pointer-events-none animate-live-noise"
+            style={{
+              backgroundImage: 'url(/assets/kawsar-exact-noise.png)',
+              backgroundRepeat: 'repeat',
+              backgroundSize: '256px 256px',
+              opacity: 0.4,
+            }}
+          />
+        </div>
+
         {/* Logo Ticker Strip (Clean 100% Crisp Edges matching live site) */}
         <div className="w-full h-[40px] relative overflow-hidden flex items-center z-20">
           {/* Smooth Continuous Marquee Track */}
@@ -307,6 +322,23 @@ export default function HomePage() {
           SERVICES SECTION (Background Canvas #F6F5F4)
           ========================================================================= */}
       <section className="relative w-full bg-[#F6F5F4] pt-[52px] md:pt-[100px] pb-[80px] md:pb-[121px] z-[1] overflow-hidden">
+        {/* Section Scoped Background Noise Layer (z-0 strictly behind foreground UI) */}
+        <div
+          className="absolute inset-0 pointer-events-none select-none overflow-hidden z-0"
+          style={{ opacity: 0.08 }}
+          aria-hidden="true"
+        >
+          <div
+            className="absolute -inset-[200%] w-[400%] h-[400%] pointer-events-none animate-live-noise"
+            style={{
+              backgroundImage: 'url(/assets/kawsar-exact-noise.png)',
+              backgroundRepeat: 'repeat',
+              backgroundSize: '256px 256px',
+              opacity: 0.4,
+            }}
+          />
+        </div>
+
         <div className="relative max-w-[1300px] mx-auto px-0 z-20">
           {/* Section Headline (Authentic Framer text gradient matching kawsar.design) */}
           <h2
@@ -325,7 +357,7 @@ export default function HomePage() {
 
             {/* Tilted Floating Pill */}
             <div
-              className="absolute w-[125px] h-[48px] bg-[#FFFFFE] rounded-[60px] shadow-[0_20px_10px_0_rgba(236,235,234,0.4)] flex items-center justify-center pointer-events-none"
+              className="absolute w-[125px] h-[48px] bg-[#FFFFFE] rounded-[60px] shadow-[0_20px_10px_0_rgba(236,235,234,0.4)] flex items-center justify-center pointer-events-none z-20"
               style={{
                 transform: 'rotate(-10deg)',
               }}
@@ -477,6 +509,23 @@ export default function HomePage() {
         data-framer-border="true"
         className="relative w-full bg-white rounded-t-[80px] md:rounded-t-[120px] pt-[72px] md:pt-[88px] pb-[60px] md:pb-[62px] z-10 overflow-hidden"
       >
+        {/* Section Scoped Background Noise Layer (z-0 strictly behind foreground UI) */}
+        <div
+          className="absolute inset-0 pointer-events-none select-none overflow-hidden z-0"
+          style={{ opacity: 0.08 }}
+          aria-hidden="true"
+        >
+          <div
+            className="absolute -inset-[200%] w-[400%] h-[400%] pointer-events-none animate-live-noise"
+            style={{
+              backgroundImage: 'url(/assets/kawsar-exact-noise.png)',
+              backgroundRepeat: 'repeat',
+              backgroundSize: '256px 256px',
+              opacity: 0.4,
+            }}
+          />
+        </div>
+
         <div className="relative w-full max-w-[1300px] mx-auto px-0 flex flex-col items-center z-20">
           {/* Top Circular Ring Frame */}
           <div className="relative w-[128px] h-[128px] rounded-full overflow-hidden flex items-center justify-center mb-0 md:mb-0">
