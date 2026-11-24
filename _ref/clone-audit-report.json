@@ -1,0 +1,273 @@
+{
+  "auditedAt": "2026-11-23T19:52:05.145Z",
+  "consoleErrors": [],
+  "desktop": {
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollHeight": 2316
+    },
+    "images": [
+      {
+        "src": "http://localhost:3000/assets/Ylx45dCKlDrap5HSs7wTBwhoAY.png",
+        "alt": "Kawsar Ahmed",
+        "naturalWidth": 512,
+        "naturalHeight": 512,
+        "broken": false
+      },
+      {
+        "src": "http://localhost:3000/assets/nPT3My9mYZPzyjp42aeGQACk4p4.svg",
+        "alt": "Partner Logo",
+        "naturalWidth": 118,
+        "naturalHeight": 34,
+        "broken": false
+      },
+      {
+        "src": "http://localhost:3000/assets/XFWQcHTyPCmpljR7ttDhwueN9k.svg",
+        "alt": "Partner Logo",
+        "naturalWidth": 94,
+        "naturalHeight": 32,
+        "broken": false
+      },
+      {
+        "src": "http://localhost:3000/assets/FeK7mQ25Aj92hjXNE7801ccv4.svg",
+        "alt": "Partner Logo",
+        "naturalWidth": 134,
+        "naturalHeight": 24,
+        "broken": false
+      },
+      {
+        "src": "http://localhost:3000/assets/S7Wn9R0XUGbZP76whfsn435N8o.svg",
+        "alt": "Partner Logo",
+        "naturalWidth": 118,
+        "naturalHeight": 24,
+        "broken": false
+      },
+      {
+        "src": "http://localhost:3000/assets/9kIk1y3XOCY94YnLwCDU3SSHL0I.svg",
+        "alt": "Partner Logo",
+        "naturalWidth": 155,
+        "naturalHeight": 44,
+        "broken": false
+      },
+      {
+        "src": "http://localhost:3000/assets/Pjlzorsbp4GK4U9nqYaPWgkPs.svg",
+        "alt": "Partner Logo",
+        "naturalWidth": 122,
+        "naturalHeight": 33,
+        "broken": false
+      },
+      {
+        "src": "http://localhost:3000/assets/nPT3My9mYZPzyjp42aeGQACk4p4.svg",
+        "alt": "Partner Logo",
+        "naturalWidth": 118,
+        "naturalHeight": 34,
+        "broken": false
+      },
+      {
+        "src": "http://localhost:3000/assets/XFWQcHTyPCmpljR7ttDhwueN9k.svg",
+        "alt": "Partner Logo",
+        "naturalWidth": 94,
+        "naturalHeight": 32,
+        "broken": false
+      },
+      {
+        "src": "http://localhost:3000/assets/FeK7mQ25Aj92hjXNE7801ccv4.svg",
+        "alt": "Partner Logo",
+        "naturalWidth": 134,
+        "naturalHeight": 24,
+        "broken": false
+      },
+      {
+        "src": "http://localhost:3000/assets/S7Wn9R0XUGbZP76whfsn435N8o.svg",
+        "alt": "Partner Logo",
+        "naturalWidth": 118,
+        "naturalHeight": 24,
+        "broken": false
+      },
+      {
+        "src": "http://localhost:3000/assets/9kIk1y3XOCY94YnLwCDU3SSHL0I.svg",
+        "alt": "Partner Logo",
+        "naturalWidth": 155,
+        "naturalHeight": 44,
+        "broken": false
+      },
+      {
+        "src": "http://localhost:3000/assets/Pjlzorsbp4GK4U9nqYaPWgkPs.svg",
+        "alt": "Partner Logo",
+        "naturalWidth": 122,
+        "naturalHeight": 33,
+        "broken": false
+      },
+      {
+        "src": "http://localhost:3000/assets/nPT3My9mYZPzyjp42aeGQACk4p4.svg",
+        "alt": "Partner Logo",
+        "naturalWidth": 118,
+        "naturalHeight": 34,
+        "broken": false
+      },
+      {
+        "src": "http://localhost:3000/assets/XFWQcHTyPCmpljR7ttDhwueN9k.svg",
+        "alt": "Partner Logo",
+        "naturalWidth": 94,
+        "naturalHeight": 32,
+        "broken": false
+      },
+      {
+        "src": "http://localhost:3000/assets/FeK7mQ25Aj92hjXNE7801ccv4.svg",
+        "alt": "Partner Logo",
+        "naturalWidth": 134,
+        "naturalHeight": 24,
+        "broken": false
+      },
+      {
+        "src": "http://localhost:3000/assets/S7Wn9R0XUGbZP76whfsn435N8o.svg",
+        "alt": "Partner Logo",
+        "naturalWidth": 118,
+        "naturalHeight": 24,
+        "broken": false
+      },
+      {
+        "src": "http://localhost:3000/assets/9kIk1y3XOCY94YnLwCDU3SSHL0I.svg",
+        "alt": "Partner Logo",
+        "naturalWidth": 155,
+        "naturalHeight": 44,
+        "broken": false
+      },
+      {
+        "src": "http://localhost:3000/assets/Pjlzorsbp4GK4U9nqYaPWgkPs.svg",
+        "alt": "Partner Logo",
+        "naturalWidth": 122,
+        "naturalHeight": 33,
+        "broken": false
+      },
+      {
+        "src": "http://localhost:3000/assets/nPT3My9mYZPzyjp42aeGQACk4p4.svg",
+        "alt": "Partner Logo",
+        "naturalWidth": 118,
+        "naturalHeight": 34,
+        "broken": false
+      },
+      {
+        "src": "http://localhost:3000/assets/XFWQcHTyPCmpljR7ttDhwueN9k.svg",
+        "alt": "Partner Logo",
+        "naturalWidth": 94,
+        "naturalHeight": 32,
+        "broken": false
+      },
+      {
+        "src": "http://localhost:3000/assets/FeK7mQ25Aj92hjXNE7801ccv4.svg",
+        "alt": "Partner Logo",
+        "naturalWidth": 134,
+        "naturalHeight": 24,
+        "broken": false
+      },
+      {
+        "src": "http://localhost:3000/assets/S7Wn9R0XUGbZP76whfsn435N8o.svg",
+        "alt": "Partner Logo",
+        "naturalWidth": 118,
+        "naturalHeight": 24,
+        "broken": false
+      },
+      {
+        "src": "http://localhost:3000/assets/9kIk1y3XOCY94YnLwCDU3SSHL0I.svg",
+        "alt": "Partner Logo",
+        "naturalWidth": 155,
+        "naturalHeight": 44,
+        "broken": false
+      },
+      {
+        "src": "http://localhost:3000/assets/Pjlzorsbp4GK4U9nqYaPWgkPs.svg",
+        "alt": "Partner Logo",
+        "naturalWidth": 122,
+        "naturalHeight": 33,
+        "broken": false
+      }
+    ],
+    "h1": {
+      "rect": {
+        "x": 480,
+        "y": 354,
+        "w": 480,
+        "h": 192
+      },
+      "fontFamily": "\"Otterco Display Medium\", sans-serif",
+      "fontSize": "56px",
+      "fontWeight": "500",
+      "lineHeight": "64px",
+      "color": "rgb(36, 36, 36)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "borderRadius": "0px"
+    },
+    "heroSection": {
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 1440,
+        "h": 762
+      },
+      "fontFamily": "\"Otterco Regular\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "color": "rgb(36, 36, 36)",
+      "backgroundColor": "rgb(246, 245, 244)",
+      "borderRadius": "0px 0px 120px 120px"
+    },
+    "latestWorkBtn": {
+      "rect": {
+        "x": 630,
+        "y": 586,
+        "w": 180,
+        "h": 60
+      },
+      "fontFamily": "\"Otterco Regular\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "color": "rgb(36, 36, 36)",
+      "backgroundColor": "rgb(36, 36, 36)",
+      "borderRadius": "60px"
+    },
+    "servicesTitle": {
+      "rect": {
+        "x": 413,
+        "y": 1103,
+        "w": 615,
+        "h": 108
+      },
+      "fontFamily": "\"Otterco Display Medium\", sans-serif",
+      "fontSize": "36px",
+      "fontWeight": "500",
+      "lineHeight": "54px",
+      "color": "rgb(36, 36, 36)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "borderRadius": "0px"
+    },
+    "contactTitle": {
+      "rect": {
+        "x": 387,
+        "y": 1853,
+        "w": 667,
+        "h": 128
+      },
+      "fontFamily": "\"Otterco Display SemiBold\", sans-serif",
+      "fontSize": "56px",
+      "fontWeight": "600",
+      "lineHeight": "64px",
+      "color": "rgb(36, 36, 36)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "borderRadius": "0px"
+    }
+  },
+  "mobile": {
+    "viewport": {
+      "width": 375,
+      "height": 812,
+      "scrollWidth": 375,
+      "scrollHeight": 2328
+    },
+    "hasHorizontalOverflow": false
+  }
+}

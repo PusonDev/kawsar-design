@@ -1,0 +1,74 @@
+{
+  "targetUrl": "https://kawsar.design/",
+  "analyzedAt": "2026-11-24T06:05:00.000Z",
+  "noiseMechanism": {
+    "type": "tiled-png-texture",
+    "isAnimated": false,
+    "hasSvgFeTurbulence": false,
+    "hasCanvas": false,
+    "sourceUrl": "https://framerusercontent.com/images/rR6HYXBrMmX4cRpXfXUOvpvpB0.png",
+    "localAssetPath": "public/assets/noise-tile.png",
+    "fileSize": 22927,
+    "dimensions": {
+      "naturalWidth": 256,
+      "naturalHeight": 256
+    }
+  },
+  "primaryNoiseLayer": {
+    "scope": "canvas-wide (covers entire page container, positioned above base sheets and below content)",
+    "containerSelector": ".framer-ekivo5-container",
+    "containerStyles": {
+      "position": "absolute",
+      "inset": "0px -663px 0px -662px",
+      "width": "2765px",
+      "height": "2304px",
+      "opacity": 0.08,
+      "pointerEvents": "none",
+      "zIndex": "auto",
+      "overflow": "hidden"
+    },
+    "tileInnerStyles": {
+      "position": "absolute",
+      "inset": "-200%",
+      "width": "400%",
+      "height": "400%",
+      "backgroundImage": "url('/assets/noise-tile.png')",
+      "backgroundRepeat": "repeat",
+      "backgroundSize": "auto",
+      "backgroundPosition": "0% 0%",
+      "opacity": 0.4,
+      "effectiveOpacity": 0.032,
+      "mixBlendMode": "normal",
+      "filter": "none",
+      "transform": "none",
+      "pointerEvents": "none",
+      "userSelect": "none"
+    }
+  },
+  "avatarAccentNoiseLayer": {
+    "scope": "avatar-circular-accent",
+    "containerSelector": ".framer-1dh92xw-container",
+    "containerStyles": {
+      "borderRadius": "500px",
+      "overflow": "hidden"
+    },
+    "tileInnerStyles": {
+      "position": "absolute",
+      "inset": "-200%",
+      "width": "400%",
+      "height": "400%",
+      "backgroundImage": "url('/assets/noise-tile.png')",
+      "backgroundRepeat": "repeat",
+      "backgroundSize": "auto",
+      "opacity": 0.3,
+      "mixBlendMode": "normal"
+    }
+  },
+  "stackingOrder": {
+    "layer0_middleSheet": "z-index: 1, y: 280-1022, bg: #FFFFFF",
+    "layer1_heroSheet": "z-index: 2, y: 0-742, bg: #F6F5F4",
+    "layer2_contactSheet": "z-index: 3, y: 1638-2304, bg: #FFFFFF",
+    "layer3_globalNoise": "z-index: 4, y: 0-2304, opacity: 0.08 (tile 0.4)",
+    "layer4_content": "z-index: 10, typography, action buttons, interactive pills, links (100% sharp, 0% washed out)"
+  }
+}

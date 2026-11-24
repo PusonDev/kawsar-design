@@ -1,0 +1,47 @@
+[
+  {
+    "tag": "DIV",
+    "className": "framer-6s92xu",
+    "rect": {
+      "x": 0,
+      "y": 240,
+      "w": 375,
+      "h": 660
+    },
+    "position": "absolute",
+    "top": "240px",
+    "left": "0px",
+    "bg": "rgb(255, 255, 255)",
+    "borderRadius": "80px"
+  },
+  {
+    "tag": "DIV",
+    "className": "framer-1158rf0",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 375,
+      "h": 660
+    },
+    "position": "absolute",
+    "top": "0px",
+    "left": "0px",
+    "bg": "rgb(246, 245, 244)",
+    "borderRadius": "0px 0px 80px 80px"
+  },
+  {
+    "tag": "DIV",
+    "className": "framer-xohbsi",
+    "rect": {
+      "x": 0,
+      "y": 1682,
+      "w": 375,
+      "h": 591
+    },
+    "position": "absolute",
+    "top": "1682px",
+    "left": "0px",
+    "bg": "rgb(255, 255, 255)",
+    "borderRadius": "80px 80px 0px 0px"
+  }
+]
