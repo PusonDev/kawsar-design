@@ -14,26 +14,6 @@ import {
   DribbbleLatestWorkSvg,
 } from '../components/icons';
 
-// Reusable 1:1 Live Tactile Noise / Grain Overlay with Stepped Jitter
-function NoiseOverlay({ opacity = 0.032 }: { opacity?: number }) {
-  return (
-    <div
-      className="absolute inset-0 pointer-events-none select-none z-[1] overflow-hidden"
-      style={{ opacity }}
-      aria-hidden="true"
-    >
-      <div
-        className="absolute -inset-[200%] w-[400%] h-[400%] pointer-events-none animate-live-noise"
-        style={{
-          backgroundImage: 'url(/assets/noise-live.png)',
-          backgroundRepeat: 'repeat',
-          backgroundSize: '256px 256px',
-        }}
-      />
-    </div>
-  );
-}
-
 export default function HomePage() {
   const logos = [
     { src: '/assets/nPT3My9mYZPzyjp42aeGQACk4p4.svg', width: 118, height: 34, alt: 'Partner Logo' },
@@ -47,14 +27,31 @@ export default function HomePage() {
   return (
     <main className="w-full min-h-screen bg-[#F6F5F4] text-[#242424] relative overflow-x-hidden selection:bg-zinc-200">
       {/* =========================================================================
-          HERO & HEADER TOP SECTION (Curved Bottom Sheet)
-          y: 0 -> 742px (Height: 742px)
+          GLOBAL 1:1 LIVE NOISE LAYER (Exact Framer Tile, Fixed Inset, 11.6 FPS Cadence)
           ========================================================================= */}
-      <section className="relative w-full bg-[#F6F5F4] rounded-b-[80px] md:rounded-b-[120px] pt-[40px] pb-[116px] z-10 overflow-hidden">
-        <NoiseOverlay opacity={0.028} />
-        {/* ----------------- HEADER / NAVBAR (y=40, h=56, max-w=1300) ----------------- */}
+      <div
+        className="fixed inset-0 pointer-events-none select-none z-[9999] overflow-hidden"
+        aria-hidden="true"
+      >
+        <div
+          className="absolute -inset-[200%] w-[400%] h-[400%] pointer-events-none animate-live-noise"
+          style={{
+            backgroundImage: 'url(/assets/live-noise.png)',
+            backgroundRepeat: 'repeat',
+            backgroundSize: '256px 256px',
+            opacity: 0.035,
+          }}
+        />
+      </div>
+
+      {/* =========================================================================
+          HERO & HEADER TOP SECTION (Curved Bottom Sheet)
+          Surface: #F6F5F4 (Exact RGB 246, 245, 244)
+          ========================================================================= */}
+      <section className="relative w-full bg-[#F6F5F4] rounded-b-[80px] md:rounded-b-[120px] pt-[24px] pb-[60px] md:pt-[40px] md:pb-[96px] z-10 overflow-hidden">
+        {/* ----------------- HEADER / NAVBAR (max-w=1300) ----------------- */}
         <header className="relative w-full max-w-[1300px] mx-auto px-4 md:px-0 flex items-center justify-between z-20">
-          {/* Desktop Left: Email Pill + CV Pill */}
+          {/* Desktop Left (>= 810px): Email Pill + CV Pill */}
           <div className="hidden md:flex items-center gap-[10px]">
             {/* Email + Copy Pill */}
             <div className="h-[56px] w-[279px] bg-[#F1F0EF] rounded-[1000px] flex items-center justify-between pl-[16px] pr-[4px] py-[4px]">
@@ -95,11 +92,11 @@ export default function HomePage() {
             </a>
           </div>
 
-          {/* Mobile Header Left */}
+          {/* Tablet & Mobile Header Left (<= 809px): Compact Email & CV Buttons */}
           <div className="flex md:hidden items-center gap-[8px]">
             <a
               href="mailto:kawsarvy.design@gmail.com"
-              className="h-[48px] w-[88px] rounded-full bg-[#242424] text-white flex items-center justify-center transition active:scale-[0.98]"
+              className="h-[48px] w-[88px] rounded-[24px] bg-[#242424] text-white flex items-center justify-center transition active:scale-[0.98]"
               style={{
                 fontFamily: '"Otterco Display Medium", sans-serif',
                 fontSize: '12px',
@@ -112,7 +109,7 @@ export default function HomePage() {
               href="https://drive.google.com/file/d/1CSIY8rbsj0Izwj-OeM2R93eJTddzCdAM/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
-              className="h-[48px] w-[88px] rounded-full bg-[#FFFFFE] border border-[#ECEBEA] text-[#242424] flex items-center justify-center transition active:scale-[0.98]"
+              className="h-[48px] w-[88px] rounded-[24px] bg-[#FFFFFE] border border-[#ECEBEA] text-[#242424] flex items-center justify-center transition active:scale-[0.98]"
               style={{
                 fontFamily: '"Otterco Display Medium", sans-serif',
                 fontSize: '12px',
@@ -123,7 +120,7 @@ export default function HomePage() {
             </a>
           </div>
 
-          {/* Desktop Right: Social Links */}
+          {/* Desktop Right (>= 810px): Social Links */}
           <div className="hidden md:flex items-center text-[14px] leading-[16.8px] text-[#373737] gap-[10px]">
             <a
               href="https://www.linkedin.com/in/kawsarvy/"
@@ -160,7 +157,7 @@ export default function HomePage() {
             </a>
           </div>
 
-          {/* Mobile Right: Circular Social Buttons */}
+          {/* Tablet & Mobile Header Right (<= 809px): 3 Circular Social Buttons */}
           <div className="flex md:hidden items-center gap-[4px]">
             <a
               href="https://www.linkedin.com/in/kawsarvy/"
@@ -193,8 +190,8 @@ export default function HomePage() {
         </header>
 
         {/* ----------------- HERO CONTENT ----------------- */}
-        <div className="relative max-w-[1300px] mx-auto px-4 flex flex-col items-center mt-[75px] md:mt-[96px] z-20">
-          {/* Avatar + Floating Badge Container (Avatar at y=192) */}
+        <div className="relative max-w-[1300px] mx-auto px-4 flex flex-col items-center mt-[48px] md:mt-[80px] z-20">
+          {/* Avatar + Floating Badge Container */}
           <div className="relative flex items-center justify-center">
             {/* 128x128 Avatar Circle */}
             <div className="relative w-[128px] h-[128px] rounded-full overflow-hidden flex items-center justify-center border border-[#ECEBEA] shadow-sm">
@@ -208,9 +205,9 @@ export default function HomePage() {
               />
             </div>
 
-            {/* Floating "Kawsar Ahmed  👋🏼 " Badge */}
+            {/* Floating "Kawsar Ahmed  👋🏼 " Badge (At exact crown dx: 99px, dy: 10px) */}
             <div
-              className="absolute left-[70px] md:left-[84px] top-[4px] md:top-[9px] bg-[#FFFFFE] rounded-[60px] px-[16px] py-[8px] shadow-[0_10px_10px_0_rgba(84,84,84,0.1)] flex items-center justify-center whitespace-nowrap z-20"
+              className="absolute left-[99px] top-[10px] w-[127px] h-[68px] bg-[#FFFFFE] rounded-[60px] shadow-[0_10px_10px_0_rgba(84,84,84,0.1)] flex items-center justify-center whitespace-nowrap z-20 pointer-events-none"
               style={{
                 transform: 'rotate(-10deg)',
               }}
@@ -228,9 +225,9 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Hero H1 (Starts at y=330) */}
+          {/* Hero H1 */}
           <h1
-            className="text-gradient-hero text-center mt-[10px] md:mt-[10px] tracking-normal text-[36px] leading-[44px] md:text-[56px] md:leading-[64px]"
+            className="text-gradient-hero text-center mt-[16px] md:mt-[20px] tracking-normal text-[36px] leading-[44px] md:text-[56px] md:leading-[64px]"
             style={{
               fontFamily: '"Otterco Display Medium", sans-serif',
               fontWeight: 500,
@@ -241,7 +238,7 @@ export default function HomePage() {
             <span className="block">experience.</span>
           </h1>
 
-          {/* Latest Work Button (Starts at y=566, h=60) */}
+          {/* Latest Work Button */}
           <a
             href="https://dribbble.com/Kawsarvy"
             target="_blank"
@@ -265,18 +262,13 @@ export default function HomePage() {
 
       {/* =========================================================================
           MIDDLE WHITE SHEET (Houses Client Logos Marquee)
-          Visible from y=742 to 1022 (h=280px, Ticker at y=842)
+          Surface: Pure White #FFFFFF
           ========================================================================= */}
-      <section className="relative w-full bg-white rounded-b-[80px] md:rounded-b-[120px] -mt-[60px] md:-mt-[80px] pt-[140px] md:pt-[184px] pb-[100px] md:pb-[116px] z-[5] overflow-hidden">
-        <NoiseOverlay opacity={0.028} />
-        {/* Logo Ticker Strip (h=40, y=842) */}
-        <div className="w-full h-[40px] relative overflow-hidden flex items-center z-20">
-          {/* Subtle horizontal gradient edge masks */}
-          <div className="absolute left-0 top-0 bottom-0 w-[60px] md:w-[150px] bg-gradient-to-r from-white to-transparent z-10 pointer-events-none" />
-          <div className="absolute right-0 top-0 bottom-0 w-[60px] md:w-[150px] bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />
-
+      <section className="relative w-full bg-white rounded-b-[80px] md:rounded-b-[120px] -mt-[40px] md:-mt-[60px] pt-[80px] md:pt-[110px] pb-[60px] md:pb-[80px] z-[5] overflow-hidden">
+        {/* Logo Ticker Strip with Soft Edge Fade Mask */}
+        <div className="w-full h-[40px] relative overflow-hidden flex items-center z-20 marquee-edge-mask">
           {/* Smooth Continuous Marquee Track */}
-          <div className="animate-marquee-smooth flex items-center gap-[80px]">
+          <div className="animate-marquee-smooth flex items-center gap-[60px] md:gap-[80px]">
             {[...logos, ...logos, ...logos, ...logos].map((logo, idx) => (
               <div key={idx} className="w-[160px] h-[40px] flex-shrink-0 relative">
                 <div className="absolute inset-0">
@@ -303,12 +295,10 @@ export default function HomePage() {
 
       {/* =========================================================================
           SERVICES SECTION (Background Canvas #F6F5F4)
-          Visible from y=1022 to 1638 (Title at y=1122, Pill at y=1271, Grid at y=1365)
           ========================================================================= */}
-      <section className="relative w-full bg-[#F6F5F4] pt-[81px] md:pt-[124px] pb-[81px] md:pb-[81px] z-[1] overflow-hidden">
-        <NoiseOverlay opacity={0.028} />
+      <section className="relative w-full bg-[#F6F5F4] pt-[64px] md:pt-[100px] pb-[72px] md:pb-[100px] z-[1] overflow-hidden">
         <div className="relative max-w-[1300px] mx-auto px-4 md:px-0 z-20">
-          {/* Section Headline (Starts at y=1122) */}
+          {/* Section Headline */}
           <h2
             className="text-gradient-services text-center max-w-[360px] md:max-w-[615px] mx-auto text-[28px] leading-[42px] md:text-[36px] md:leading-[54px] font-[500]"
             style={{
@@ -318,14 +308,14 @@ export default function HomePage() {
             Collaborate with brands and agencies to create impactful results.
           </h2>
 
-          {/* Divider Line with Tilted "Services" Pill (Centered at y=1271) */}
-          <div className="relative w-full max-w-[972px] mx-auto mt-[48px] md:mt-[85px] mb-[48px] md:mb-[68px] flex items-center justify-center">
+          {/* Divider Line with Tilted "Services" Pill */}
+          <div className="relative w-full max-w-[972px] mx-auto mt-[40px] md:mt-[72px] mb-[40px] md:mb-[68px] flex items-center justify-center">
             {/* Hairline Divider */}
             <div className="w-full h-[1px] bg-[#ECEBEA]" />
 
             {/* Tilted Floating Pill */}
             <div
-              className="absolute w-[131px] h-[69px] bg-[#FFFFFE] rounded-[60px] shadow-[0_20px_10px_0_rgba(236,235,234,0.4)] flex items-center justify-center"
+              className="absolute w-[131px] h-[69px] bg-[#FFFFFE] rounded-[60px] shadow-[0_20px_10px_0_rgba(236,235,234,0.4)] flex items-center justify-center pointer-events-none"
               style={{
                 transform: 'rotate(-10deg)',
               }}
@@ -343,10 +333,10 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* 4 Services Grid (y=1365) */}
-          <div className="max-w-[972px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-x-[16px] md:gap-x-[80px] gap-y-[40px] md:gap-y-0">
+          {/* 4 Services Grid: 1 col on mobile, 2 col on tablet/split-screen, 4 col on desktop */}
+          <div className="max-w-[972px] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-[48px] md:gap-x-[80px] gap-y-[40px] md:gap-y-0">
             {/* Service 1: UX & UI */}
-            <div className="flex flex-col items-start w-full max-w-[183px]">
+            <div className="flex flex-col items-start w-full">
               <div className="w-[44px] h-[44px] flex items-center justify-center">
                 <ServiceUxUiSvg width={44} height={44} />
               </div>
@@ -376,7 +366,7 @@ export default function HomePage() {
             </div>
 
             {/* Service 2: Web & Mobile App */}
-            <div className="flex flex-col items-start w-full max-w-[183px]">
+            <div className="flex flex-col items-start w-full">
               <div className="w-[44px] h-[44px] flex items-center justify-center">
                 <ServiceWebMobileSvg width={44} height={44} />
               </div>
@@ -406,7 +396,7 @@ export default function HomePage() {
             </div>
 
             {/* Service 3: Design & Creative */}
-            <div className="flex flex-col items-start w-full max-w-[183px]">
+            <div className="flex flex-col items-start w-full">
               <div className="w-[44px] h-[44px] flex items-center justify-center">
                 <ServiceDesignCreativeSvg width={44} height={44} />
               </div>
@@ -436,7 +426,7 @@ export default function HomePage() {
             </div>
 
             {/* Service 4: Development */}
-            <div className="flex flex-col items-start w-full max-w-[183px]">
+            <div className="flex flex-col items-start w-full">
               <div className="w-[42px] h-[44px] flex items-center justify-center">
                 <ServiceDevelopmentSvg width={42} height={44} />
               </div>
@@ -469,18 +459,17 @@ export default function HomePage() {
       </section>
 
       {/* =========================================================================
-          CONTACT & FOOTER (Curved White Top Sheet)
-          Visible from y=1638 to 2304 (h=666px, Icon at y=1726, Title at y=1850, Buttons at y=2022)
+          CONTACT & FOOTER (Curved Sheet)
+          Surface: #FAFAFA
           ========================================================================= */}
-      <section className="relative w-full bg-white rounded-t-[80px] md:rounded-t-[120px] pt-[88px] md:pt-[81px] pb-[74px] z-10 overflow-hidden">
-        <NoiseOverlay opacity={0.028} />
+      <section className="relative w-full bg-[#FAFAFA] rounded-t-[80px] md:rounded-t-[120px] pt-[72px] md:pt-[81px] pb-[60px] md:pb-[74px] z-10 overflow-hidden">
         <div className="relative max-w-[1300px] mx-auto px-4 md:px-0 flex flex-col items-center z-20">
-          {/* Top Circular Ring Frame (y=1726) */}
+          {/* Top Circular Ring Frame */}
           <div className="relative w-[128px] h-[128px] rounded-full overflow-hidden flex items-center justify-center mb-[28px] md:mb-[36px]">
             <AvatarFrameSvg className="w-full h-full pointer-events-none" />
           </div>
 
-          {/* Contact Heading (y=1850) */}
+          {/* Contact Heading */}
           <h2
             className="text-gradient-contact text-center max-w-[352px] md:max-w-[667px] text-[36px] leading-[44px] md:text-[56px] md:leading-[64px] font-[600]"
             style={{
@@ -490,9 +479,9 @@ export default function HomePage() {
             Tell me about your next project
           </h2>
 
-          {/* Action Buttons: Email Me & whatsApp (y=2022) */}
+          {/* Action Buttons: Email Me & whatsApp */}
           <div className="mt-[36px] md:mt-[44px] flex items-center justify-center gap-[10px]">
-            {/* Email Me Button (x=587) */}
+            {/* Email Me Button */}
             <div className="w-[128px] h-[60px] bg-[#F1F0EF] border border-[#ECEBEA] rounded-[74px] p-[4px] flex items-center justify-center">
               <a
                 href="mailto:kawsarvy.design@gmail.com"
@@ -512,7 +501,7 @@ export default function HomePage() {
               </a>
             </div>
 
-            {/* whatsApp Button (x=725) */}
+            {/* whatsApp Button (Strict lowercase w) */}
             <div className="w-[128px] h-[60px] bg-[#F1F0EF] border border-[#ECEBEA] rounded-[74px] p-[4px] flex items-center justify-center">
               <a
                 href="https://wa.me/1303536185"
@@ -534,15 +523,15 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* ----------------- FOOTER (y=2181, copyright at y=2225) ----------------- */}
-          <footer className="w-full max-w-[1300px] mt-[96px] md:mt-[115px]">
+          {/* ----------------- FOOTER ----------------- */}
+          <footer className="w-full max-w-[1300px] mt-[80px] md:mt-[115px]">
             {/* Hairline Divider Line */}
             <div className="w-full h-[1px] bg-[#ECEBEA] mb-[24px] md:mb-[28px]" />
 
-            <div className="w-full flex flex-col md:flex-row items-center justify-between gap-4">
-              {/* Copyright (x=72 on desktop) */}
+            {/* Desktop Footer (>= 810px): Horizontal split */}
+            <div className="hidden md:flex w-full items-center justify-between">
               <p
-                className="pl-0 md:pl-[2px]"
+                className="pl-[2px]"
                 style={{
                   fontFamily: '"Otterco Regular", sans-serif',
                   fontSize: '14px',
@@ -553,8 +542,7 @@ export default function HomePage() {
                 © 2026 All rights reserved.
               </p>
 
-              {/* Desktop Footer Socials */}
-              <div className="hidden md:flex items-center text-[14px] leading-[16.8px] text-[#373737] gap-[10px]">
+              <div className="flex items-center text-[14px] leading-[16.8px] text-[#373737] gap-[10px]">
                 <a
                   href="https://www.linkedin.com/in/kawsarvy/"
                   target="_blank"
@@ -589,9 +577,22 @@ export default function HomePage() {
                   instagram
                 </a>
               </div>
+            </div>
 
-              {/* Mobile Footer Socials */}
-              <div className="flex md:hidden items-center gap-[4px]">
+            {/* Tablet & Mobile Footer (<= 809px): Centered Stacked Layout */}
+            <div className="flex md:hidden flex-col items-center gap-[30px] w-full text-center">
+              <p
+                style={{
+                  fontFamily: '"Otterco Regular", sans-serif',
+                  fontSize: '14px',
+                  lineHeight: '16.8px',
+                  color: 'rgb(55, 55, 55)',
+                }}
+              >
+                © 2026 All rights reserved.
+              </p>
+
+              <div className="flex items-center gap-[4px]">
                 <a
                   href="https://www.linkedin.com/in/kawsarvy/"
                   target="_blank"

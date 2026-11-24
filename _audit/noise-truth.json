@@ -1,0 +1,153 @@
+{
+  "container": {
+    "position": "absolute",
+    "inset": "0px -663px 0px -662px",
+    "top": "0px",
+    "left": "-662px",
+    "right": "-663px",
+    "bottom": "0px",
+    "width": "2765px",
+    "height": "2304px",
+    "opacity": "0.08",
+    "zIndex": "auto",
+    "pointerEvents": "auto"
+  },
+  "tile": {
+    "backgroundImage": "url(\"https://framerusercontent.com/images/rR6HYXBrMmX4cRpXfXUOvpvpB0.png\")",
+    "backgroundSize": "auto",
+    "backgroundRepeat": "repeat",
+    "opacity": "0.4",
+    "mixBlendMode": "normal",
+    "position": "absolute",
+    "inset": "-4608px -5530px",
+    "width": "11060px",
+    "height": "9216px",
+    "transform": "matrix(1, 0, 0, 1, -442.4, -921.6)",
+    "willChange": "transform"
+  },
+  "empirical20Frames": [
+    {
+      "step": 1,
+      "elapsedMs": 31,
+      "transform": "matrix(1, 0, 0, 1, -1548.4, 322.56)",
+      "changed": false
+    },
+    {
+      "step": 2,
+      "elapsedMs": 61,
+      "transform": "matrix(1, 0, 0, 1, -1548.4, 322.56)",
+      "changed": false
+    },
+    {
+      "step": 3,
+      "elapsedMs": 91,
+      "transform": "matrix(1, 0, 0, 1, -1659, 460.8)",
+      "changed": true
+    },
+    {
+      "step": 4,
+      "elapsedMs": 121,
+      "transform": "matrix(1, 0, 0, 1, -1659, 460.8)",
+      "changed": false
+    },
+    {
+      "step": 5,
+      "elapsedMs": 150,
+      "transform": "matrix(1, 0, 0, 1, -1659, 460.8)",
+      "changed": false
+    },
+    {
+      "step": 6,
+      "elapsedMs": 181,
+      "transform": "matrix(1, 0, 0, 1, -1415.68, 184.32)",
+      "changed": true
+    },
+    {
+      "step": 7,
+      "elapsedMs": 211,
+      "transform": "matrix(1, 0, 0, 1, -1415.68, 184.32)",
+      "changed": false
+    },
+    {
+      "step": 8,
+      "elapsedMs": 240,
+      "transform": "matrix(1, 0, 0, 1, -1415.68, 184.32)",
+      "changed": false
+    },
+    {
+      "step": 9,
+      "elapsedMs": 271,
+      "transform": "matrix(1, 0, 0, 1, -1172.36, -92.16)",
+      "changed": true
+    },
+    {
+      "step": 10,
+      "elapsedMs": 301,
+      "transform": "matrix(1, 0, 0, 1, -1172.36, -92.16)",
+      "changed": false
+    },
+    {
+      "step": 11,
+      "elapsedMs": 331,
+      "transform": "matrix(1, 0, 0, 1, -1172.36, -92.16)",
+      "changed": false
+    },
+    {
+      "step": 12,
+      "elapsedMs": 361,
+      "transform": "matrix(1, 0, 0, 1, -929.04, -368.64)",
+      "changed": true
+    },
+    {
+      "step": 13,
+      "elapsedMs": 391,
+      "transform": "matrix(1, 0, 0, 1, -929.04, -368.64)",
+      "changed": false
+    },
+    {
+      "step": 14,
+      "elapsedMs": 421,
+      "transform": "matrix(1, 0, 0, 1, -929.04, -368.64)",
+      "changed": false
+    },
+    {
+      "step": 15,
+      "elapsedMs": 452,
+      "transform": "matrix(1, 0, 0, 1, -685.72, -645.12)",
+      "changed": true
+    },
+    {
+      "step": 16,
+      "elapsedMs": 481,
+      "transform": "matrix(1, 0, 0, 1, -685.72, -645.12)",
+      "changed": false
+    },
+    {
+      "step": 17,
+      "elapsedMs": 511,
+      "transform": "matrix(1, 0, 0, 1, -685.72, -645.12)",
+      "changed": false
+    },
+    {
+      "step": 18,
+      "elapsedMs": 542,
+      "transform": "matrix(1, 0, 0, 1, -442.4, -921.6)",
+      "changed": true
+    },
+    {
+      "step": 19,
+      "elapsedMs": 571,
+      "transform": "matrix(1, 0, 0, 1, -442.4, -921.6)",
+      "changed": false
+    },
+    {
+      "step": 20,
+      "elapsedMs": 602,
+      "transform": "matrix(1, 0, 0, 1, -442.4, -921.6)",
+      "changed": false
+    }
+  ],
+  "changedCountIn20Frames": 6,
+  "measuredFPS": 9.97,
+  "avgIntervalMs": 100
+}

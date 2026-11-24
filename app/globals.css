@@ -101,6 +101,12 @@ html, body {
   animation-play-state: paused;
 }
 
+/* Edge Fade Mask for Marquee Ticker */
+.marquee-edge-mask {
+  mask-image: linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%);
+}
+
 /* Exact 1:1 Live Noise Stepped Jitter from Framer (90 discrete steps @ 11.25 FPS / 88.89ms cadence) */
 @keyframes live-noise-jitter {
   0.0000% { transform: translate3d(-3.5%, -7%, 0); }
