@@ -301,10 +301,10 @@ export default function HomePage() {
           SERVICES SECTION (Background Canvas #F6F5F4)
           ========================================================================= */}
       <section className="relative w-full bg-[#F6F5F4] pt-[72px] md:pt-[100px] pb-[80px] md:pb-[121px] z-[1] overflow-hidden">
-        <div className="relative max-w-[1300px] mx-auto px-4 md:px-0 z-20">
+        <div className="relative max-w-[1300px] mx-auto px-0 z-20">
           {/* Section Headline (Solid rgb(0,0,0) matching kawsar.design) */}
           <h2
-            className="text-heading-solid text-center max-w-[360px] md:max-w-[615px] mx-auto text-[36px] leading-[42px] md:leading-[54px] font-[500]"
+            className="text-heading-solid text-center w-[360px] md:w-[615px] shrink-0 text-[28px] leading-[42px] md:text-[36px] md:leading-[54px] font-[500] relative left-1/2 -translate-x-1/2"
             style={{
               fontFamily: '"Otterco Display Medium", sans-serif',
             }}
@@ -313,7 +313,7 @@ export default function HomePage() {
           </h2>
 
           {/* Divider Line with Tilted "Services" Pill */}
-          <div className="relative w-full max-w-[972px] mx-auto mt-[44px] md:mt-[69px] mb-[101px] md:mb-[65px] flex items-center justify-center">
+          <div className="relative w-[360px] md:w-full md:max-w-[972px] shrink-0 left-1/2 -translate-x-1/2 md:static md:translate-x-0 mx-auto mt-[44px] md:mt-[69px] mb-[101px] md:mb-[65px] flex items-center justify-center">
             {/* Hairline Divider */}
             <div className="w-full h-[1px] bg-[#ECEBEA]" />
 
@@ -338,7 +338,7 @@ export default function HomePage() {
           </div>
 
           {/* 4 Services Grid: 2 col on mobile/tablet, 4 col on desktop */}
-          <div className="w-full max-w-[360px] md:max-w-[972px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-x-[16px] md:gap-x-[80px] gap-y-[65px] md:gap-y-0 h-auto md:h-[152px]">
+          <div className="w-[360px] md:w-full md:max-w-[972px] shrink-0 relative left-1/2 -translate-x-1/2 md:static md:translate-x-0 mx-auto grid grid-cols-2 md:grid-cols-4 gap-x-[16px] md:gap-x-[80px] gap-y-[65px] md:gap-y-0 h-auto md:h-[152px]">
             {/* Service 1: UX & UI */}
             <div className="flex flex-col items-start w-full">
               <div className="w-[44px] h-[44px] flex items-center justify-center">
@@ -476,7 +476,7 @@ export default function HomePage() {
 
           {/* Contact Heading (Solid rgb(0,0,0) matching kawsar.design) */}
           <h2
-            className="text-heading-solid text-center max-w-[352px] md:max-w-[658px] text-[36px] leading-[44px] md:text-[56px] md:leading-[64px] font-[600]"
+            className="text-heading-solid text-center w-[352px] md:w-[658px] shrink-0 text-[36px] leading-[44px] md:text-[56px] md:leading-[64px] font-[600] relative left-1/2 -translate-x-1/2 md:static md:translate-x-0"
             style={{
               fontFamily: '"Otterco Display SemiBold", sans-serif',
             }}
