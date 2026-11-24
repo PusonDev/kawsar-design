@@ -32,7 +32,7 @@ export default function HomePage() {
           ========================================================================= */}
       <section
         data-framer-border="true"
-        className="relative w-full bg-[#F6F5F4] rounded-b-[80px] md:rounded-b-[120px] min-h-[660px] md:h-[742px] pt-[40px] pb-[83px] md:pb-[116px] z-10 overflow-hidden"
+        className="relative w-full bg-[#F6F5F4] rounded-b-[80px] md:rounded-b-[120px] h-[660px] md:h-[742px] pt-[40px] pb-[72px] md:pb-[116px] z-10"
       >
         {/* Section Scoped Background Noise Layer (1:1 with kawsar.design framer-ekivo5-container) */}
         <div
@@ -295,7 +295,7 @@ export default function HomePage() {
           ========================================================================= */}
       <section
         data-framer-border="true"
-        className="relative w-full bg-white rounded-t-none rounded-b-[80px] md:rounded-b-[120px] -mt-[80px] md:-mt-[120px] pt-[162px] md:pt-[220px] pb-[118px] md:pb-[140px] z-[5] overflow-hidden"
+        className="relative w-full bg-white rounded-t-[80px] rounded-b-[80px] md:rounded-b-[120px] -mt-[80px] md:-mt-[120px] pt-[162px] md:pt-[220px] pb-[118px] md:pb-[140px] z-[5]"
       >
         {/* Section Scoped Background Noise Layer (z-0 strictly behind foreground UI) */}
         <div
@@ -347,7 +347,7 @@ export default function HomePage() {
       {/* =========================================================================
           SERVICES SECTION (Sits seamlessly on #F6F5F4 Canvas)
           ========================================================================= */}
-      <section className="relative w-full pt-[52px] md:pt-[100px] pb-[80px] md:pb-[121px] z-[1]">
+      <section className="relative w-full pt-[63px] md:pt-[100px] pb-[70px] md:pb-[121px] z-[1]">
 
         <div className="relative max-w-[1300px] mx-auto px-0 z-20">
           {/* Section Headline (Authentic Framer text gradient matching kawsar.design) */}
@@ -361,15 +361,16 @@ export default function HomePage() {
           </h2>
 
           {/* Divider Line with Tilted "Services" Pill */}
-          <div className="w-[351px] md:w-[972px] mx-auto md:mx-0 md:relative md:left-1/2 md:-translate-x-1/2 mt-[51px] md:mt-[69px] mb-[101px] md:mb-[65px] flex items-center justify-center">
+          <div className="w-[351px] md:w-[972px] mx-auto md:mx-0 md:relative md:left-1/2 md:-translate-x-1/2 mt-[51px] md:mt-[69px] mb-[110px] md:mb-[65px] flex items-center justify-center">
             {/* Hairline Divider */}
             <div className="w-full h-[1px] bg-[#ECEBEA]" />
 
             {/* Tilted Floating Pill */}
             <div
-              className="absolute w-[125px] h-[48px] bg-[#FFFFFE] border border-[#ECEBEA] rounded-[60px] shadow-[0_20px_10px_0_rgba(236,235,234,0.4)] flex items-center justify-center pointer-events-none z-20"
+              className="absolute w-[125px] h-[48px] bg-[#FFFFFE] border border-[#ECEBEA] rounded-[60px] shadow-[0_20px_10px_0_rgba(236,235,234,0.4)] flex items-center justify-center pointer-events-none z-20 animate-badge-float select-none"
               style={{
-                transform: 'rotate(-10deg)',
+                transformOrigin: '62px 24px',
+                transform: 'translateY(0px) rotate(-10deg)',
               }}
             >
               <span
@@ -385,10 +386,10 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* 4 Services Grid: 2 col on mobile, 4 col on tablet/desktop */}
-          <div className="w-[351px] md:w-[762px] lg:w-[972px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-x-[16px] md:gap-x-[10px] lg:gap-x-[80px] gap-y-[65px] md:gap-y-0 h-auto md:h-[152px]">
+          {/* 4 Services Grid: 2 col on mobile (w=360px), 4 col on tablet/desktop */}
+          <div className="w-[360px] md:w-[762px] lg:w-[972px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-x-[16px] md:gap-x-[10px] lg:gap-x-[80px] gap-y-[49px] md:gap-y-0 h-auto md:h-[152px]">
             {/* Service 1: UX & UI */}
-            <div className="flex flex-col items-start w-[167px] md:w-[183px]">
+            <div className="flex flex-col items-start w-[172px] md:w-[183px]">
               <div className="w-[44px] h-[44px] flex items-center justify-center">
                 <ServiceUxUiSvg width={44} height={44} />
               </div>
@@ -404,21 +405,22 @@ export default function HomePage() {
                 UX & UI
               </h3>
               <p
-                className="mt-[8px]"
+                className="mt-[16px]"
                 style={{
                   fontFamily: '"Otterco Light", sans-serif',
                   fontWeight: 300,
                   fontSize: '14px',
-                  lineHeight: '16.8px',
+                  lineHeight: '18.2px',
                   color: 'rgb(42, 42, 42)',
                 }}
               >
-                Designing interfaces that are intuitive, efficient, and enjoyable to use.
+                <span className="block">Designing interfaces that</span>
+                <span className="block">are intuitive, efficient, and enjoyable to use.</span>
               </p>
             </div>
 
             {/* Service 2: Web & Mobile App */}
-            <div className="flex flex-col items-start w-[167px] md:w-[183px]">
+            <div className="flex flex-col items-start w-[172px] md:w-[183px]">
               <div className="w-[44px] h-[44px] flex items-center justify-center">
                 <ServiceWebMobileSvg width={44} height={44} />
               </div>
@@ -434,21 +436,22 @@ export default function HomePage() {
                 Web & Mobile App
               </h3>
               <p
-                className="mt-[8px]"
+                className="mt-[16px]"
                 style={{
                   fontFamily: '"Otterco Light", sans-serif',
                   fontWeight: 300,
                   fontSize: '14px',
-                  lineHeight: '16.8px',
+                  lineHeight: '18.2px',
                   color: 'rgb(42, 42, 42)',
                 }}
               >
-                Transforming ideas into exceptional web and mobile app experiences.
+                <span className="block">Transforming ideas into exceptional web and</span>
+                <span className="block">mobile app experiences.</span>
               </p>
             </div>
 
             {/* Service 3: Design & Creative */}
-            <div className="flex flex-col items-start w-[167px] md:w-[183px]">
+            <div className="flex flex-col items-start w-[172px] md:w-[183px]">
               <div className="w-[44px] h-[44px] flex items-center justify-center">
                 <ServiceDesignCreativeSvg width={44} height={44} />
               </div>
@@ -464,21 +467,22 @@ export default function HomePage() {
                 Design & Creative
               </h3>
               <p
-                className="mt-[8px]"
+                className="mt-[16px]"
                 style={{
                   fontFamily: '"Otterco Light", sans-serif',
                   fontWeight: 300,
                   fontSize: '14px',
-                  lineHeight: '16.8px',
+                  lineHeight: '18.2px',
                   color: 'rgb(42, 42, 42)',
                 }}
               >
-                Crafting visually stunning designs that connect with your audience.
+                <span className="block">Crafting visually stunning designs that connect with</span>
+                <span className="block">your audience.</span>
               </p>
             </div>
 
             {/* Service 4: Development */}
-            <div className="flex flex-col items-start w-[167px] md:w-[183px]">
+            <div className="flex flex-col items-start w-[172px] md:w-[183px]">
               <div className="w-[42px] h-[44px] flex items-center justify-center">
                 <ServiceDevelopmentSvg width={42} height={44} />
               </div>
@@ -494,16 +498,18 @@ export default function HomePage() {
                 Development
               </h3>
               <p
-                className="mt-[8px]"
+                className="mt-[16px]"
                 style={{
                   fontFamily: '"Otterco Light", sans-serif',
                   fontWeight: 300,
                   fontSize: '14px',
-                  lineHeight: '16.8px',
+                  lineHeight: '18.2px',
                   color: 'rgb(42, 42, 42)',
                 }}
               >
-                Bringing your vision to life with the latest technology and design trends.
+                <span className="block">Bringing your vision to life</span>
+                <span className="block">with the latest technology</span>
+                <span className="block">and design trends.</span>
               </p>
             </div>
           </div>
@@ -517,7 +523,7 @@ export default function HomePage() {
           ========================================================================= */}
       <section
         data-framer-border="true"
-        className="relative w-full bg-white rounded-t-[80px] md:rounded-t-[120px] pt-[72px] md:pt-[88px] pb-[34px] md:pb-[62px] z-10 overflow-hidden"
+        className="relative w-full bg-white rounded-t-[80px] md:rounded-t-[120px] pt-[61px] md:pt-[88px] pb-[34px] md:pb-[62px] z-10"
       >
         {/* Section Scoped Background Noise Layer (z-0 strictly behind foreground UI) */}
         <div
@@ -540,7 +546,7 @@ export default function HomePage() {
 
         <div className="relative w-full max-w-[1302px] mx-auto px-0 flex flex-col items-center z-20">
           {/* Top Circular Ring Frame */}
-          <div className="relative w-[128px] h-[128px] rounded-full overflow-hidden flex items-center justify-center mb-[28px] md:mb-0">
+          <div className="relative w-[128px] h-[128px] rounded-full overflow-hidden flex items-center justify-center mb-[27px] md:mb-0">
             <AvatarFrameSvg className="w-full h-full pointer-events-none" />
           </div>
 
@@ -601,9 +607,9 @@ export default function HomePage() {
           </div>
 
           {/* ----------------- FOOTER (Single Semantic Node, Responsive Layout) ----------------- */}
-          <footer className="w-[351px] md:w-[729px] lg:w-[1302px] mx-auto mt-[91px] md:mt-[99px]">
+          <footer className="w-[351px] md:w-[729px] lg:w-[1302px] mx-auto mt-[87px] md:mt-[99px]">
             {/* Hairline Divider Line */}
-            <div className="w-full h-[1px] bg-[#ECEBEA] mb-[24px] md:mb-[43px]" />
+            <div className="w-full h-[1px] bg-[#ECEBEA] mb-[33px] md:mb-[43px]" />
 
             {/* Single Responsive Flex Container: Single Row on ALL viewports */}
             <div className="w-full flex flex-row items-center justify-between text-left">
