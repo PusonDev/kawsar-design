@@ -278,14 +278,23 @@ export default function HomePage() {
           {/* Smooth Continuous Marquee Track */}
           <div className="animate-marquee-smooth flex items-center gap-[80px]">
             {[...logos, ...logos, ...logos, ...logos].map((logo, idx) => (
-              <div key={idx} className="w-[160px] h-[40px] flex-shrink-0 flex items-center justify-center">
-                <Image
-                  src={logo.src}
-                  alt={logo.alt}
-                  width={logo.width}
-                  height={logo.height}
-                  className="h-auto max-h-[40px] object-contain"
-                />
+              <div key={idx} className="w-[160px] h-[40px] flex-shrink-0 relative">
+                <div className="absolute inset-0">
+                  <img
+                    decoding="auto"
+                    width={logo.width}
+                    height={logo.height}
+                    src={logo.src}
+                    alt={logo.alt}
+                    style={{
+                      display: 'block',
+                      width: '100%',
+                      height: '100%',
+                      objectPosition: 'center',
+                      objectFit: 'contain',
+                    }}
+                  />
+                </div>
               </div>
             ))}
           </div>
