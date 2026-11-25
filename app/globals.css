@@ -393,3 +393,22 @@ main {
   animation-play-state: running !important;
   will-change: transform;
 }
+
+/* Master Silicon-Valley Precision Laser Cursor */
+@media (hover: hover) and (pointer: fine) {
+  html.laser-cursor-active,
+  html.laser-cursor-active body,
+  html.laser-cursor-active a,
+  html.laser-cursor-active button,
+  html.laser-cursor-active [role="button"],
+  html.laser-cursor-active [data-interactive],
+  html.laser-cursor-active .cursor-pointer {
+    cursor: none !important;
+  }
+
+  html.laser-cursor-active input,
+  html.laser-cursor-active textarea,
+  html.laser-cursor-active [contenteditable="true"] {
+    cursor: text !important;
+  }
+}

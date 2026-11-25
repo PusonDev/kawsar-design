@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from 'next';
+import { LaserCursor } from '@/components/LaserCursor';
 import './globals.css';
 
 export const viewport: Viewport = {
@@ -61,6 +62,7 @@ export default function RootLayout({
         />
       </head>
       <body className="bg-white text-[#242424] antialiased selection:bg-zinc-200">
+        <LaserCursor theme="monochrome" />
         {children}
       </body>
     </html>
