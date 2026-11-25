@@ -8,7 +8,7 @@ This document serves as the supreme design authority for this codebase. Any AI a
 ## 🎨 1. SURFACE & CANVAS COLOR TOKENS
 - **Hero & Services Canvas:** `#F6F5F4` (`rgb(246, 245, 244)`)
 - **Partner Logo Marquee Strip:** `#FFFFFF` (`rgb(255, 255, 255)`)
-- **Contact & Footer Sheet:** `#FAFAFA` (`rgb(250, 250, 250)`)
+- **Contact & Footer Sheet:** `#FFFFFF` (`rgb(255, 255, 255)`)
 - **Primary Text:** `#242424` (`rgb(36, 36, 36)`)
 - **Muted / Secondary Text:** `#373737` (`rgb(55, 55, 55)`)
 - **Subtle Hairline Borders & Dividers:** `#ECEBEA` (`rgb(236, 235, 234)`)
@@ -28,7 +28,7 @@ This document serves as the supreme design authority for this codebase. Any AI a
 - **Natural Dimensions:** `256px × 256px`
 - **File Size:** `22,927 bytes`
 - **SHA-256 Hash:** `7867172cbddd0172eb2fcf5803679ab8fb337eddb8397d43c918788016181409`
-- **Stacking & Scope:** Global fixed viewport overlay (`position: fixed; inset: 0; pointer-events: none; z-index: 9999;`)
+- **Stacking & Scope:** Scoped background canvas and section noise layer (`pointer-events: none; z-index: 0;` — zero foreground bleed)
 - **Container Opacity:** `0.08`
 - **Tile Opacity:** `0.4`
 - **Effective Opacity:** `0.032`

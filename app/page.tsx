@@ -73,11 +73,14 @@ export default function HomePage() {
         </div>
 
         {/* ----------------- HEADER / NAVBAR (Exact responsive width matching kawsar.design) ----------------- */}
-        <header className="relative w-full max-w-[367px] md:max-w-none md:w-[729px] lg:w-[1296px] mx-auto px-[11px] md:px-0 pt-[4px] md:pt-0 flex items-center justify-between z-20">
+        <header className="relative w-[94%] md:w-[90%] lg:w-[1296px] h-[56px] mx-auto flex items-center justify-between z-20">
           {/* Desktop Left (>= 810px): Email Pill + CV Pill */}
           <div className="hidden md:flex items-center gap-[10px]">
             {/* Email + Copy Pill */}
-            <div className="h-[56px] w-[279px] bg-[#F1F0EF] border border-[#ECEBEA] rounded-[1000px] flex items-center justify-between pl-[16px] pr-[4px] py-[4px]">
+            <div
+              data-framer-border="true"
+              className="h-[56px] w-[279px] bg-[#F1F0EF] rounded-[1000px] flex items-center justify-between pl-[16px] pr-[4px] py-[4px]"
+            >
               <span
                 style={{
                   fontFamily: '"Otterco Regular", sans-serif',
@@ -97,7 +100,8 @@ export default function HomePage() {
               href="https://drive.google.com/file/d/1CSIY8rbsj0Izwj-OeM2R93eJTddzCdAM/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
-              className="h-[56px] w-[108px] bg-[#F1F0EF] border border-[#ECEBEA] rounded-[1000px] p-[4px] flex items-center justify-center group"
+              data-framer-border="true"
+              className="h-[56px] w-[108px] bg-[#F1F0EF] rounded-[1000px] p-[4px] flex items-center justify-center group"
             >
               <div className="h-[48px] w-[100px] bg-[#FFFFFE] rounded-[60px] flex items-center justify-center">
                 <span
@@ -120,7 +124,8 @@ export default function HomePage() {
             {/* Email Dual Capsule */}
             <a
               href="mailto:kawsarvy.design@gmail.com"
-              className="h-[48px] w-[88px] bg-[#F1F0EF] border border-[#ECEBEA] rounded-[24px] p-[4px] flex items-center justify-center group"
+              data-framer-border="true"
+              className="h-[48px] w-[88px] bg-[#F1F0EF] rounded-[24px] p-[4px] flex items-center justify-center group"
             >
               <div className="h-[40px] w-[80px] bg-[#242424] rounded-[60px] flex items-center justify-center">
                 <span
@@ -142,7 +147,8 @@ export default function HomePage() {
               href="https://drive.google.com/file/d/1CSIY8rbsj0Izwj-OeM2R93eJTddzCdAM/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
-              className="h-[48px] w-[88px] bg-[#F1F0EF] border border-[#ECEBEA] rounded-[24px] p-[4px] flex items-center justify-center group"
+              data-framer-border="true"
+              className="h-[48px] w-[88px] bg-[#F1F0EF] rounded-[24px] p-[4px] flex items-center justify-center group"
             >
               <div className="h-[40px] w-[80px] bg-[#FFFFFE] rounded-[60px] flex items-center justify-center">
                 <span
@@ -230,7 +236,7 @@ export default function HomePage() {
         </header>
 
         {/* ----------------- HERO CONTENT ----------------- */}
-        <div className="relative max-w-[1300px] mx-auto px-4 flex flex-col items-center mt-[116px] md:mt-[96px] z-20">
+        <div className="relative max-w-[1300px] mx-auto px-4 flex flex-col items-center mt-[109px] md:mt-[96px] z-20">
           {/* Avatar + Floating Badge Container */}
           <div className="relative w-[128px] h-[128px] flex items-center justify-center">
             {/* 128x128 Avatar Circle with Authentic Noise Overlay matching kawsar.design (framer-1dh92xw-container) */}
@@ -285,17 +291,21 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Hero H1 (1:1 with Framer .framer-2cgirf: w-[308px] md:w-[525px] shrink-0, exact 3 lines, zero unwanted line breaks) */}
+          {/* Hero H1 (1:1 with Framer .framer-2cgirf: w-[308px] md:w-[525px] shrink-0, single gradient text-fill span matching Framer) */}
           <h1
-            className="heading-hero-gradient text-center mt-[16px] md:mt-[10px] tracking-normal text-[36px] leading-[44px] md:text-[56px] md:leading-[64px] w-[308px] md:w-[525px] shrink-0 mx-auto"
+            className="text-center mt-[10px] tracking-normal text-[36px] leading-[44px] md:text-[56px] md:leading-[64px] w-[308px] md:w-[525px] shrink-0 mx-auto max-w-full"
             style={{
               fontFamily: '"Otterco Display Medium", sans-serif',
               fontWeight: 500,
             }}
           >
-            <span className="block whitespace-nowrap">Building digital</span>
-            <span className="block whitespace-nowrap">products, brands, and</span>
-            <span className="block whitespace-nowrap">experience.</span>
+            <span className="heading-hero-gradient inline-block">
+              <span className="whitespace-nowrap">Building digital</span>
+              <br />
+              <span className="whitespace-nowrap">products, brands, and</span>
+              <br />
+              <span className="whitespace-nowrap">experience.</span>
+            </span>
           </h1>
 
           {/* Latest Work Button (matching kawsar.design) */}
@@ -303,7 +313,7 @@ export default function HomePage() {
             href="https://dribbble.com/Kawsarvy"
             target="_blank"
             rel="noopener noreferrer"
-            className="group mt-[44px] w-[180px] h-[60px] bg-[#242424] rounded-[60px] flex items-center justify-center gap-[12px] no-underline z-20"
+            className="group mt-[42px] md:mt-[44px] w-[180px] h-[60px] bg-[#242424] rounded-[60px] flex items-center justify-center gap-[12px] no-underline z-20"
           >
             <DribbbleLatestWorkSvg width={16} height={16} />
             <span
@@ -380,30 +390,13 @@ export default function HomePage() {
       </section>
 
       {/* =========================================================================
-          SERVICES SECTION (Sits seamlessly on #F6F5F4 Canvas)
+          SERVICES SECTION (Sits transparently on #F6F5F4 Canvas + Global Canvas Noise)
           ========================================================================= */}
-      <section className="relative w-full pt-[63px] md:pt-[100px] pb-[70px] md:pb-[121px] z-[1] overflow-hidden">
-        {/* Section Scoped Background Noise Layer (z-0 strictly behind foreground UI) */}
-        <div
-          className="absolute inset-0 pointer-events-none select-none overflow-hidden max-w-full z-0"
-          style={{ opacity: 0.08, contain: 'paint' }}
-          aria-hidden="true"
-        >
-          <div
-            className="absolute -inset-[200%] w-[400%] h-[400%] pointer-events-none animate-live-noise"
-            style={{
-              backgroundImage: 'url(/assets/kawsar-exact-noise.png)',
-              backgroundRepeat: 'repeat',
-              backgroundSize: '256px 256px',
-              opacity: 0.4,
-            }}
-          />
-        </div>
-
+      <section className="relative w-full pt-[59px] md:pt-[100px] pb-[71px] md:pb-[121px] z-[1]">
         <div className="relative max-w-[1300px] mx-auto px-0 z-20">
           {/* Section Headline (Authentic Framer text gradient matching kawsar.design) */}
           <h2
-            className="heading-collaborate-gradient text-center w-[351px] md:w-[615px] shrink-0 text-[28px] leading-[42px] md:text-[36px] md:leading-[54px] font-[500] mx-auto"
+            className="heading-collaborate-gradient text-center w-[360px] md:w-[615px] shrink-0 text-[28px] leading-[42px] md:text-[36px] md:leading-[54px] font-[500] mx-auto"
             style={{
               fontFamily: '"Otterco Display Medium", sans-serif',
             }}
@@ -412,28 +405,30 @@ export default function HomePage() {
           </h2>
 
           {/* Divider Line with Tilted "Services" Pill */}
-          <div className="w-full max-w-[351px] md:max-w-none md:w-[972px] px-3 md:px-0 mx-auto md:mx-0 md:relative md:left-1/2 md:-translate-x-1/2 mt-[51px] md:mt-[69px] mb-[110px] md:mb-[65px] flex items-center justify-center">
+          <div className="relative w-[90%] md:w-[972px] mx-auto md:mx-0 md:left-1/2 md:-translate-x-1/2 mt-[50px] md:mt-[69px] mb-[114px] md:mb-[65px] flex items-center justify-center">
             {/* Hairline Divider */}
             <div className="w-full h-[1px] bg-[#ECEBEA]" />
 
             {/* Tilted "Services" Pill (Static -10deg rotation matching kawsar.design) */}
-            <div
-              className="absolute w-[125px] h-[48px] bg-[#FFFFFE] border border-[#ECEBEA] rounded-[60px] shadow-[0_20px_10px_0_rgba(236,235,234,0.4)] flex items-center justify-center pointer-events-none z-20 select-none"
-              style={{
-                transformOrigin: '62px 24px',
-                transform: 'rotate(-10deg)',
-              }}
-            >
-              <span
+            <div className="absolute pointer-events-none z-20 select-none translate-y-[4.5px] md:translate-y-[5.6px]">
+              <div
+                className="w-[125px] h-[48px] bg-[#FFFFFE] border border-[#ECEBEA] rounded-[60px] shadow-[0_20px_10px_0_rgba(236,235,234,0.4)] flex items-center justify-center"
                 style={{
-                  fontFamily: '"Otterco Display Medium", sans-serif',
-                  fontSize: '12px',
-                  lineHeight: '14.4px',
-                  color: 'rgb(36, 36, 36)',
+                  transformOrigin: '62px 24px',
+                  transform: 'rotate(-10deg)',
                 }}
               >
-                Services
-              </span>
+                <span
+                  style={{
+                    fontFamily: '"Otterco Display Medium", sans-serif',
+                    fontSize: '12px',
+                    lineHeight: '14.4px',
+                    color: 'rgb(36, 36, 36)',
+                  }}
+                >
+                  Services
+                </span>
+              </div>
             </div>
           </div>
 
@@ -456,17 +451,15 @@ export default function HomePage() {
                 UX & UI
               </h3>
               <p
-                className="mt-[16px]"
+                className="mt-[16px] text-[14px] leading-[18.2px] md:leading-[16.8px]"
                 style={{
                   fontFamily: '"Otterco Light", sans-serif',
                   fontWeight: 300,
-                  fontSize: '14px',
-                  lineHeight: '18.2px',
                   color: 'rgb(42, 42, 42)',
                 }}
               >
-                <span className="block">Designing interfaces that</span>
-                <span className="block">are intuitive, efficient, and enjoyable to use.</span>
+                Designing interfaces that
+                <br className="md:hidden" /> are intuitive, efficient, and enjoyable to use.
               </p>
             </div>
 
@@ -487,17 +480,15 @@ export default function HomePage() {
                 Web & Mobile App
               </h3>
               <p
-                className="mt-[16px]"
+                className="mt-[16px] text-[14px] leading-[18.2px] md:leading-[16.8px]"
                 style={{
                   fontFamily: '"Otterco Light", sans-serif',
                   fontWeight: 300,
-                  fontSize: '14px',
-                  lineHeight: '18.2px',
                   color: 'rgb(42, 42, 42)',
                 }}
               >
-                <span className="block">Transforming ideas into exceptional web and</span>
-                <span className="block">mobile app experiences.</span>
+                Transforming ideas into exceptional web and
+                <br className="md:hidden" /> mobile app experiences.
               </p>
             </div>
 
@@ -518,17 +509,16 @@ export default function HomePage() {
                 Design & Creative
               </h3>
               <p
-                className="mt-[16px]"
+                className="mt-[16px] text-[14px] leading-[18.2px] md:leading-[16.8px]"
                 style={{
                   fontFamily: '"Otterco Light", sans-serif',
                   fontWeight: 300,
-                  fontSize: '14px',
-                  lineHeight: '18.2px',
                   color: 'rgb(42, 42, 42)',
                 }}
               >
-                <span className="block">Crafting visually stunning designs that connect with</span>
-                <span className="block">your audience.</span>
+                Crafting visually stunning designs that connect with
+                <br className="md:hidden" /> your
+                <br className="hidden md:inline" /> audience.
               </p>
             </div>
 
@@ -549,18 +539,16 @@ export default function HomePage() {
                 Development
               </h3>
               <p
-                className="mt-[16px]"
+                className="mt-[16px] text-[14px] leading-[18.2px] md:leading-[16.8px]"
                 style={{
                   fontFamily: '"Otterco Light", sans-serif',
                   fontWeight: 300,
-                  fontSize: '14px',
-                  lineHeight: '18.2px',
                   color: 'rgb(42, 42, 42)',
                 }}
               >
-                <span className="block">Bringing your vision to life</span>
-                <span className="block">with the latest technology</span>
-                <span className="block">and design trends.</span>
+                Bringing your vision to life
+                <br className="md:hidden" /> with the latest technology
+                <br className="md:hidden" /> and design trends.
               </p>
             </div>
           </div>
@@ -595,13 +583,13 @@ export default function HomePage() {
 
         <div className="relative w-full max-w-[1302px] mx-auto px-0 flex flex-col items-center z-20">
           {/* Top Circular Ring Frame */}
-          <div className="relative w-[128px] h-[128px] rounded-full overflow-hidden flex items-center justify-center mb-[27px] md:mb-0">
+          <div className="relative w-[128px] h-[128px] rounded-full overflow-hidden flex items-center justify-center mb-[29px] md:mb-0">
             <AvatarFrameSvg className="w-full h-full pointer-events-none" />
           </div>
 
           {/* Contact Heading (Authentic Framer text gradient matching kawsar.design) */}
           <h2
-            className="heading-contact-gradient text-center w-[355px] md:w-[658px] shrink-0 text-[36px] leading-[44px] md:text-[56px] md:leading-[64px] font-[600] mx-auto"
+            className="heading-contact-gradient text-center w-[352px] md:w-[658px] shrink-0 text-[36px] leading-[44px] md:text-[56px] md:leading-[64px] font-[600] mx-auto"
             style={{
               fontFamily: '"Otterco Display SemiBold", sans-serif',
             }}
@@ -610,9 +598,12 @@ export default function HomePage() {
           </h2>
 
           {/* Action Buttons: Email Me & WhatsApp */}
-          <div className="mt-[23px] md:mt-[40px] flex items-center justify-center gap-[10px]">
+          <div className="mt-[24px] md:mt-[40px] flex items-center justify-center gap-[10px]">
             {/* Email Me Button */}
-            <div className="w-[128px] h-[60px] bg-[#F1F0EF] border border-[#ECEBEA] rounded-[74px] p-[4px] flex items-center justify-center">
+            <div
+              data-framer-border="true"
+              className="w-[128px] h-[60px] bg-[#F1F0EF] rounded-[74px] p-[4px] flex items-center justify-center"
+            >
               <a
                 href="mailto:kawsarvy.design@gmail.com"
                 className="w-[120px] h-[52px] bg-[#242424] rounded-[90px] flex items-center justify-center gap-[8px] z-20 group"
@@ -633,13 +624,14 @@ export default function HomePage() {
             </div>
 
             {/* WhatsApp Button */}
-            <div className="w-[128px] h-[60px] bg-[#F1F0EF] border border-[#ECEBEA] rounded-[74px] p-[4px] flex items-center justify-center">
-              <a
-                href="https://wa.me/1303536185"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-[120px] h-[52px] bg-[#FFFFFE] rounded-[90px] flex items-center justify-center gap-[8px] z-20 group"
-              >
+            <a
+              href="https://wa.me/1303536185"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-framer-border="true"
+              className="w-[128px] h-[60px] bg-[#F1F0EF] rounded-[74px] p-[4px] flex items-center justify-center z-20 group"
+            >
+              <div className="w-[120px] h-[52px] bg-[#FFFFFE] rounded-[90px] flex items-center justify-center gap-[8px]">
                 <span
                   style={{
                     fontFamily: '"Otterco Medium", sans-serif',
@@ -651,12 +643,12 @@ export default function HomePage() {
                 >
                   whatsApp
                 </span>
-              </a>
-            </div>
+              </div>
+            </a>
           </div>
 
           {/* ----------------- FOOTER (Single Semantic Node, Responsive Layout) ----------------- */}
-          <footer className="w-full max-w-[351px] md:max-w-none md:w-[729px] lg:w-[1302px] px-3 md:px-0 mx-auto mt-[87px] md:mt-[99px]">
+          <footer className="w-[90%] md:w-[729px] lg:w-[1302px] mx-auto mt-[84px] md:mt-[99px]">
             {/* Hairline Divider Line */}
             <div className="w-full h-[1px] bg-[#ECEBEA] mb-[33px] md:mb-[43px]" />
 
