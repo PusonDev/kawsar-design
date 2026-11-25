@@ -73,7 +73,7 @@ export default function HomePage() {
         </div>
 
         {/* ----------------- HEADER / NAVBAR (Exact responsive width matching kawsar.design) ----------------- */}
-        <header className="relative w-[94%] md:w-[90%] lg:w-[1296px] h-[56px] mx-auto flex items-center justify-between z-20">
+        <header className="relative w-[94%] md:w-[90%] lg:w-[1296px] h-[56px] mx-auto md:-translate-x-[1.4px] lg:-translate-x-[2.5px] flex items-center justify-between z-20">
           {/* Desktop Left (>= 810px): Email Pill + CV Pill */}
           <div className="hidden md:flex items-center gap-[10px]">
             {/* Email + Copy Pill */}
@@ -236,7 +236,7 @@ export default function HomePage() {
         </header>
 
         {/* ----------------- HERO CONTENT ----------------- */}
-        <div className="relative max-w-[1300px] mx-auto px-4 flex flex-col items-center mt-[109px] md:mt-[96px] z-20">
+        <div className="relative max-w-[1300px] mx-auto px-4 flex flex-col items-center mt-[109px] md:mt-[96px] md:-translate-x-[0.6px] lg:-translate-x-[1px] z-20">
           {/* Avatar + Floating Badge Container */}
           <div className="relative w-[128px] h-[128px] flex items-center justify-center">
             {/* 128x128 Avatar Circle with Authentic Noise Overlay matching kawsar.design (framer-1dh92xw-container) */}
@@ -293,14 +293,14 @@ export default function HomePage() {
 
           {/* Hero H1 (1:1 with Framer .framer-2cgirf: w-[308px] md:w-[525px] shrink-0, single gradient text-fill span matching Framer) */}
           <h1
-            className="text-center mt-[10px] tracking-normal text-[36px] leading-[44px] md:text-[56px] md:leading-[64px] w-[308px] md:w-[525px] shrink-0 mx-auto max-w-full"
+            className="text-center mt-[11px] md:mt-[11.5px] tracking-normal text-[36px] leading-[44px] md:text-[56px] md:leading-[64px] w-[308px] md:w-[525px] shrink-0 mx-auto max-w-full"
             style={{
               fontFamily: '"Otterco Display Medium", sans-serif',
               fontWeight: 500,
             }}
           >
             <span className="heading-hero-gradient inline-block">
-              <span className="whitespace-nowrap">Building digital</span>
+              <span className="inline-block whitespace-nowrap mb-[1px] md:mb-[2px]">Building digital</span>
               <br />
               <span className="whitespace-nowrap">products, brands, and</span>
               <br />
@@ -313,7 +313,7 @@ export default function HomePage() {
             href="https://dribbble.com/Kawsarvy"
             target="_blank"
             rel="noopener noreferrer"
-            className="group mt-[42px] md:mt-[44px] w-[180px] h-[60px] bg-[#242424] rounded-[60px] flex items-center justify-center gap-[12px] no-underline z-20"
+            className="group mt-[40px] md:mt-[40.5px] w-[180px] h-[60px] bg-[#242424] rounded-[60px] flex items-center justify-center gap-[12px] no-underline z-20"
           >
             <DribbbleLatestWorkSvg width={16} height={16} />
             <span
@@ -392,7 +392,7 @@ export default function HomePage() {
       {/* =========================================================================
           SERVICES SECTION (Sits transparently on #F6F5F4 Canvas + Global Canvas Noise)
           ========================================================================= */}
-      <section className="relative w-full pt-[59px] md:pt-[100px] pb-[71px] md:pb-[121px] z-[1]">
+      <section className="relative w-full pt-[59px] md:pt-[100px] pb-[70px] md:pb-[121px] z-[1]">
         <div className="relative max-w-[1300px] mx-auto px-0 z-20">
           {/* Section Headline (Authentic Framer text gradient matching kawsar.design) */}
           <h2
@@ -405,12 +405,12 @@ export default function HomePage() {
           </h2>
 
           {/* Divider Line with Tilted "Services" Pill */}
-          <div className="relative w-[90%] md:w-[972px] mx-auto md:mx-0 md:left-1/2 md:-translate-x-1/2 mt-[50px] md:mt-[69px] mb-[114px] md:mb-[65px] flex items-center justify-center">
+          <div className="relative w-[90%] md:w-[972px] mx-auto md:mx-0 md:left-1/2 md:-translate-x-1/2 mt-[50.5px] md:mt-[69px] mb-[114.5px] md:mb-[65px] flex items-center justify-center">
             {/* Hairline Divider */}
             <div className="w-full h-[1px] bg-[#ECEBEA]" />
 
             {/* Tilted "Services" Pill (Static -10deg rotation matching kawsar.design) */}
-            <div className="absolute pointer-events-none z-20 select-none translate-y-[4.5px] md:translate-y-[5.6px]">
+            <div className="absolute pointer-events-none z-20 select-none translate-y-[4.5px] md:translate-y-[5.6px] md:-translate-x-[0.6px] lg:-translate-x-[1px]">
               <div
                 className="w-[125px] h-[48px] bg-[#FFFFFE] border border-[#ECEBEA] rounded-[60px] shadow-[0_20px_10px_0_rgba(236,235,234,0.4)] flex items-center justify-center"
                 style={{
@@ -451,9 +451,8 @@ export default function HomePage() {
                 UX & UI
               </h3>
               <p
-                className="mt-[16px] text-[14px] leading-[18.2px] md:leading-[16.8px]"
+                className="service-desc-font mt-[16px] text-[14px] leading-[18.2px] md:leading-[16.8px]"
                 style={{
-                  fontFamily: '"Otterco Light", sans-serif',
                   fontWeight: 300,
                   color: 'rgb(42, 42, 42)',
                 }}
@@ -480,9 +479,8 @@ export default function HomePage() {
                 Web & Mobile App
               </h3>
               <p
-                className="mt-[16px] text-[14px] leading-[18.2px] md:leading-[16.8px]"
+                className="service-desc-font mt-[16px] text-[14px] leading-[18.2px] md:leading-[16.8px]"
                 style={{
-                  fontFamily: '"Otterco Light", sans-serif',
                   fontWeight: 300,
                   color: 'rgb(42, 42, 42)',
                 }}
@@ -509,9 +507,8 @@ export default function HomePage() {
                 Design & Creative
               </h3>
               <p
-                className="mt-[16px] text-[14px] leading-[18.2px] md:leading-[16.8px]"
+                className="service-desc-font mt-[16px] text-[14px] leading-[18.2px] md:leading-[16.8px]"
                 style={{
-                  fontFamily: '"Otterco Light", sans-serif',
                   fontWeight: 300,
                   color: 'rgb(42, 42, 42)',
                 }}
@@ -539,9 +536,8 @@ export default function HomePage() {
                 Development
               </h3>
               <p
-                className="mt-[16px] text-[14px] leading-[18.2px] md:leading-[16.8px]"
+                className="service-desc-font mt-[16px] text-[14px] leading-[18.2px] md:leading-[16.8px]"
                 style={{
-                  fontFamily: '"Otterco Light", sans-serif',
                   fontWeight: 300,
                   color: 'rgb(42, 42, 42)',
                 }}
@@ -655,7 +651,7 @@ export default function HomePage() {
             {/* Single Responsive Flex Container: Single Row on ALL viewports */}
             <div className="w-full flex flex-row items-center justify-between text-left">
               <p
-                className="pl-0 md:pl-[2px]"
+                className="pl-0 lg:pl-[3px]"
                 style={{
                   fontFamily: '"Otterco Regular", sans-serif',
                   fontSize: '14px',
